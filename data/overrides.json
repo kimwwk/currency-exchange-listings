@@ -1,0 +1,327 @@
+{
+  "_comment": {
+    "purpose": "Manual verdicts that survive re-scrapes. The classifier (pipeline/classify.js) applies these FIRST, before any rule. An override always wins.",
+    "matching": "Each entry has a `match` object. The classifier tries `feature_ids` (exact dedupe-key match) first; if none match it falls back to `name_regex` (case-insensitive, tested against the place name). Use feature_ids for precision and name_regex as a durable fallback in case a place's feature ID changes between scrapes.",
+    "status_vocabulary": "walk_in_confirmed | walk_in_unverified | remittance_first | online_only | noise. (The classifier also emits `unknown`, but that is never set via override.)",
+    "walk_in_confirmed_rule": "ONLY set status=walk_in_confirmed when `evidence` contains a real verification (website 'how it works' language confirming an in-person cash counter, or a logged phone call). Never infer it from category/address alone.",
+    "fields": {
+      "match.name_regex": "Case-insensitive regex string tested against place name. Fallback when feature_ids miss.",
+      "match.feature_ids": "Array of Google Maps feature IDs (0x..:0x..) this verdict applies to. Primary match key.",
+      "status": "One of the status vocabulary values.",
+      "sub_type": "Optional refinement, e.g. online_only|b2b_office|bitcoin_atm|payday|pawn_gold|bank|agent|jewellery.",
+      "evidence": "Human-readable proof string. Required for walk_in_confirmed; recommended for all.",
+      "source": "web | phone | brand | scrape | analysis.",
+      "note": "Free-text analyst note.",
+      "verified_phone": "Template for a future phone-call verdict Kim can fill in: {date: 'YYYY-MM-DD', answer: 'yes'|'no'|'no_answer'}. Leave date/answer null until a call is made. When answer='yes' for cash walk-in, promote status to walk_in_confirmed and copy the call into evidence."
+    },
+    "seed_provenance": "Seeded 2026-06-04 from idea-grooming/currency-exchange-finder/research/maps-gap-analysis.md (Test 0 scrape of 2026-06-03). 35 ONLINE_ONLY_OFFICE places + known-noise brands + the Interchange hybrid correction."
+  },
+  "overrides": [
+    {
+      "match": { "name_regex": "^Knightsbridge Foreign Exchange Toronto", "feature_ids": ["0x882b34d2917ad95d:0x5bbbfff950940bf7"] },
+      "status": "online_only",
+      "sub_type": "online_only",
+      "evidence": "KnightsbridgeFX.com 'How It Works': book online, fund by wire/EFT, receive by delivery or pickup. 'They are not able to accept payments by cash, cheque, or bank draft.' (verified 2026-06-03)",
+      "source": "web",
+      "note": "The canonical trap. 100 King St W #5700, office tower, no walk-in cash counter.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^Knightsbridge Foreign Exchange (Brampton|Halifax|Port Coquitlam|Langley|London|Hamilton)", "feature_ids": ["0x882b35ddc3a9f18b:0xf00b5fcdea98202d","0x882b3504c5ddd927:0x2a9b79beaadb565e","0x882b35949ddc8141:0x85659f134924cec2","0x882b35bc0be1c1fb:0x74b2d28984818daa","0x882b359ba30f94a9:0x968ef84246dc6ff4","0x882b35fbfaa0c805:0x25f492b9c74e96da"] },
+      "status": "noise",
+      "sub_type": "out_of_area",
+      "evidence": "Out-of-GTA KnightsbridgeFX branches (Brampton, Halifax, Port Coquitlam, Langley, London, Hamilton) that leaked into the generic/Mississauga queries. Online-only brand AND outside the target geography.",
+      "source": "analysis",
+      "note": "Excluded as out-of-area noise; the brand is online-only regardless.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "ZHONG HAI|中海换汇", "feature_ids": ["0x89d4d37086dd9e61:0x1ba187527ae3ec58"] },
+      "status": "online_only",
+      "sub_type": "b2b_office",
+      "evidence": "Site states 'do not engage in cash transactions'; WeChat-only consultation, RMB wholesale. Woodbine Business Centre office, not a counter. (verified 2026-06-03)",
+      "source": "web",
+      "note": "7240 Woodbine Ave #215, Markham.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^Money Trader$", "feature_ids": ["0x89d4d4a1c414e975:0x82f88561fdd743d0"] },
+      "status": "online_only",
+      "sub_type": "b2b_office",
+      "evidence": "This listing IS MTFX Inc. (Suite 306, M-F office hours), an online payment-solutions provider. Second MTFX listing. (verified 2026-06-03)",
+      "source": "web",
+      "note": "2750 14th Ave #306, Markham.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^MTFX Foreign Exchange", "feature_ids": ["0x89d4d4a1c4871293:0x3e0952e71886c774"] },
+      "status": "online_only",
+      "sub_type": "b2b_office",
+      "evidence": "MTFX is an online/wholesale FX brand (online payment solutions), no retail walk-in counter. Category 'Corporate office'. (verified 2026-06-03)",
+      "source": "web",
+      "note": "18 Wynford Dr Ste 401.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^RICE FX", "feature_ids": ["0x89d4d4fb0ba8607b:0x62c38f37a4a8de6a"] },
+      "status": "online_only",
+      "sub_type": "b2b_office",
+      "evidence": "ricefx.com = boutique B2B FX for businesses (Spot FX, risk mitigation). No walk-in. (verified 2026-06-03)",
+      "source": "web",
+      "note": "151 Whitehall Dr Suite 10, Markham.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^Exchange International$", "feature_ids": ["0x89d4cb3359d21b21:0xcbc4bd1c07b8a77d"] },
+      "status": "online_only",
+      "sub_type": "b2b_office",
+      "evidence": "= Friedberg Mercantile, a commodities/investment firm. Google category 'Investment service'. No retail FX counter. (verified 2026-06-03)",
+      "source": "web",
+      "note": "211 Yonge St.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^Accuracy Network", "feature_ids": ["0x89d4cb008a2dd661:0xa14123ae13e7b520"] },
+      "status": "online_only",
+      "sub_type": "b2b_office",
+      "evidence": "B2B office (Royal Bank Plaza, Suite 1600, M-F 9-5). Google category 'Education center'. No retail presence. (verified 2026-06-03)",
+      "source": "web",
+      "note": "200 Bay St.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^Zytra FX", "feature_ids": ["0x2b5ff0f0191fa04f:0x4f6f727d49aed5fb"] },
+      "status": "online_only",
+      "sub_type": "b2b_office",
+      "evidence": "No retail presence; B2B office, Google category 'Consultant'. (verified 2026-06-03)",
+      "source": "web",
+      "note": "Exchange Tower, 130 King St W.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^Payments International", "feature_ids": ["0x882b34d30a900001:0xbf82c7a7df0ca8c9"] },
+      "status": "online_only",
+      "sub_type": "b2b_office",
+      "evidence": "Known online/wholesale FX brand, no retail counter (1 University Ave 11th Fl office). (brand-confident 2026-06-03)",
+      "source": "brand",
+      "note": "1 University Ave 11th Floor.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^Mercantile Exchange Corporation", "feature_ids": ["0x40574d98ead15b65:0x4b102b874840a370"] },
+      "status": "online_only",
+      "sub_type": "b2b_office",
+      "evidence": "Known wholesale FX brand, no retail counter. Category 'Corporate office'. (brand-confident 2026-06-03)",
+      "source": "brand",
+      "note": "1 Yorkville Ave.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^Monex Canada", "feature_ids": ["0x882b34d2a612e2ed:0xf60cbf8a78b432be"] },
+      "status": "online_only",
+      "sub_type": "b2b_office",
+      "evidence": "Monex = online/wholesale FX. TD Centre Suite 3520 office, no walk-in. (brand-confident 2026-06-03)",
+      "source": "brand",
+      "note": "Toronto-Dominion Centre, 66 Wellington St W Suite 3520.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^Auralytix Canada", "feature_ids": ["0x882b34dbd445a673:0x584d37d11f245816"] },
+      "status": "online_only",
+      "sub_type": "b2b_office",
+      "evidence": "Interac e-Transfer-only FX ('Free & speedy interac eTransfer'), Investment service category, no cash counter. (analysis 2026-06-03)",
+      "source": "web",
+      "note": "371 Front St W suite 304.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^KVB Global", "feature_ids": ["0x882b30df632f785d:0x32ab4ee822da155d"] },
+      "status": "online_only",
+      "sub_type": "b2b_office",
+      "evidence": "KVB = online/wholesale FX brand. Exchange Tower #2130 office, no walk-in. (brand-confident 2026-06-03)",
+      "source": "brand",
+      "note": "Exchange Tower, 130 King St W #2130.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^Strategic Partners Global Trade", "feature_ids": ["0x89d4cb3282bfffff:0x3b98d67dbd78685d"] },
+      "status": "online_only",
+      "sub_type": "b2b_office",
+      "evidence": "B2B trade office, 1 King St W 48th Floor Suite 212, no retail counter. (brand-confident 2026-06-03)",
+      "source": "brand",
+      "note": "1 King St W 48th Floor, Suite 212.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^Velocity Trade Canada", "feature_ids": ["0x882b34a5701d47b3:0x6b4bc44134b22cff"] },
+      "status": "online_only",
+      "sub_type": "b2b_office",
+      "evidence": "Velocity Trade = institutional/wholesale FX. 100 Yonge #1800 office, no walk-in. (brand-confident 2026-06-03)",
+      "source": "brand",
+      "note": "100 Yonge St #1800.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^VirgoCX", "feature_ids": ["0x89d4cb49dbb8c02f:0x8cbbeb4178afff88"] },
+      "status": "online_only",
+      "sub_type": "crypto",
+      "evidence": "VirgoCX = regulated crypto/FX exchange (online). 4950 Yonge, Financial institution category, no cash counter. (brand-confident 2026-06-03)",
+      "source": "brand",
+      "note": "4950 Yonge St.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^Remitbee", "feature_ids": ["0x882b46fd01475905:0x546334d0f0b5f73b"] },
+      "status": "online_only",
+      "sub_type": "online_only",
+      "evidence": "Remitbee = online money transfer & FX. 2 Robert Speck Pkwy #620 office, no walk-in cash counter. (brand-confident 2026-06-03)",
+      "source": "brand",
+      "note": "2 Robert Speck Pkwy #620, Mississauga.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^Canadian Capital Commodities", "feature_ids": ["0x882b472f7925198f:0x1dcf74b84dcbc4a4"] },
+      "status": "online_only",
+      "sub_type": "b2b_office",
+      "evidence": "B2B commodities/FX, 33 City Centre #140 office, no retail counter. (brand-confident 2026-06-03)",
+      "source": "brand",
+      "note": "33 City Centre Dr #140, Mississauga.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^Ebury Canada", "feature_ids": ["0x882ef3af32b3e90f:0xd6401bdeb62f8c19"] },
+      "status": "online_only",
+      "sub_type": "b2b_office",
+      "evidence": "Ebury = B2B/corporate FX & payments. 33 Yonge Suite 815 office, no walk-in. (brand-confident 2026-06-03)",
+      "source": "brand",
+      "note": "33 Yonge St Suite 815.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^GFX Partners", "feature_ids": ["0x882b34cccb95886d:0x5d8cf83c417b6f4d"] },
+      "status": "online_only",
+      "sub_type": "b2b_office",
+      "evidence": "B2B FX office, 229 Yonge St, Investment service category, no retail counter. (brand-confident 2026-06-03)",
+      "source": "brand",
+      "note": "229 Yonge St.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^OANDA Canada", "feature_ids": ["0x882b34da0951c673:0xa741800caf99f01f"] },
+      "status": "online_only",
+      "sub_type": "online_only",
+      "evidence": "OANDA = online FX trading/brokerage. 370 King W #302 office, no walk-in cash. (brand-confident 2026-06-03)",
+      "source": "brand",
+      "note": "370 King St W #302.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^Expedia Canada", "feature_ids": ["0x882b34dbf3cf7595:0xc7a93e450811c3a8"] },
+      "status": "noise",
+      "sub_type": "mislabelled",
+      "evidence": "Expedia Canada corporate office (travel), 150 King W. Not a currency exchange; mislabelled listing. (analysis 2026-06-03)",
+      "source": "analysis",
+      "note": "150 King St W.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^Corpay$", "feature_ids": ["0x89d4cb32571d3d27:0x57c28d9b53accdd5"] },
+      "status": "online_only",
+      "sub_type": "b2b_office",
+      "evidence": "Corpay = corporate payments/FX. 121 King W 4th Fl, Financial consultant category, no retail counter. (brand-confident 2026-06-03)",
+      "source": "brand",
+      "note": "Roserock Place, 121 King St W 4th floor.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^Wealthsimple$", "feature_ids": ["0x882b35527f779003:0x49ecb34c5bda1a94"] },
+      "status": "online_only",
+      "sub_type": "online_only",
+      "evidence": "Wealthsimple = online investing/financial app. 80 Spadina 4th Floor office, no walk-in FX counter. (brand-confident 2026-06-03)",
+      "source": "brand",
+      "note": "80 Spadina Ave. 4th Floor.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^SKY FOREX GLOBAL", "feature_ids": ["0x89d4cbef041d80df:0x88d4c1090e80ed58"] },
+      "status": "online_only",
+      "sub_type": "b2b_office",
+      "evidence": "33 Bay St office, no phone listed, Directions-only listing; no retail counter found. (analysis 2026-06-03)",
+      "source": "analysis",
+      "note": "33 Bay St.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^Coinut", "feature_ids": ["0x89d4cb2fbef56afd:0x744db81f155ca869"] },
+      "status": "online_only",
+      "sub_type": "crypto",
+      "evidence": "Coinut = online crypto exchange (Singapore & Canada). 18 King St E, no walk-in cash FX counter. (brand-confident 2026-06-03)",
+      "source": "brand",
+      "note": "18 King St E.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "Crypto Hustlers Exchange", "feature_ids": ["0x89d4d5755d8d1b3f:0x27dd198a5e8edc9a"] },
+      "status": "online_only",
+      "sub_type": "crypto",
+      "evidence": "Crypto exchange, second-floor unit (9390 Woodbine Ave 2nd Floor), Directions-only, no retail cash counter found. (analysis 2026-06-03)",
+      "source": "analysis",
+      "note": "2D10, 9390 Woodbine Ave Second Floor, Markham.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "Kandahar Money Exchange", "feature_ids": ["0x89d4d1e60d521e0b:0x51c5f89d2261d52e"] },
+      "status": "online_only",
+      "sub_type": "uncertain_office",
+      "evidence": "UNCERTAIN in gap-analysis: 3601 Lawrence Ave E #2, Google category 'Market', flagged office/B2B but NOT website-verified. (analysis 2026-06-03)",
+      "source": "analysis",
+      "note": "UNCERTAIN. Candidate for the phone-verification pass; if it runs a counter, promote to walk_in_unverified/confirmed.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^H-TONG FINANCIAL", "feature_ids": ["0x882b2d9a64db0773:0x73ae74412ea39cc1"] },
+      "status": "online_only",
+      "sub_type": "uncertain_office",
+      "evidence": "UNCERTAIN in gap-analysis: 4789 Yonge St suite 1120 (high-floor office), no retail web presence. NOT website-verified. (analysis 2026-06-03)",
+      "source": "analysis",
+      "note": "UNCERTAIN. Candidate for the phone-verification pass.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^MTFE Company", "feature_ids": ["0x89d4d3b8086808a9:0xba303ae67e6936ff"] },
+      "status": "online_only",
+      "sub_type": "uncertain_office",
+      "evidence": "UNCERTAIN in gap-analysis: 7030 Woodbine Ave, Google category 'Corporate office'. NOT website-verified. (analysis 2026-06-03)",
+      "source": "analysis",
+      "note": "UNCERTAIN. Candidate for the phone-verification pass.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^Noble Foreign Exchange", "feature_ids": ["0x882b46fcee689dcb:0x89691ae4833d3991"] },
+      "status": "online_only",
+      "sub_type": "uncertain_office",
+      "evidence": "UNCERTAIN in gap-analysis: 1310 Dundas St E Unit 204, Google category 'Insurance agency'. NOT website-verified. (analysis 2026-06-03)",
+      "source": "analysis",
+      "note": "UNCERTAIN. Candidate for the phone-verification pass.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^Muslim Xchange", "feature_ids": ["0x882b47304ac380d9:0x964373e613cca325"] },
+      "status": "online_only",
+      "sub_type": "uncertain_office",
+      "evidence": "UNCERTAIN in gap-analysis: 4023 The Exchange, Google category 'Information services', no retail presence found. NOT website-verified. (analysis 2026-06-03)",
+      "source": "analysis",
+      "note": "UNCERTAIN. Candidate for the phone-verification pass.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^Interchange Financial", "feature_ids": ["0x882b34cb032fed39:0xdd08aa7f725e4669"] },
+      "status": "walk_in_unverified",
+      "sub_type": "hybrid_pickup_no_cash_in",
+      "evidence": "interchangefinancial.com confirms in-person pickup at physical locations ('pick up cash in-store... pay with Debit Card or Interac e-transfer'). HOWEVER it does NOT accept cash-in (debit/e-transfer only) -- a hybrid pickup model, NOT a traditional cash-in-cash-out counter. (verified 2026-06-03)",
+      "source": "web",
+      "note": "Material correction from gap-analysis: reclassified ONLINE_ONLY -> WALK_IN_SHOP (UNCERTAIN). Kept as walk_in_unverified NOT walk_in_confirmed because the product question is 'takes YOUR cash at a counter' and the confirmed evidence is that it does NOT take cash-in. Flag for a phone call: 'Do you accept cash deposits in person?'",
+      "verified_phone": { "date": null, "answer": null }
+    }
+  ]
+}

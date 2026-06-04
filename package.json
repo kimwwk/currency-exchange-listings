@@ -1,0 +1,18 @@
+{
+  "name": "currency-exchange-listings",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GTA Cash Exchange Directory — walk-in currency exchange shops in Toronto that actually take cash. Static site generated from an automated scrape + classification pipeline.",
+  "type": "commonjs",
+  "scripts": {
+    "scrape": "node pipeline/scrape.js",
+    "classify": "node pipeline/classify.js",
+    "build": "node site/build.js",
+    "refresh": "bash pipeline/refresh.sh",
+    "serve": "npx serve dist",
+    "deploy": "npx wrangler pages deploy dist --project-name=gta-cash-exchange"
+  },
+  "devDependencies": {
+    "playwright": "^1.49.0"
+  }
+}
