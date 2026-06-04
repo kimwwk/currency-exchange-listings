@@ -1,0 +1,33 @@
+name: Deploy to Cloudflare
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # classify + build are dependency-free; raw scrape data is committed.
+      # Scraping never runs in CI (Google blocks datacenter IPs) — refresh
+      # locally with `bash pipeline/refresh.sh` and push the updated data.
+      - name: Classify
+        run: node pipeline/classify.js
+
+      - name: Build site
+        run: node site/build.js
+
+      - name: Deploy to Cloudflare Workers (static assets)
+        run: npx wrangler deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
