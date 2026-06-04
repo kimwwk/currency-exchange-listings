@@ -2,7 +2,7 @@
 
 Walk-in currency exchange shops in Toronto/GTA that **actually take cash at the counter** — with honest verification badges. Built because Google Maps' "currency exchange" category mixes real shops with online-only offices (we measured ~13% of 274 listings; 31 carry named evidence and are listed publicly).
 
-**Live site:** https://gta-cash-exchange.pages.dev
+**Live site:** https://gta-cash-exchange.our-pot-backend-production.workers.dev
 
 ## How it works
 

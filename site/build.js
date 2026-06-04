@@ -8,7 +8,7 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const DIST = path.join(ROOT, 'dist');
-const SITE_URL = process.env.SITE_URL || 'https://gta-cash-exchange.pages.dev';
+const SITE_URL = process.env.SITE_URL || 'https://gta-cash-exchange.our-pot-backend-production.workers.dev';
 const SITE_NAME = 'GTA Cash Exchange Directory';
 const REPO_URL = 'https://github.com/kimwwk/currency-exchange-listings';
 
