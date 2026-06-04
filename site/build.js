@@ -8,7 +8,7 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const DIST = path.join(ROOT, 'dist');
-const SITE_URL = process.env.SITE_URL || 'https://gta-cash-exchange.our-pot-backend-production.workers.dev';
+const SITE_URL = process.env.SITE_URL || 'https://gta-cash-exchange.kivov-digital.workers.dev';
 const SITE_NAME = 'GTA Cash Exchange Directory';
 const REPO_URL = 'https://github.com/kimwwk/currency-exchange-listings';
 
@@ -49,6 +49,7 @@ function page({ title, description, canonicalPath, body, jsonLd, h1 }) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
+<meta name="google-site-verification" content="Ye_IMYi1SiV2M2haI9gEqUoeOJr3WJVGUXEurMIXcG8" />
 <link rel="canonical" href="${SITE_URL}${canonicalPath}">
 <link rel="stylesheet" href="/style.css">
 ${ld}
