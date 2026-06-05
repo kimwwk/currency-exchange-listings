@@ -475,6 +475,10 @@ function main() {
       const id = idm ? idm[1] : null;
       if (!id) continue; // every row has an ID per Test 0; skip the impossible miss
       const lines = r.lines || [];
+      // Coordinates live in the place href as !3d<lat>!4d<lng>
+      const cm = (r.href || '').match(/!3d(-?\d+\.\d+)!4d(-?\d+\.\d+)/);
+      const lat = cm ? Number(cm[1]) : null;
+      const lng = cm ? Number(cm[2]) : null;
 
       // Parse fields from lines[]
       let rating = null;
@@ -495,6 +499,8 @@ function main() {
           address: cat.address,
           phone,
           hours_line,
+          lat,
+          lng,
           areas: new Set([area]),
           scrapedAt,
           _firstScrape: scrapedAt,
@@ -509,6 +515,7 @@ function main() {
         if (!ex.address && cat.address) ex.address = cat.address;
         if (!ex.phone && phone) ex.phone = phone;
         if (!ex.hours_line && hours_line) ex.hours_line = hours_line;
+        if (ex.lat == null && lat != null) { ex.lat = lat; ex.lng = lng; }
         if (scrapedAt) {
           if (!ex._firstScrape || scrapedAt < ex._firstScrape) ex._firstScrape = scrapedAt;
           if (!ex._lastScrape || scrapedAt > ex._lastScrape) ex._lastScrape = scrapedAt;
@@ -576,6 +583,8 @@ function main() {
       address: p.address || null,
       phone: p.phone || null,
       hours_line: p.hours_line || null,
+      lat: p.lat ?? null,
+      lng: p.lng ?? null,
       areas,
       fintrac_registered,
       verified_phone: verified_phone,

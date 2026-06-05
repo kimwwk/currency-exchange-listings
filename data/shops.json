@@ -13,6 +13,8 @@
     "address": "698 Pape Ave",
     "phone": "(416) 461-9990",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 461-9990",
+    "lat": 43.6792416,
+    "lng": -79.3452795,
     "areas": [
       "toronto",
       "downtown"
@@ -39,6 +41,8 @@
     "address": "200 Bay St.",
     "phone": "(647) 495-3827",
     "hours_line": "Open 24 hours · (647) 495-3827",
+    "lat": 43.6465177,
+    "lng": -79.3800808,
     "areas": [
       "toronto"
     ],
@@ -67,6 +71,8 @@
     "address": "250 Yonge St #2201",
     "phone": "(416) 740-0022",
     "hours_line": "Closed · Opens 6 a.m. Thu · (416) 740-0022",
+    "lat": 43.6543743,
+    "lng": -79.3804848,
     "areas": [
       "toronto",
       "downtown"
@@ -92,6 +98,8 @@
     "address": "115 Richmond St E #2",
     "phone": "(416) 543-7551",
     "hours_line": "Closed · Opens 12 p.m. Thu · (416) 543-7551",
+    "lat": 43.6526556,
+    "lng": -79.3735713,
     "areas": [
       "toronto"
     ],
@@ -117,6 +125,8 @@
     "address": "150 Augusta Ave",
     "phone": "+1 877-416-9274",
     "hours_line": "Closes soon · 11 p.m. · Opens 9 a.m. Thu · +1 877-416-9274",
+    "lat": 43.6527177,
+    "lng": -79.4014962,
     "areas": [
       "toronto"
     ],
@@ -142,6 +152,8 @@
     "address": "371 Front St W suite 304",
     "phone": null,
     "hours_line": "Open 24 hours",
+    "lat": 43.6429861,
+    "lng": -79.3920955,
     "areas": [
       "toronto",
       "downtown"
@@ -170,6 +182,8 @@
     "address": "120 Adelaide St W Suite 2500, Office 103",
     "phone": "(416) 943-1603",
     "hours_line": null,
+    "lat": 43.6499752,
+    "lng": -79.3833659,
     "areas": [
       "toronto"
     ],
@@ -194,6 +208,8 @@
     "address": "2354A Yonge St Unit 1 (2nd Floor",
     "phone": "(416) 848-4849",
     "hours_line": "Closed · Opens 9 a.m. Thu · (416) 848-4849",
+    "lat": 43.7085774,
+    "lng": -79.3990767,
     "areas": [
       "toronto",
       "scarborough",
@@ -222,6 +238,8 @@
     "address": "595 Bay St.",
     "phone": "(416) 585-2273",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 585-2273",
+    "lat": 43.6562198,
+    "lng": -79.3832909,
     "areas": [
       "toronto",
       "downtown"
@@ -247,6 +265,8 @@
     "address": "360 Bay St. #302",
     "phone": "(416) 366-9000",
     "hours_line": "Closed · Opens 9 a.m. Thu · (416) 366-9000",
+    "lat": 43.6507033,
+    "lng": -79.3813332,
     "areas": [
       "toronto"
     ],
@@ -272,6 +292,8 @@
     "address": "Village by the Grange, 109 McCaul St unit 21",
     "phone": "(416) 666-3002",
     "hours_line": "Closed · Opens 10:30 a.m. Thu · (416) 666-3002",
+    "lat": 43.6538725,
+    "lng": -79.3910929,
     "areas": [
       "toronto",
       "downtown",
@@ -299,6 +321,8 @@
     "address": "55 Dundas St E 4th Floor",
     "phone": "(416) 248-2646",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 248-2646",
+    "lat": 43.6559423,
+    "lng": -79.378702,
     "areas": [
       "toronto",
       "downtown"
@@ -324,6 +348,8 @@
     "address": "220 Yonge St",
     "phone": "(416) 921-4872",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 921-4872",
+    "lat": 43.6530104,
+    "lng": -79.3802589,
     "areas": [
       "toronto",
       "downtown",
@@ -351,6 +377,8 @@
     "address": "220 Yonge St",
     "phone": "(416) 598-8560",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 598-8560",
+    "lat": 43.6544382,
+    "lng": -79.3806994,
     "areas": [
       "toronto",
       "downtown"
@@ -376,6 +404,8 @@
     "address": "2858 Danforth Ave",
     "phone": "(416) 915-9210",
     "hours_line": "Closed · Opens 11 a.m. Thu · (416) 915-9210",
+    "lat": 43.6898804,
+    "lng": -79.2949353,
     "areas": [
       "toronto"
     ],
@@ -401,6 +431,8 @@
     "address": "190 Queens Quay E",
     "phone": "(647) 748-0088",
     "hours_line": "Closes soon · 11 p.m. · Opens 8 a.m. Thu · (647) 748-0088",
+    "lat": 43.6457099,
+    "lng": -79.3648474,
     "areas": [
       "toronto"
     ],
@@ -426,6 +458,8 @@
     "address": "140 The Esplanade Unit 4",
     "phone": "(289) 205-0901",
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (289) 205-0901",
+    "lat": 43.6484879,
+    "lng": -79.3705974,
     "areas": [
       "toronto"
     ],
@@ -451,6 +485,8 @@
     "address": "811 Dundas St W Unit 3",
     "phone": "(416) 361-0505",
     "hours_line": "Closes soon · 11 p.m. · Opens 8 a.m. Thu · (416) 361-0505",
+    "lat": 43.6516079,
+    "lng": -79.4086422,
     "areas": [
       "toronto"
     ],
@@ -476,6 +512,8 @@
     "address": "658 Queen St E",
     "phone": "(416) 466-0429",
     "hours_line": "Open 24 hours · (416) 466-0429",
+    "lat": 43.65863,
+    "lng": -79.35179,
     "areas": [
       "toronto",
       "north-york"
@@ -502,6 +540,8 @@
     "address": "18 King St E",
     "phone": null,
     "hours_line": "Closed · Opens 9:30 a.m. Thu",
+    "lat": 43.6496485,
+    "lng": -79.3770895,
     "areas": [
       "toronto"
     ],
@@ -529,6 +569,8 @@
     "address": "437 Yonge St A",
     "phone": "(416) 595-0900",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 595-0900",
+    "lat": 43.6609442,
+    "lng": -79.3826217,
     "areas": [
       "toronto",
       "downtown",
@@ -557,6 +599,8 @@
     "address": "3401 Dufferin St Unit 32C",
     "phone": "(416) 787-1444",
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (416) 787-1444",
+    "lat": 43.7268737,
+    "lng": -79.4513888,
     "areas": [
       "toronto",
       "north-york"
@@ -583,6 +627,8 @@
     "address": "Roserock Place, 121 King St W 4th floor",
     "phone": "(416) 646-6401",
     "hours_line": "Closed · Opens 9 a.m. Thu · (416) 646-6401",
+    "lat": 43.6476464,
+    "lng": -79.383028,
     "areas": [
       "toronto"
     ],
@@ -610,6 +656,8 @@
     "address": "279 Spadina Ave.",
     "phone": "(416) 596-7601",
     "hours_line": "Closed · Opens 10:30 a.m. Thu · (416) 596-7601",
+    "lat": 43.6526952,
+    "lng": -79.3976479,
     "areas": [
       "toronto",
       "downtown",
@@ -637,6 +685,8 @@
     "address": "120 Adelaide St W R7",
     "phone": "(647) 812-2286",
     "hours_line": "Closed · Opens 8:30 a.m. Thu · (647) 812-2286",
+    "lat": 43.6499219,
+    "lng": -79.3831964,
     "areas": [
       "toronto",
       "downtown",
@@ -664,6 +714,8 @@
     "address": "4841 Yonge St Unit 237D",
     "phone": "(647) 812-2876",
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (647) 812-2876",
+    "lat": 43.7625088,
+    "lng": -79.4105316,
     "areas": [
       "toronto",
       "scarborough",
@@ -691,6 +743,8 @@
     "address": "121 Yonge St",
     "phone": "(416) 363-2300",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 363-2300",
+    "lat": 43.6507752,
+    "lng": -79.3784284,
     "areas": [
       "toronto",
       "downtown"
@@ -717,6 +771,8 @@
     "address": "33 Yonge St Suite 815",
     "phone": "(647) 694-0604",
     "hours_line": "Closed · Opens 9 a.m. Thu · (647) 694-0604",
+    "lat": 43.6475888,
+    "lng": -79.3768695,
     "areas": [
       "toronto"
     ],
@@ -745,6 +801,8 @@
     "address": "234 Parliament St",
     "phone": "(416) 474-7776",
     "hours_line": "Closed · Opens 11 a.m. Thu · (416) 474-7776",
+    "lat": 43.6574646,
+    "lng": -79.3653564,
     "areas": [
       "toronto",
       "downtown"
@@ -771,6 +829,8 @@
     "address": "211 Yonge St",
     "phone": "(416) 214-9157",
     "hours_line": null,
+    "lat": 43.6538403,
+    "lng": -79.3795657,
     "areas": [
       "toronto",
       "downtown"
@@ -800,6 +860,8 @@
     "address": "150 King St W",
     "phone": null,
     "hours_line": null,
+    "lat": 43.6480925,
+    "lng": -79.3844403,
     "areas": [
       "toronto"
     ],
@@ -828,6 +890,8 @@
     "address": "215 Victoria St #400",
     "phone": "(416) 366-4000",
     "hours_line": "Closed · Opens 8:30 a.m. Thu · (416) 366-4000",
+    "lat": 43.6550116,
+    "lng": -79.3788287,
     "areas": [
       "toronto",
       "downtown"
@@ -854,6 +918,8 @@
     "address": "111 Blue Jays Way",
     "phone": "+1 888-832-1282",
     "hours_line": "Open · Closes 1 a.m. · +1 888-832-1282",
+    "lat": 43.6455113,
+    "lng": -79.3919378,
     "areas": [
       "toronto"
     ],
@@ -879,6 +945,8 @@
     "address": "318 Parliament St",
     "phone": "+1 888-832-1282",
     "hours_line": "Closed · Opens 8:30 a.m. Thu · +1 888-832-1282",
+    "lat": 43.6595939,
+    "lng": -79.3662267,
     "areas": [
       "toronto",
       "downtown",
@@ -908,6 +976,8 @@
     "address": "457 Parliament St",
     "phone": "+1 888-832-1282",
     "hours_line": "Closed · Opens 11 a.m. Thu · +1 888-832-1282",
+    "lat": 43.6636554,
+    "lng": -79.3675669,
     "areas": [
       "toronto",
       "downtown"
@@ -934,6 +1004,8 @@
     "address": "101 Danforth Ave",
     "phone": "+1 888-832-1282",
     "hours_line": "Closed · Opens 9 a.m. Thu · +1 888-832-1282",
+    "lat": 43.6761536,
+    "lng": -79.3581273,
     "areas": [
       "toronto",
       "north-york",
@@ -961,6 +1033,8 @@
     "address": "125 Dundas St E",
     "phone": "+1 888-832-1282",
     "hours_line": "Open · Closes 3 a.m. · +1 888-832-1282",
+    "lat": 43.6565714,
+    "lng": -79.3761549,
     "areas": [
       "toronto",
       "downtown",
@@ -988,6 +1062,8 @@
     "address": "140 Danforth Ave",
     "phone": "+1 888-832-1282",
     "hours_line": "Closed · Opens 9 a.m. Thu · +1 888-832-1282",
+    "lat": 43.6766405,
+    "lng": -79.3577935,
     "areas": [
       "toronto",
       "north-york",
@@ -1015,6 +1091,8 @@
     "address": "2-105 Victoria St Unit 2",
     "phone": "+1 888-832-1282",
     "hours_line": "Closed · Opens 9 a.m. Thu · +1 888-832-1282",
+    "lat": 43.6521232,
+    "lng": -79.3776916,
     "areas": [
       "toronto"
     ],
@@ -1040,6 +1118,8 @@
     "address": "213 Wellesley St E",
     "phone": "+1 888-832-1282",
     "hours_line": "Closed · Opens 7 a.m. Thu · +1 888-832-1282",
+    "lat": 43.6672469,
+    "lng": -79.373261,
     "areas": [
       "toronto",
       "downtown",
@@ -1069,6 +1149,8 @@
     "address": "117 Gerrard St E",
     "phone": "+1 888-832-1282",
     "hours_line": "Open · Closes 12 a.m. · +1 888-832-1282",
+    "lat": 43.6601188,
+    "lng": -79.3760778,
     "areas": [
       "toronto",
       "downtown",
@@ -1097,6 +1179,8 @@
     "address": "736 Bay St. Unit 4",
     "phone": "+1 888-832-1282",
     "hours_line": "Closed · Opens 8 a.m. Thu · +1 888-832-1282",
+    "lat": 43.6593954,
+    "lng": -79.3856111,
     "areas": [
       "toronto"
     ],
@@ -1122,6 +1206,8 @@
     "address": "323 Richmond St E",
     "phone": "+1 888-832-1282",
     "hours_line": "Closes soon · 11 p.m. · Opens 8 a.m. Thu · +1 888-832-1282",
+    "lat": 43.6531429,
+    "lng": -79.3688207,
     "areas": [
       "toronto"
     ],
@@ -1147,6 +1233,8 @@
     "address": "120 Lombard St unit 3",
     "phone": "+1 888-832-1282",
     "hours_line": "Closed · Opens 8 a.m. Thu · +1 888-832-1282",
+    "lat": 43.6525882,
+    "lng": -79.3729249,
     "areas": [
       "toronto"
     ],
@@ -1172,6 +1260,8 @@
     "address": "130 John St",
     "phone": "+1 888-832-1282",
     "hours_line": "Open · Closes 3 a.m. · +1 888-832-1282",
+    "lat": 43.6486493,
+    "lng": -79.3907862,
     "areas": [
       "toronto",
       "downtown"
@@ -1198,6 +1288,8 @@
     "address": "523 Parliament St",
     "phone": "+1 888-832-1282",
     "hours_line": "Closed · Opens 9 a.m. Thu · +1 888-832-1282",
+    "lat": 43.6654016,
+    "lng": -79.3681812,
     "areas": [
       "toronto",
       "downtown"
@@ -1224,6 +1316,8 @@
     "address": "287 King St W",
     "phone": "+1 888-832-1282",
     "hours_line": "Closes soon · 11 p.m. · Opens 9 a.m. Thu · +1 888-832-1282",
+    "lat": 43.6463963,
+    "lng": -79.3898151,
     "areas": [
       "toronto",
       "downtown"
@@ -1250,6 +1344,8 @@
     "address": "599 Church St",
     "phone": "+1 888-832-1282",
     "hours_line": "Closes soon · 11 p.m. · Opens 9 a.m. Thu · +1 888-832-1282",
+    "lat": 43.6689873,
+    "lng": -79.3821133,
     "areas": [
       "toronto",
       "north-york"
@@ -1276,6 +1372,8 @@
     "address": "568 Yonge St",
     "phone": "+1 888-832-1282",
     "hours_line": "Closed · Opens 9:30 a.m. Thu · +1 888-832-1282",
+    "lat": 43.6647925,
+    "lng": -79.3847142,
     "areas": [
       "toronto"
     ],
@@ -1301,6 +1399,8 @@
     "address": "14 Church St",
     "phone": "+1 888-832-1282",
     "hours_line": "Open · Closes 1 a.m. · +1 888-832-1282",
+    "lat": 43.6477975,
+    "lng": -79.3737667,
     "areas": [
       "toronto"
     ],
@@ -1326,6 +1426,8 @@
     "address": "654 Yonge St",
     "phone": "+1 888-832-1282",
     "hours_line": "Open · Closes 12 a.m. · +1 888-832-1282",
+    "lat": 43.6669135,
+    "lng": -79.3855711,
     "areas": [
       "toronto"
     ],
@@ -1351,6 +1453,8 @@
     "address": "74 Wellesley St E",
     "phone": "+1 888-832-1282",
     "hours_line": "Open · Closes 12 a.m. · +1 888-832-1282",
+    "lat": 43.665976,
+    "lng": -79.3805441,
     "areas": [
       "toronto",
       "downtown",
@@ -1378,6 +1482,8 @@
     "address": "229 Yonge St",
     "phone": "(416) 217-3088",
     "hours_line": null,
+    "lat": 43.6544479,
+    "lng": -79.3798633,
     "areas": [
       "toronto"
     ],
@@ -1406,6 +1512,8 @@
     "address": "55 Dundas St E 3rd Floor",
     "phone": "(416) 504-4653",
     "hours_line": "Closed · Opens 9 a.m. Thu · (416) 504-4653",
+    "lat": 43.6559343,
+    "lng": -79.3786952,
     "areas": [
       "toronto",
       "downtown"
@@ -1432,6 +1540,8 @@
     "address": "573 Yonge St",
     "phone": "(416) 575-6998",
     "hours_line": "Closes soon · 11 p.m. · Opens 6 a.m. Thu · (416) 575-6998",
+    "lat": 43.6654689,
+    "lng": -79.3846577,
     "areas": [
       "toronto",
       "downtown"
@@ -1458,6 +1568,8 @@
     "address": "595 Bay St.",
     "phone": "(778) 800-3777",
     "hours_line": "Closed · Opens 10 a.m. Thu · (778) 800-3777",
+    "lat": 43.6562198,
+    "lng": -79.3832909,
     "areas": [
       "toronto"
     ],
@@ -1483,6 +1595,8 @@
     "address": "Atrium on Bay, 20 Dundas St W",
     "phone": "+1 888-972-7799",
     "hours_line": "Closed · Opens 10 a.m. Thu · +1 888-972-7799",
+    "lat": 43.6561446,
+    "lng": -79.3822851,
     "areas": [
       "toronto",
       "downtown",
@@ -1512,6 +1626,8 @@
     "address": "2310 Bloor St W",
     "phone": "(416) 767-7782",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 767-7782",
+    "lat": 43.6505219,
+    "lng": -79.4796968,
     "areas": [
       "toronto"
     ],
@@ -1537,6 +1653,8 @@
     "address": "100 King St W #5700",
     "phone": "(416) 479-0834",
     "hours_line": "Closed · Opens 8:30 a.m. Thu · (416) 479-0834",
+    "lat": 43.6486362,
+    "lng": -79.3817439,
     "areas": [
       "toronto",
       "downtown"
@@ -1566,6 +1684,8 @@
     "address": "Exchange Tower, 130 King St W #2130",
     "phone": "(416) 646-9188",
     "hours_line": "Closed · Opens 9 a.m. Thu · (416) 646-9188",
+    "lat": 43.648528,
+    "lng": -79.3833359,
     "areas": [
       "toronto",
       "downtown"
@@ -1595,6 +1715,8 @@
     "address": "675 King St W",
     "phone": "+1 877-412-2646",
     "hours_line": "Open 24 hours · +1 877-412-2646",
+    "lat": 43.6436386,
+    "lng": -79.4031977,
     "areas": [
       "toronto"
     ],
@@ -1620,6 +1742,8 @@
     "address": "491 Parliament St",
     "phone": "+1 877-412-2646",
     "hours_line": "Closed · Opens 8 a.m. Thu · +1 877-412-2646",
+    "lat": 43.6644211,
+    "lng": -79.3678162,
     "areas": [
       "toronto",
       "downtown"
@@ -1646,6 +1770,8 @@
     "address": "25 The Esplanade",
     "phone": "+1 877-412-2646",
     "hours_line": "Open · Closes 1 a.m. · +1 877-412-2646",
+    "lat": 43.6462626,
+    "lng": -79.3751543,
     "areas": [
       "toronto"
     ],
@@ -1671,6 +1797,8 @@
     "address": "444 Yonge St",
     "phone": "+1 877-412-2646",
     "hours_line": "Closed · Opens 6:30 a.m. Thu · +1 877-412-2646",
+    "lat": 43.6604352,
+    "lng": -79.3832192,
     "areas": [
       "toronto"
     ],
@@ -1696,6 +1824,8 @@
     "address": "300 Simcoe St",
     "phone": "+1 877-412-2646",
     "hours_line": "Open 24 hours · +1 877-412-2646",
+    "lat": 43.6561298,
+    "lng": -79.3901217,
     "areas": [
       "toronto",
       "downtown"
@@ -1722,6 +1852,8 @@
     "address": "146 Sumach St",
     "phone": "+1 877-412-2646",
     "hours_line": "Closed · Opens 8 a.m. Thu · +1 877-412-2646",
+    "lat": 43.6590811,
+    "lng": -79.3603319,
     "areas": [
       "toronto",
       "downtown",
@@ -1751,6 +1883,8 @@
     "address": "45 Carlton St.",
     "phone": "+1 877-412-2646",
     "hours_line": "Open · Closes 2 a.m. · +1 877-412-2646",
+    "lat": 43.6614665,
+    "lng": -79.3805887,
     "areas": [
       "toronto",
       "downtown",
@@ -1778,6 +1912,8 @@
     "address": "270 Wellington St W",
     "phone": "+1 877-412-2646",
     "hours_line": "Open · Closes 12 a.m. · +1 877-412-2646",
+    "lat": 43.6450467,
+    "lng": -79.391617,
     "areas": [
       "toronto"
     ],
@@ -1803,6 +1939,8 @@
     "address": "253 Spadina Ave.",
     "phone": "+1 877-412-2646",
     "hours_line": "Closes soon · 11 p.m. · Opens 7 a.m. Thu · +1 877-412-2646",
+    "lat": 43.6521823,
+    "lng": -79.3973003,
     "areas": [
       "toronto"
     ],
@@ -1828,6 +1966,8 @@
     "address": "838 Broadview Ave",
     "phone": "+1 877-412-2646",
     "hours_line": "Open · Closes 12 a.m. · +1 877-412-2646",
+    "lat": 43.6786561,
+    "lng": -79.3585439,
     "areas": [
       "toronto",
       "north-york"
@@ -1854,6 +1994,8 @@
     "address": "720 Queen St E",
     "phone": "+1 877-412-2646",
     "hours_line": "Closes soon · 11 p.m. · Opens 7 a.m. Thu · +1 877-412-2646",
+    "lat": 43.6591169,
+    "lng": -79.3495919,
     "areas": [
       "toronto",
       "north-york"
@@ -1880,6 +2022,8 @@
     "address": "161 Church St",
     "phone": "+1 877-412-2646",
     "hours_line": "Open · Closes 12 a.m. · +1 877-412-2646",
+    "lat": 43.6542078,
+    "lng": -79.3760091,
     "areas": [
       "toronto",
       "downtown"
@@ -1906,6 +2050,8 @@
     "address": "1 Yorkville Ave",
     "phone": "(416) 368-3680",
     "hours_line": "Closed · Opens 8:30 a.m. Thu · (416) 368-3680",
+    "lat": 43.6717234,
+    "lng": -79.3878145,
     "areas": [
       "toronto",
       "downtown"
@@ -1934,6 +2080,8 @@
     "address": "65 Wellesley St E Unit: 200",
     "phone": "(416) 399-3996",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 399-3996",
+    "lat": 43.6654595,
+    "lng": -79.3811355,
     "areas": [
       "toronto",
       "downtown"
@@ -1960,6 +2108,8 @@
     "address": "Toronto-Dominion Centre, 66 Wellington St W Suite 3520",
     "phone": "(647) 943-1680",
     "hours_line": "Closed · Opens 8:30 a.m. Thu · (647) 943-1680",
+    "lat": 43.6478521,
+    "lng": -79.3811179,
     "areas": [
       "toronto",
       "downtown"
@@ -1989,6 +2139,8 @@
     "address": "268 Parliament St",
     "phone": "(416) 364-2274",
     "hours_line": "Closed · Opens 9 a.m. Thu · (416) 364-2274",
+    "lat": 43.6583124,
+    "lng": -79.3657655,
     "areas": [
       "toronto",
       "downtown"
@@ -2015,6 +2167,8 @@
     "address": "Inside Sun Wa Books, 280 Spadina Ave.",
     "phone": "(416) 977-9125",
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (416) 977-9125",
+    "lat": 43.6524831,
+    "lng": -79.3983685,
     "areas": [
       "toronto"
     ],
@@ -2040,6 +2194,8 @@
     "address": "260 Adelaide St E #206",
     "phone": "(647) 875-6717",
     "hours_line": "Open 24 hours · (647) 875-6717",
+    "lat": 43.6519613,
+    "lng": -79.3704129,
     "areas": [
       "toronto",
       "downtown"
@@ -2065,6 +2221,8 @@
     "address": "222 Spadina Ave. #101C",
     "phone": "(416) 599-6486",
     "hours_line": "Closed · Opens 10:30 a.m. Thu · (416) 599-6486",
+    "lat": 43.6509656,
+    "lng": -79.3975392,
     "areas": [
       "toronto",
       "downtown"
@@ -2091,6 +2249,8 @@
     "address": "370 King St W #302",
     "phone": "(416) 593-9436",
     "hours_line": null,
+    "lat": 43.6463591,
+    "lng": -79.3917759,
     "areas": [
       "toronto"
     ],
@@ -2118,6 +2278,8 @@
     "address": "1973 Yonge St",
     "phone": "(647) 948-7416",
     "hours_line": "Closed · Opens 11 a.m. Thu · (647) 948-7416",
+    "lat": 43.6999531,
+    "lng": -79.3966043,
     "areas": [
       "toronto",
       "north-york"
@@ -2143,6 +2305,8 @@
     "address": "644 Yonge St",
     "phone": "(437) 889-6000",
     "hours_line": "Closed · Opens 9 a.m. Thu · (437) 889-6000",
+    "lat": 43.6665861,
+    "lng": -79.3854128,
     "areas": [
       "toronto"
     ],
@@ -2168,6 +2332,8 @@
     "address": "120 Adelaide St W Suite #2500",
     "phone": "+1 888-504-4032",
     "hours_line": "Closed · Opens 10 a.m. Thu · +1 888-504-4032",
+    "lat": 43.6499286,
+    "lng": -79.3832479,
     "areas": [
       "toronto",
       "downtown"
@@ -2194,6 +2360,8 @@
     "address": "382 Yonge St",
     "phone": "(416) 542-1509",
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (416) 542-1509",
+    "lat": 43.6592875,
+    "lng": -79.382471,
     "areas": [
       "toronto"
     ],
@@ -2218,6 +2386,8 @@
     "address": "111 Queens Quay W",
     "phone": "(647) 343-1011",
     "hours_line": "Closed · Opens 10 a.m. Thu · (647) 343-1011",
+    "lat": 43.6399406,
+    "lng": -79.379615,
     "areas": [
       "toronto",
       "downtown"
@@ -2244,6 +2414,8 @@
     "address": "439 University Ave 5th Floor",
     "phone": "+1 844-473-6487",
     "hours_line": "Closed · Opens 6 a.m. Thu · +1 844-473-6487",
+    "lat": 43.6544178,
+    "lng": -79.3875832,
     "areas": [
       "toronto",
       "downtown"
@@ -2270,6 +2442,8 @@
     "address": "Victoria Variety, 44 Victoria St",
     "phone": "(416) 860-0368",
     "hours_line": "Closed · Opens 8:30 a.m. Thu · (416) 860-0368",
+    "lat": 43.6503921,
+    "lng": -79.3772798,
     "areas": [
       "toronto"
     ],
@@ -2295,6 +2469,8 @@
     "address": "200 Bay St.",
     "phone": "(416) 974-3940",
     "hours_line": "Open 24 hours · (416) 974-3940",
+    "lat": 43.6468457,
+    "lng": -79.3804133,
     "areas": [
       "toronto",
       "downtown"
@@ -2320,6 +2496,8 @@
     "address": null,
     "phone": "(647) 360-7708",
     "hours_line": null,
+    "lat": 43.6481325,
+    "lng": -79.3846555,
     "areas": [
       "toronto"
     ],
@@ -2345,6 +2523,8 @@
     "address": "44 King St W",
     "phone": "(416) 866-6430",
     "hours_line": "Closed · Opens 8 a.m. Thu · (416) 866-6430",
+    "lat": 43.648969,
+    "lng": -79.3800432,
     "areas": [
       "toronto",
       "downtown"
@@ -2370,6 +2550,8 @@
     "address": "301 Spadina Ave.",
     "phone": "(647) 628-5566",
     "hours_line": "Closed · Opens 10:30 a.m. Thu · (647) 628-5566",
+    "lat": 43.6536874,
+    "lng": -79.3980144,
     "areas": [
       "toronto",
       "downtown",
@@ -2397,6 +2579,8 @@
     "address": "33 Bay St.",
     "phone": null,
     "hours_line": null,
+    "lat": 43.6427847,
+    "lng": -79.3770039,
     "areas": [
       "toronto",
       "downtown"
@@ -2426,6 +2610,8 @@
     "address": "1 King St W 48th Floor, Suite 212",
     "phone": "(416) 639-2128",
     "hours_line": null,
+    "lat": 43.6488576,
+    "lng": -79.3781453,
     "areas": [
       "toronto",
       "downtown"
@@ -2454,6 +2640,8 @@
     "address": "1920 Yonge St",
     "phone": "(416) 488-9841",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 488-9841",
+    "lat": 43.6987974,
+    "lng": -79.3972629,
     "areas": [
       "toronto"
     ],
@@ -2479,6 +2667,8 @@
     "address": "65 Wellesley St E",
     "phone": "(416) 944-4135",
     "hours_line": "Closed · Opens 9 a.m. Thu · (416) 944-4135",
+    "lat": 43.6654299,
+    "lng": -79.3812472,
     "areas": [
       "toronto",
       "downtown",
@@ -2505,6 +2695,8 @@
     "address": "55 King St W Concourse Level",
     "phone": "(416) 216-6868",
     "hours_line": "Closed · Opens 8 a.m. Thu · (416) 216-6868",
+    "lat": 43.647283,
+    "lng": -79.3814268,
     "areas": [
       "toronto",
       "downtown",
@@ -2531,6 +2723,8 @@
     "address": "10 King St E Suite 600",
     "phone": "(647) 576-2387",
     "hours_line": "Open 24 hours · (647) 576-2387",
+    "lat": 43.6494778,
+    "lng": -79.3774433,
     "areas": [
       "toronto"
     ],
@@ -2555,6 +2749,8 @@
     "address": "439 University Ave 5th Floor",
     "phone": "(647) 767-0908",
     "hours_line": null,
+    "lat": 43.6544178,
+    "lng": -79.3875832,
     "areas": [
       "toronto",
       "downtown"
@@ -2581,6 +2777,8 @@
     "address": "100 Yonge St #1800",
     "phone": "(416) 855-2800",
     "hours_line": "Closed · Opens 8 a.m. Thu · (416) 855-2800",
+    "lat": 43.6498028,
+    "lng": -79.3783663,
     "areas": [
       "toronto",
       "downtown"
@@ -2610,6 +2808,8 @@
     "address": "80 Spadina Ave. 4th Floor",
     "phone": null,
     "hours_line": null,
+    "lat": 43.646084,
+    "lng": -79.395606,
     "areas": [
       "toronto"
     ],
@@ -2638,6 +2838,8 @@
     "address": "121 Yonge St",
     "phone": "(416) 363-2300",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 363-2300",
+    "lat": 43.6508272,
+    "lng": -79.3784601,
     "areas": [
       "toronto"
     ],
@@ -2662,6 +2864,8 @@
     "address": "69 Yorkville Ave #102",
     "phone": "(647) 349-0980",
     "hours_line": "Closed · Opens 10 a.m. Thu · (647) 349-0980",
+    "lat": 43.6711232,
+    "lng": -79.3908606,
     "areas": [
       "toronto",
       "downtown",
@@ -2689,6 +2893,8 @@
     "address": "Exchange Tower, 130 King St W",
     "phone": null,
     "hours_line": "Open 24 hours",
+    "lat": 43.648528,
+    "lng": -79.3833359,
     "areas": [
       "toronto"
     ],
@@ -2717,6 +2923,8 @@
     "address": "384 Yonge St",
     "phone": "(416) 205-1130",
     "hours_line": "Closed · Opens 8 a.m. Thu · (416) 205-1130",
+    "lat": 43.6596624,
+    "lng": -79.3825772,
     "areas": [
       "downtown"
     ],
@@ -2742,6 +2950,8 @@
     "address": "534 Parliament St",
     "phone": "(416) 925-1915",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 925-1915",
+    "lat": 43.6662574,
+    "lng": -79.3689093,
     "areas": [
       "downtown"
     ],
@@ -2767,6 +2977,8 @@
     "address": "2 College St Suite #105",
     "phone": "(416) 587-2871",
     "hours_line": "Closed · Opens 11 a.m. Thu · (416) 587-2871",
+    "lat": 43.6615219,
+    "lng": -79.383509,
     "areas": [
       "downtown"
     ],
@@ -2792,6 +3004,8 @@
     "address": "21 Dundas Square Suite 1200",
     "phone": "(647) 691-6983",
     "hours_line": "Closed · Opens 9 a.m. Thu · (647) 691-6983",
+    "lat": 43.6557861,
+    "lng": -79.3796849,
     "areas": [
       "downtown"
     ],
@@ -2817,6 +3031,8 @@
     "address": "65 Wellesley St E Suite 401",
     "phone": "(416) 960-2274",
     "hours_line": "Closed · Opens 9 a.m. Thu · (416) 960-2274",
+    "lat": 43.6654595,
+    "lng": -79.3811355,
     "areas": [
       "downtown",
       "north-york"
@@ -2843,6 +3059,8 @@
     "address": "Inside Shoppers Drug Mart, 279 Yonge St #1402",
     "phone": "(416) 591-1733",
     "hours_line": "Closed · Opens 9 a.m. Thu · (416) 591-1733",
+    "lat": 43.655642,
+    "lng": -79.3803443,
     "areas": [
       "downtown"
     ],
@@ -2868,6 +3086,8 @@
     "address": "8 Adelaide St W #200",
     "phone": "(416) 550-1132",
     "hours_line": "Temporarily closed · (416) 550-1132",
+    "lat": 43.650476,
+    "lng": -79.3789719,
     "areas": [
       "downtown"
     ],
@@ -2893,6 +3113,8 @@
     "address": "247 Yonge St",
     "phone": "(416) 777-0886",
     "hours_line": "Closes soon · 11 p.m. · Opens 12:30 p.m. Thu · (416) 777-0886",
+    "lat": 43.6550158,
+    "lng": -79.3799708,
     "areas": [
       "downtown"
     ],
@@ -2918,6 +3140,8 @@
     "address": "1 University Ave 11th Floor",
     "phone": "+1 888-588-4538",
     "hours_line": "Open 24 hours · +1 888-588-4538",
+    "lat": 43.6458066,
+    "lng": -79.3830865,
     "areas": [
       "downtown"
     ],
@@ -2946,6 +3170,8 @@
     "address": "360 Bay St.",
     "phone": "(647) 259-1770",
     "hours_line": "Open 24 hours · (647) 259-1770",
+    "lat": 43.6507033,
+    "lng": -79.3813332,
     "areas": [
       "downtown"
     ],
@@ -2971,6 +3197,8 @@
     "address": "777 Bay St. unit c 216",
     "phone": "(416) 977-5824",
     "hours_line": "Open · Closes 12 a.m. · (416) 977-5824",
+    "lat": 43.6606965,
+    "lng": -79.3854709,
     "areas": [
       "downtown"
     ],
@@ -2996,6 +3224,8 @@
     "address": "777 Bay St. Lower Level",
     "phone": "+1 800-267-8097",
     "hours_line": "Closed · Opens 8:30 a.m. Thu · +1 800-267-8097",
+    "lat": 43.6606076,
+    "lng": -79.3848111,
     "areas": [
       "downtown"
     ],
@@ -3021,6 +3251,8 @@
     "address": "1 Dundas St W Suite 2500",
     "phone": "+1 877-646-5303",
     "hours_line": "Closed · Opens 9 a.m. Thu · +1 877-646-5303",
+    "lat": 43.6558668,
+    "lng": -79.3819145,
     "areas": [
       "downtown"
     ],
@@ -3046,6 +3278,8 @@
     "address": "310 Gerrard St E",
     "phone": "(416) 925-7198",
     "hours_line": "Closed · Opens 11:30 a.m. Thu · (416) 925-7198",
+    "lat": 43.6623046,
+    "lng": -79.3659242,
     "areas": [
       "downtown"
     ],
@@ -3070,6 +3304,8 @@
     "address": "3030 Don Mills Rd E #1a",
     "phone": "(647) 348-5488",
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (647) 348-5488",
+    "lat": 43.785944,
+    "lng": -79.352651,
     "areas": [
       "scarborough",
       "north-york"
@@ -3095,6 +3331,8 @@
     "address": "1967 Lawrence Ave E #5",
     "phone": "(416) 285-9669",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 285-9669",
+    "lat": 43.7446715,
+    "lng": -79.2971556,
     "areas": [
       "scarborough",
       "north-york"
@@ -3120,6 +3358,8 @@
     "address": "288 Markham Rd",
     "phone": "(416) 831-3030",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 831-3030",
+    "lat": 43.7456138,
+    "lng": -79.2204798,
     "areas": [
       "scarborough"
     ],
@@ -3144,6 +3384,8 @@
     "address": "3143 Eglinton Ave E",
     "phone": "(647) 460-9202",
     "hours_line": "Closed · Opens 10 a.m. Thu · (647) 460-9202",
+    "lat": 43.7420415,
+    "lng": -79.2224254,
     "areas": [
       "scarborough"
     ],
@@ -3168,6 +3410,8 @@
     "address": "1975 Lawrence Ave E",
     "phone": "(416) 840-0086",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 840-0086",
+    "lat": 43.7446458,
+    "lng": -79.2965614,
     "areas": [
       "scarborough",
       "north-york"
@@ -3193,6 +3437,8 @@
     "address": "3000 Danforth Ave",
     "phone": "(416) 693-2182",
     "hours_line": "Closed · Opens 11 a.m. Thu · (416) 693-2182",
+    "lat": 43.6907615,
+    "lng": -79.2910395,
     "areas": [
       "scarborough"
     ],
@@ -3218,6 +3464,8 @@
     "address": "866 Markham Rd",
     "phone": "(416) 546-3800",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 546-3800",
+    "lat": 43.7680054,
+    "lng": -79.2290029,
     "areas": [
       "scarborough"
     ],
@@ -3242,6 +3490,8 @@
     "address": "300 Borough Dr #775",
     "phone": "(416) 290-1010",
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (416) 290-1010",
+    "lat": 43.774905,
+    "lng": -79.2572949,
     "areas": [
       "scarborough"
     ],
@@ -3266,6 +3516,8 @@
     "address": "4400 Sheppard Ave E #20",
     "phone": "(416) 335-8630",
     "hours_line": "Closed · Opens 11 a.m. Thu · (416) 335-8630",
+    "lat": 43.7882529,
+    "lng": -79.2700059,
     "areas": [
       "scarborough",
       "north-york"
@@ -3292,6 +3544,8 @@
     "address": "1880 Eglinton Ave E",
     "phone": "(416) 750-9120",
     "hours_line": "Open 24 hours · (416) 750-9120",
+    "lat": 43.7260374,
+    "lng": -79.2989976,
     "areas": [
       "scarborough"
     ],
@@ -3316,6 +3570,8 @@
     "address": "1981 Lawrence Ave E",
     "phone": "(416) 666-4406",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 666-4406",
+    "lat": 43.7446904,
+    "lng": -79.2963131,
     "areas": [
       "scarborough",
       "north-york"
@@ -3342,6 +3598,8 @@
     "address": "5617 Yonge St",
     "phone": "+1 888-972-7799",
     "hours_line": "Closed · Opens 9 a.m. Thu · +1 888-972-7799",
+    "lat": 43.7802379,
+    "lng": -79.4153598,
     "areas": [
       "scarborough",
       "north-york"
@@ -3370,6 +3628,8 @@
     "address": "305 Milner Ave #102",
     "phone": "(416) 901-9995",
     "hours_line": "Closed · Opens 8 a.m. Thu · (416) 901-9995",
+    "lat": 43.7894162,
+    "lng": -79.2360108,
     "areas": [
       "scarborough",
       "markham"
@@ -3396,6 +3656,8 @@
     "address": "3601 Lawrence Ave E #2",
     "phone": "(905) 442-5316",
     "hours_line": null,
+    "lat": 43.7597737,
+    "lng": -79.2235747,
     "areas": [
       "scarborough"
     ],
@@ -3423,6 +3685,8 @@
     "address": "2479 Yonge St",
     "phone": "(416) 316-2222",
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (416) 316-2222",
+    "lat": 43.7116627,
+    "lng": -79.3990698,
     "areas": [
       "scarborough",
       "north-york"
@@ -3448,6 +3712,8 @@
     "address": "1057 Steeles Ave W",
     "phone": "(437) 690-1707",
     "hours_line": "Closed · Opens 10 a.m. Thu · (437) 690-1707",
+    "lat": 43.7912889,
+    "lng": -79.4482925,
     "areas": [
       "scarborough",
       "north-york"
@@ -3474,6 +3740,8 @@
     "address": "2399 Eglinton Ave E",
     "phone": "(416) 751-5554",
     "hours_line": "Closes soon · 11 p.m. · Opens 7 a.m. Thu · (416) 751-5554",
+    "lat": 43.731579,
+    "lng": -79.2684228,
     "areas": [
       "scarborough"
     ],
@@ -3499,6 +3767,8 @@
     "address": "1879 Lawrence Ave E",
     "phone": "(647) 847-5329",
     "hours_line": "Closed · Opens 10 a.m. Thu · (647) 847-5329",
+    "lat": 43.7434753,
+    "lng": -79.301758,
     "areas": [
       "scarborough"
     ],
@@ -3523,6 +3793,8 @@
     "address": "2300 Lawrence Ave E #9",
     "phone": "(416) 414-4344",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 414-4344",
+    "lat": 43.7507466,
+    "lng": -79.2771495,
     "areas": [
       "scarborough",
       "north-york"
@@ -3549,6 +3821,8 @@
     "address": "1896 Eglinton Ave E",
     "phone": "(416) 751-8896",
     "hours_line": "Open 24 hours · (416) 751-8896",
+    "lat": 43.7264045,
+    "lng": -79.2970265,
     "areas": [
       "scarborough"
     ],
@@ -3574,6 +3848,8 @@
     "address": "Inside SEAFOOD CITY SCARBOROUGH, 20 Lebovic Ave Suite 500",
     "phone": "(416) 293-8758",
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (416) 293-8758",
+    "lat": 43.7225522,
+    "lng": -79.2904775,
     "areas": [
       "scarborough"
     ],
@@ -3599,6 +3875,8 @@
     "address": "3341 Markham Rd unit no-106",
     "phone": "(416) 293-1700",
     "hours_line": "Closed · Opens 10:30 a.m. Thu · (416) 293-1700",
+    "lat": 43.8356047,
+    "lng": -79.2506653,
     "areas": [
       "scarborough",
       "markham"
@@ -3624,6 +3902,8 @@
     "address": "462 Birchmount Rd Unit 29",
     "phone": "(647) 909-1916",
     "hours_line": "Closed · Opens 10:30 a.m. Thu · (647) 909-1916",
+    "lat": 43.7076061,
+    "lng": -79.2698248,
     "areas": [
       "scarborough"
     ],
@@ -3648,6 +3928,8 @@
     "address": "3463 Sheppard Ave E Unit 3",
     "phone": "(437) 419-0200",
     "hours_line": null,
+    "lat": 43.7789831,
+    "lng": -79.3048914,
     "areas": [
       "scarborough",
       "north-york"
@@ -3673,6 +3955,8 @@
     "address": "5775 Yonge St",
     "phone": "(416) 488-8822",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 488-8822",
+    "lat": 43.7833294,
+    "lng": -79.4159787,
     "areas": [
       "scarborough",
       "north-york",
@@ -3701,6 +3985,8 @@
     "address": "1525 Victoria Park Ave",
     "phone": "(416) 752-0060",
     "hours_line": "Closed · Opens 9 a.m. Thu · (416) 752-0060",
+    "lat": 43.7261665,
+    "lng": -79.3021009,
     "areas": [
       "scarborough"
     ],
@@ -3725,6 +4011,8 @@
     "address": "6125 Yonge St Unit 4",
     "phone": "(289) 710-0100",
     "hours_line": "Closed · Opens 10 a.m. Thu · (289) 710-0100",
+    "lat": 43.7922402,
+    "lng": -79.4180788,
     "areas": [
       "north-york"
     ],
@@ -3749,6 +4037,8 @@
     "address": "6032 Yonge St",
     "phone": "(647) 360-6030",
     "hours_line": "Closed · Opens 9 a.m. Thu · (647) 360-6030",
+    "lat": 43.7896138,
+    "lng": -79.4183404,
     "areas": [
       "north-york"
     ],
@@ -3773,6 +4063,8 @@
     "address": "4664 Yonge St",
     "phone": "(416) 792-7355",
     "hours_line": null,
+    "lat": 43.7579081,
+    "lng": -79.4104707,
     "areas": [
       "north-york"
     ],
@@ -3797,6 +4089,8 @@
     "address": "6105 Yonge St Unit C",
     "phone": "(647) 871-3031",
     "hours_line": "Closed · Opens 9 a.m. Thu · (647) 871-3031",
+    "lat": 43.7913365,
+    "lng": -79.4179135,
     "areas": [
       "north-york"
     ],
@@ -3821,6 +4115,8 @@
     "address": "6126 Yonge St",
     "phone": "(647) 827-2222",
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (647) 827-2222",
+    "lat": 43.7918242,
+    "lng": -79.4188457,
     "areas": [
       "north-york"
     ],
@@ -3845,6 +4141,8 @@
     "address": "6120B Yonge St",
     "phone": "(416) 319-0000",
     "hours_line": "Closed · Opens 9 a.m. Thu · (416) 319-0000",
+    "lat": 43.7917325,
+    "lng": -79.4188924,
     "areas": [
       "north-york"
     ],
@@ -3869,6 +4167,8 @@
     "address": "7163 Yonge St Unit 124 B",
     "phone": "(416) 400-0702",
     "hours_line": "Closed · Opens 9 a.m. Thu · (416) 400-0702",
+    "lat": 43.8025412,
+    "lng": -79.420717,
     "areas": [
       "north-york"
     ],
@@ -3893,6 +4193,8 @@
     "address": "5775 Yonge St",
     "phone": "(416) 488-9841",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 488-9841",
+    "lat": 43.783429,
+    "lng": -79.416182,
     "areas": [
       "north-york",
       "markham"
@@ -3918,6 +4220,8 @@
     "address": "",
     "phone": null,
     "hours_line": "Closed · Opens 10 a.m. Thu",
+    "lat": 43.7924089,
+    "lng": -79.4483651,
     "areas": [
       "north-york"
     ],
@@ -3942,6 +4246,8 @@
     "address": "6093 Yonge St",
     "phone": "(647) 324-9000",
     "hours_line": "Closed · Opens 9 a.m. Thu · (647) 324-9000",
+    "lat": 43.7910735,
+    "lng": -79.4178293,
     "areas": [
       "north-york"
     ],
@@ -3966,6 +4272,8 @@
     "address": "6083 Yonge St",
     "phone": "(647) 450-6030",
     "hours_line": "Closed · Opens 9 a.m. Thu · (647) 450-6030",
+    "lat": 43.7908224,
+    "lng": -79.4178193,
     "areas": [
       "north-york"
     ],
@@ -3990,6 +4298,8 @@
     "address": "6039 Yonge St",
     "phone": "(416) 209-9990",
     "hours_line": "Closed · Opens 9 a.m. Thu · (416) 209-9990",
+    "lat": 43.7901113,
+    "lng": -79.417594,
     "areas": [
       "north-york"
     ],
@@ -4015,6 +4325,8 @@
     "address": "323 Danforth Ave",
     "phone": "+1 888-832-1282",
     "hours_line": "Closed · Opens 11 a.m. Thu · +1 888-832-1282",
+    "lat": 43.6770347,
+    "lng": -79.3534949,
     "areas": [
       "north-york"
     ],
@@ -4040,6 +4352,8 @@
     "address": "736 Queen St E",
     "phone": "+1 888-832-1282",
     "hours_line": "Closed · Opens 9:30 a.m. Thu · +1 888-832-1282",
+    "lat": 43.6592649,
+    "lng": -79.3487999,
     "areas": [
       "north-york"
     ],
@@ -4065,6 +4379,8 @@
     "address": "815 Broadview Ave",
     "phone": "+1 888-832-1282",
     "hours_line": "Closes soon · 11 p.m. · Opens 8 a.m. Thu · +1 888-832-1282",
+    "lat": 43.6782499,
+    "lng": -79.3581941,
     "areas": [
       "north-york"
     ],
@@ -4090,6 +4406,8 @@
     "address": "345 Bloor St E #9c",
     "phone": "(647) 451-9372",
     "hours_line": "Closed · Opens 10 a.m. Thu · (647) 451-9372",
+    "lat": 43.6717993,
+    "lng": -79.3783622,
     "areas": [
       "north-york"
     ],
@@ -4115,6 +4433,8 @@
     "address": "345 Bloor St E Unit-9B",
     "phone": "(647) 451-9372",
     "hours_line": "Closed · Opens 10 a.m. Thu · (647) 451-9372",
+    "lat": 43.6717993,
+    "lng": -79.3783622,
     "areas": [
       "north-york"
     ],
@@ -4140,6 +4460,8 @@
     "address": "4789 Yonge St suite 1120",
     "phone": "(416) 512-8666",
     "hours_line": null,
+    "lat": 43.7614066,
+    "lng": -79.4102536,
     "areas": [
       "north-york"
     ],
@@ -4167,6 +4489,8 @@
     "address": "45 Overlea Blvd Unit 139",
     "phone": "(416) 424-1700",
     "hours_line": "Closed · Opens 11 a.m. Thu · (416) 424-1700",
+    "lat": 43.7059396,
+    "lng": -79.3467972,
     "areas": [
       "north-york"
     ],
@@ -4191,6 +4515,8 @@
     "address": "7368 Yonge St #306",
     "phone": "(647) 482-8000",
     "hours_line": "Closed · Opens 10 a.m. Thu · (647) 482-8000",
+    "lat": 43.807398,
+    "lng": -79.4230586,
     "areas": [
       "north-york"
     ],
@@ -4215,6 +4541,8 @@
     "address": "4400 Dufferin St Unit B1",
     "phone": "(416) 855-5770",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 855-5770",
+    "lat": 43.7650191,
+    "lng": -79.4680143,
     "areas": [
       "north-york"
     ],
@@ -4239,6 +4567,8 @@
     "address": "Iranian Plaza, 6087 Yonge St",
     "phone": "(647) 554-7000",
     "hours_line": "Closed · Opens 9 a.m. Thu · (647) 554-7000",
+    "lat": 43.790941,
+    "lng": -79.4178419,
     "areas": [
       "north-york"
     ],
@@ -4264,6 +4594,8 @@
     "address": "133 Redpath Ave",
     "phone": "+1 877-412-2646",
     "hours_line": "Open 24 hours · +1 877-412-2646",
+    "lat": 43.7082624,
+    "lng": -79.3927981,
     "areas": [
       "north-york"
     ],
@@ -4289,6 +4621,8 @@
     "address": "557 Church St",
     "phone": "+1 877-412-2646",
     "hours_line": "Open · Closes 12:30 a.m. · +1 877-412-2646",
+    "lat": 43.6672847,
+    "lng": -79.3812937,
     "areas": [
       "north-york"
     ],
@@ -4313,6 +4647,8 @@
     "address": "6121 Yonge St",
     "phone": "(416) 844-5555",
     "hours_line": "Closed · Opens 9 a.m. Thu · (416) 844-5555",
+    "lat": 43.7916221,
+    "lng": -79.4179517,
     "areas": [
       "north-york"
     ],
@@ -4337,6 +4673,8 @@
     "address": "7181 Yonge St Unit 64",
     "phone": "(905) 886-8999",
     "hours_line": "Closed · Opens 10 a.m. Thu · (905) 886-8999",
+    "lat": 43.8030691,
+    "lng": -79.4195346,
     "areas": [
       "north-york"
     ],
@@ -4362,6 +4700,8 @@
     "address": "6227 Bathurst St",
     "phone": "(647) 350-6750",
     "hours_line": "Closed · Opens 10 a.m. Thu · (647) 350-6750",
+    "lat": 43.7918659,
+    "lng": -79.4443029,
     "areas": [
       "north-york"
     ],
@@ -4386,6 +4726,8 @@
     "address": "1701 Martin Grove Rd #12",
     "phone": "(416) 746-4900",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 746-4900",
+    "lat": 43.7331528,
+    "lng": -79.5882145,
     "areas": [
       "north-york"
     ],
@@ -4411,6 +4753,8 @@
     "address": "4665 Yonge St",
     "phone": "(416) 225-3292",
     "hours_line": "Closed · Opens 9 a.m. Thu · (416) 225-3292",
+    "lat": 43.7579763,
+    "lng": -79.4095928,
     "areas": [
       "north-york"
     ],
@@ -4435,6 +4779,8 @@
     "address": "Dynasty Court, 5460 Yonge St Shop 105",
     "phone": "(416) 567-2222",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 567-2222",
+    "lat": 43.7776989,
+    "lng": -79.415278,
     "areas": [
       "north-york"
     ],
@@ -4459,6 +4805,8 @@
     "address": "5700 Yonge St #1",
     "phone": "(416) 270-5555",
     "hours_line": "Closed · Opens 9 a.m. Thu · (416) 270-5555",
+    "lat": 43.7811838,
+    "lng": -79.4165029,
     "areas": [
       "north-york"
     ],
@@ -4484,6 +4832,8 @@
     "address": "Inside Shoppers Drug Mart, 1800 Sheppard Ave E #0830",
     "phone": "(416) 491-5567",
     "hours_line": "Closed · Opens 9 a.m. Thu · (416) 491-5567",
+    "lat": 43.778733,
+    "lng": -79.3448733,
     "areas": [
       "north-york",
       "markham"
@@ -4510,6 +4860,8 @@
     "address": "18 Wynford Dr Ste 401",
     "phone": "+1 800-832-5104",
     "hours_line": "Closed · Opens 8:30 a.m. Thu · +1 800-832-5104",
+    "lat": 43.7238567,
+    "lng": -79.337273,
     "areas": [
       "north-york",
       "markham"
@@ -4538,6 +4890,8 @@
     "address": "7368 Yonge St #8A",
     "phone": "(905) 597-8787",
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (905) 597-8787",
+    "lat": 43.8074754,
+    "lng": -79.422929,
     "areas": [
       "north-york",
       "markham"
@@ -4563,6 +4917,8 @@
     "address": "6087 Yonge St",
     "phone": "(647) 547-8111",
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (647) 547-8111",
+    "lat": 43.7909375,
+    "lng": -79.4178418,
     "areas": [
       "north-york"
     ],
@@ -4588,6 +4944,8 @@
     "address": "425 Bloor St E 4th floor",
     "phone": "(647) 250-9555",
     "hours_line": "Closed · Opens 9 a.m. Thu · (647) 250-9555",
+    "lat": 43.6721328,
+    "lng": -79.3763093,
     "areas": [
       "north-york"
     ],
@@ -4612,6 +4970,8 @@
     "address": "6166 Yonge St",
     "phone": "(647) 553-5000",
     "hours_line": "Closed · Opens 10 a.m. Thu · (647) 553-5000",
+    "lat": 43.7930161,
+    "lng": -79.4193245,
     "areas": [
       "north-york"
     ],
@@ -4636,6 +4996,8 @@
     "address": "6015 Yonge St",
     "phone": "(416) 660-0606",
     "hours_line": "Closed · Opens 9 a.m. Thu · (416) 660-0606",
+    "lat": 43.7897002,
+    "lng": -79.4172551,
     "areas": [
       "north-york"
     ],
@@ -4660,6 +5022,8 @@
     "address": "7181 Yonge St Unit 195",
     "phone": "(437) 500-1500",
     "hours_line": "Closed · Opens 10 a.m. Thu · (437) 500-1500",
+    "lat": 43.8035434,
+    "lng": -79.4195738,
     "areas": [
       "north-york"
     ],
@@ -4684,6 +5048,8 @@
     "address": "193 Sheppard Ave E",
     "phone": "(416) 802-2220",
     "hours_line": "Temporarily closed · (416) 802-2220",
+    "lat": 43.7638196,
+    "lng": -79.3990598,
     "areas": [
       "north-york"
     ],
@@ -4708,6 +5074,8 @@
     "address": "4578 Yonge St",
     "phone": "(416) 802-2220",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 802-2220",
+    "lat": 43.7565108,
+    "lng": -79.4102162,
     "areas": [
       "north-york"
     ],
@@ -4732,6 +5100,8 @@
     "address": "2424 Finch Ave W Unit 18G",
     "phone": "(416) 817-8648",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 817-8648",
+    "lat": 43.7510434,
+    "lng": -79.5506649,
     "areas": [
       "north-york"
     ],
@@ -4757,6 +5127,8 @@
     "address": "4949 Bathurst St Unit 6",
     "phone": "(647) 748-8800",
     "hours_line": "Closed · Opens 10 a.m. Thu · (647) 748-8800",
+    "lat": 43.7743938,
+    "lng": -79.4423591,
     "areas": [
       "north-york"
     ],
@@ -4781,6 +5153,8 @@
     "address": "6089 Yonge St",
     "phone": "(416) 224-0000",
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (416) 224-0000",
+    "lat": 43.7909637,
+    "lng": -79.4177582,
     "areas": [
       "north-york"
     ],
@@ -4805,6 +5179,8 @@
     "address": "6099A Yonge St Upper Floor",
     "phone": "(416) 400-0080",
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (416) 400-0080",
+    "lat": 43.79122,
+    "lng": -79.41808,
     "areas": [
       "north-york"
     ],
@@ -4829,6 +5205,8 @@
     "address": "6113 Yonge St",
     "phone": "(416) 225-2345",
     "hours_line": "Temporarily closed · (416) 225-2345",
+    "lat": 43.7915112,
+    "lng": -79.4179454,
     "areas": [
       "north-york"
     ],
@@ -4853,6 +5231,8 @@
     "address": "6075 Yonge St 2ND FLOOR",
     "phone": "(647) 699-8080",
     "hours_line": "Closed · Opens 10 a.m. Thu · (647) 699-8080",
+    "lat": 43.7907594,
+    "lng": -79.4178948,
     "areas": [
       "north-york"
     ],
@@ -4877,6 +5257,8 @@
     "address": "6091 Yonge St",
     "phone": "(416) 448-8888",
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (416) 448-8888",
+    "lat": 43.7910914,
+    "lng": -79.4178125,
     "areas": [
       "north-york"
     ],
@@ -4901,6 +5283,8 @@
     "address": "6062 Yonge St",
     "phone": "(416) 580-5000",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 580-5000",
+    "lat": 43.7903108,
+    "lng": -79.4185574,
     "areas": [
       "north-york"
     ],
@@ -4926,6 +5310,8 @@
     "address": "4950 Yonge St",
     "phone": null,
     "hours_line": "Closed · Opens 10 a.m. Thu",
+    "lat": 43.7648586,
+    "lng": -79.4121017,
     "areas": [
       "north-york"
     ],
@@ -4954,6 +5340,8 @@
     "address": "647 Dundas St E Unit #1",
     "phone": "(416) 933-2000",
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (416) 933-2000",
+    "lat": 43.6605378,
+    "lng": -79.3597437,
     "areas": [
       "north-york",
       "mississauga"
@@ -4979,6 +5367,8 @@
     "address": "250 Sheppard Ave E #107",
     "phone": "(647) 300-0635",
     "hours_line": "Closed · Opens 10 a.m. Thu · (647) 300-0635",
+    "lat": 43.7640634,
+    "lng": -79.3998196,
     "areas": [
       "north-york"
     ],
@@ -5003,6 +5393,8 @@
     "address": "5295-A Yonge St",
     "phone": "(647) 406-4343",
     "hours_line": "Closed · Opens 10 a.m. Thu · (647) 406-4343",
+    "lat": 43.7729128,
+    "lng": -79.4135497,
     "areas": [
       "north-york"
     ],
@@ -5027,6 +5419,8 @@
     "address": "Newtown Square, 25 Karachi Dr Unit #16",
     "phone": "(905) 209-4100",
     "hours_line": "Closed · Opens 10 a.m. Thu · (905) 209-4100",
+    "lat": 43.849337,
+    "lng": -79.2530274,
     "areas": [
       "markham"
     ],
@@ -5052,6 +5446,8 @@
     "address": "7050 Woodbine Ave Unit 206",
     "phone": "(905) 604-2755",
     "hours_line": "Closed · Opens 10 a.m. Thu · (905) 604-2755",
+    "lat": 43.8149715,
+    "lng": -79.3498119,
     "areas": [
       "markham"
     ],
@@ -5076,6 +5472,8 @@
     "address": "Markville Shopping Centre, 5000 Hwy 7 Unit 2235",
     "phone": "(905) 475-1500",
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (905) 475-1500",
+    "lat": 43.8697805,
+    "lng": -79.2870704,
     "areas": [
       "markham"
     ],
@@ -5101,6 +5499,8 @@
     "address": "2D10, 9390 Woodbine Ave Second Floor",
     "phone": null,
     "hours_line": null,
+    "lat": 43.8720691,
+    "lng": -79.3642657,
     "areas": [
       "markham"
     ],
@@ -5128,6 +5528,8 @@
     "address": "7020-7080, 7010 Warden Ave. #21",
     "phone": "+1 800-699-4816",
     "hours_line": "Temporarily closed · +1 800-699-4816",
+    "lat": 43.8201339,
+    "lng": -79.3252931,
     "areas": [
       "markham"
     ],
@@ -5153,6 +5555,8 @@
     "address": "3621 Hwy 7 #101",
     "phone": "+1 888-972-7799",
     "hours_line": "Closed · Opens 10 a.m. Thu · +1 888-972-7799",
+    "lat": 43.8541412,
+    "lng": -79.3376411,
     "areas": [
       "markham"
     ],
@@ -5181,6 +5585,8 @@
     "address": "7 Eastvale Dr",
     "phone": "(647) 966-9693",
     "hours_line": "Closed · Opens 10 a.m. Thu · (647) 966-9693",
+    "lat": 43.8384172,
+    "lng": -79.2448947,
     "areas": [
       "markham"
     ],
@@ -5206,6 +5612,8 @@
     "address": "2942 Finch Ave E Suite 106A",
     "phone": "(416) 492-6652",
     "hours_line": "Closed · Opens 9 a.m. Thu · (416) 492-6652",
+    "lat": 43.7943225,
+    "lng": -79.3295816,
     "areas": [
       "markham"
     ],
@@ -5231,6 +5639,8 @@
     "address": "5799 Hwy 7",
     "phone": "(905) 201-2622",
     "hours_line": "Closed · Opens 9 a.m. Thu · (905) 201-2622",
+    "lat": 43.8715851,
+    "lng": -79.2652315,
     "areas": [
       "markham"
     ],
@@ -5256,6 +5666,8 @@
     "address": "2750 14th Ave #306",
     "phone": "+1 800-832-5104",
     "hours_line": "Closed · Opens 8:30 a.m. Thu · +1 800-832-5104",
+    "lat": 43.8308554,
+    "lng": -79.3592776,
     "areas": [
       "markham"
     ],
@@ -5284,6 +5696,8 @@
     "address": "7030 Woodbine Ave",
     "phone": null,
     "hours_line": "Open 24 hours",
+    "lat": 43.8144785,
+    "lng": -79.3504212,
     "areas": [
       "markham"
     ],
@@ -5312,6 +5726,8 @@
     "address": "6055 Steeles Ave E UNIT 117",
     "phone": "(416) 613-1888",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 613-1888",
+    "lat": 43.8363556,
+    "lng": -79.2496439,
     "areas": [
       "markham"
     ],
@@ -5337,6 +5753,8 @@
     "address": "151 Whitehall Dr Suite 10",
     "phone": "+1 855-887-2793",
     "hours_line": null,
+    "lat": 43.8573265,
+    "lng": -79.343954,
     "areas": [
       "markham"
     ],
@@ -5365,6 +5783,8 @@
     "address": "7595 Markham Rd Unit 5",
     "phone": "(905) 667-7200",
     "hours_line": "Closed · Opens 10 a.m. Thu · (905) 667-7200",
+    "lat": 43.8505253,
+    "lng": -79.2538368,
     "areas": [
       "markham"
     ],
@@ -5389,6 +5809,8 @@
     "address": "8763 Bayview Ave #115",
     "phone": "(905) 763-9555",
     "hours_line": "Closed · Opens 10:30 a.m. Thu · (905) 763-9555",
+    "lat": 43.8453488,
+    "lng": -79.4075254,
     "areas": [
       "markham"
     ],
@@ -5413,6 +5835,8 @@
     "address": "10097 Yonge St unit 9",
     "phone": "(416) 418-4466",
     "hours_line": "Closed · Opens 9 a.m. Thu · (416) 418-4466",
+    "lat": 43.8738963,
+    "lng": -79.4376238,
     "areas": [
       "markham"
     ],
@@ -5437,6 +5861,8 @@
     "address": "125 Commerce Valley Dr W Unit 822",
     "phone": "(647) 592-2011",
     "hours_line": "Closed · Opens 9 a.m. Thu · (647) 592-2011",
+    "lat": 43.8397609,
+    "lng": -79.3839596,
     "areas": [
       "markham"
     ],
@@ -5462,6 +5888,8 @@
     "address": "Woodbine Business Centre, 7240 Woodbine Ave #215",
     "phone": "(416) 642-3911",
     "hours_line": "Closed · Opens 11 a.m. Thu · (416) 642-3911",
+    "lat": 43.8195426,
+    "lng": -79.3509154,
     "areas": [
       "markham"
     ],
@@ -5490,6 +5918,8 @@
     "address": "1325 Eglinton Ave E",
     "phone": "(416) 230-4444",
     "hours_line": null,
+    "lat": 43.6348703,
+    "lng": -79.6229265,
     "areas": [
       "mississauga"
     ],
@@ -5515,6 +5945,8 @@
     "address": "7205 Goreway Dr",
     "phone": "(437) 808-3300",
     "hours_line": "Closed · Opens 11:30 a.m. Thu · (437) 808-3300",
+    "lat": 43.7195158,
+    "lng": -79.6380023,
     "areas": [
       "mississauga"
     ],
@@ -5539,6 +5971,8 @@
     "address": "2325 Hurontario St #17",
     "phone": "(905) 232-7872",
     "hours_line": "Closed · Opens 10 a.m. Thu · (905) 232-7872",
+    "lat": 43.57559,
+    "lng": -79.60754,
     "areas": [
       "mississauga"
     ],
@@ -5563,6 +5997,8 @@
     "address": "918 Dundas St E Unit C1A",
     "phone": "(437) 424-0424",
     "hours_line": "Closed · Opens 11 a.m. Thu · (437) 424-0424",
+    "lat": 43.5990431,
+    "lng": -79.5944494,
     "areas": [
       "mississauga"
     ],
@@ -5587,6 +6023,8 @@
     "address": "125 A Dundas St E",
     "phone": null,
     "hours_line": "Temporarily closed",
+    "lat": 43.583314,
+    "lng": -79.613593,
     "areas": [
       "mississauga"
     ],
@@ -5611,6 +6049,8 @@
     "address": "3064 Hurontario St",
     "phone": "(905) 277-5188",
     "hours_line": "Closed · Opens 10:30 a.m. Thu · (905) 277-5188",
+    "lat": 43.5812885,
+    "lng": -79.6187059,
     "areas": [
       "mississauga"
     ],
@@ -5635,6 +6075,8 @@
     "address": "3060 Hurontario St",
     "phone": "(905) 566-9393",
     "hours_line": "Closed · Opens 10 a.m. Thu · (905) 566-9393",
+    "lat": 43.5812433,
+    "lng": -79.6185354,
     "areas": [
       "mississauga"
     ],
@@ -5660,6 +6102,8 @@
     "address": "2579 Hurontario St",
     "phone": "(289) 644-5606",
     "hours_line": "Closed · Opens 9 a.m. Thu · (289) 644-5606",
+    "lat": 43.5800264,
+    "lng": -79.6155868,
     "areas": [
       "mississauga"
     ],
@@ -5685,6 +6129,8 @@
     "address": "33 City Centre Dr #140",
     "phone": "(905) 566-9771",
     "hours_line": "Closed · Opens 10 a.m. Thu · (905) 566-9771",
+    "lat": 43.5946317,
+    "lng": -79.638943,
     "areas": [
       "mississauga"
     ],
@@ -5713,6 +6159,8 @@
     "address": "2275 Britannia Rd W Unit # 3",
     "phone": "(416) 244-2579",
     "hours_line": "Closed · Opens 8 a.m. Thu · (416) 244-2579",
+    "lat": 43.5831505,
+    "lng": -79.7290899,
     "areas": [
       "mississauga"
     ],
@@ -5737,6 +6185,8 @@
     "address": "inside IQBAL's Food (Currency Exchange Booth, 4099 Erin Mills Pkwy",
     "phone": "(416) 477-2039",
     "hours_line": "Closed · Opens 12 p.m. Thu · (416) 477-2039",
+    "lat": 43.5509635,
+    "lng": -79.6875701,
     "areas": [
       "mississauga"
     ],
@@ -5762,6 +6212,8 @@
     "address": "848 Burnhamthorpe Rd W #3A",
     "phone": "(416) 507-6447",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 507-6447",
+    "lat": 43.575278,
+    "lng": -79.6556559,
     "areas": [
       "mississauga"
     ],
@@ -5787,6 +6239,8 @@
     "address": "144 Dundas St W",
     "phone": "(905) 277-0071",
     "hours_line": "Closes soon · 11 p.m. · Opens 8 a.m. Thu · (905) 277-0071",
+    "lat": 43.5769178,
+    "lng": -79.6197415,
     "areas": [
       "mississauga"
     ],
@@ -5811,6 +6265,8 @@
     "address": "5100 Erin Mills Pkwy unit r235 unit r235",
     "phone": "(905) 828-2288",
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (905) 828-2288",
+    "lat": 43.557576,
+    "lng": -79.7122713,
     "areas": [
       "mississauga"
     ],
@@ -5835,6 +6291,8 @@
     "address": "4099 Erin Mills Pkwy",
     "phone": "(416) 771-0027",
     "hours_line": "Closed · Opens 9 a.m. Thu · (416) 771-0027",
+    "lat": 43.5514584,
+    "lng": -79.6884819,
     "areas": [
       "mississauga"
     ],
@@ -5860,6 +6318,8 @@
     "address": "4033 Hurontario St",
     "phone": "+1 888-832-1282",
     "hours_line": "Open 24 hours · +1 888-832-1282",
+    "lat": 43.5946875,
+    "lng": -79.6358613,
     "areas": [
       "mississauga"
     ],
@@ -5884,6 +6344,8 @@
     "address": "3433 Fieldgate Dr",
     "phone": "(647) 302-4343",
     "hours_line": "Closed · Opens 9 a.m. Thu · (647) 302-4343",
+    "lat": 43.624388,
+    "lng": -79.5884279,
     "areas": [
       "mississauga"
     ],
@@ -5908,6 +6370,8 @@
     "address": "3031A Hurontario St",
     "phone": "(905) 272-3888",
     "hours_line": "Closed · Opens 11 a.m. Thu · (905) 272-3888",
+    "lat": 43.5811679,
+    "lng": -79.6170519,
     "areas": [
       "mississauga"
     ],
@@ -5932,6 +6396,8 @@
     "address": "inside Westwood Square Mall, 7215 Goreway Dr #1e19",
     "phone": "(647) 717-4005",
     "hours_line": "Closed · Opens 10:30 a.m. Thu · (647) 717-4005",
+    "lat": 43.71987,
+    "lng": -79.63798,
     "areas": [
       "mississauga"
     ],
@@ -5957,6 +6423,8 @@
     "address": "53 Village Centre Pl",
     "phone": "(905) 276-4252",
     "hours_line": "Closed · Opens 10 a.m. Thu · (905) 276-4252",
+    "lat": 43.6010285,
+    "lng": -79.6414358,
     "areas": [
       "mississauga"
     ],
@@ -5981,6 +6449,8 @@
     "address": "113 Dundas St E",
     "phone": "(905) 232-2822",
     "hours_line": "Closed · Opens 10:30 a.m. Thu · (905) 232-2822",
+    "lat": 43.5830333,
+    "lng": -79.6137464,
     "areas": [
       "mississauga"
     ],
@@ -6005,6 +6475,8 @@
     "address": "113 Dundas St E",
     "phone": "(905) 232-2822",
     "hours_line": "Closed · Opens 10:30 a.m. Thu · (905) 232-2822",
+    "lat": 43.5830714,
+    "lng": -79.6137934,
     "areas": [
       "mississauga"
     ],
@@ -6029,6 +6501,8 @@
     "address": "6301 Silver Dart Dr",
     "phone": null,
     "hours_line": "Open 24 hours",
+    "lat": 43.6814408,
+    "lng": -79.6108264,
     "areas": [
       "mississauga"
     ],
@@ -6053,6 +6527,8 @@
     "address": "6300 Silver Dart Dr",
     "phone": "(416) 776-1311",
     "hours_line": "Open · Closes 12 a.m. · (416) 776-1311",
+    "lat": 43.6860665,
+    "lng": -79.622233,
     "areas": [
       "mississauga"
     ],
@@ -6077,6 +6553,8 @@
     "address": "6301 Silver Dart Dr",
     "phone": "+1 833-919-0823",
     "hours_line": null,
+    "lat": 43.6852187,
+    "lng": -79.6201952,
     "areas": [
       "mississauga"
     ],
@@ -6101,6 +6579,8 @@
     "address": "6301 Silver Dart Dr",
     "phone": "+1 833-919-0823",
     "hours_line": null,
+    "lat": 43.6856106,
+    "lng": -79.6199014,
     "areas": [
       "mississauga"
     ],
@@ -6125,6 +6605,8 @@
     "address": "3643 Dixie Rd #1",
     "phone": "(905) 369-9978",
     "hours_line": "Closed · Opens 10 a.m. Thu · (905) 369-9978",
+    "lat": 43.622632,
+    "lng": -79.60073,
     "areas": [
       "mississauga"
     ],
@@ -6150,6 +6632,8 @@
     "address": "2040 Dundas St E",
     "phone": "(416) 767-7782",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 767-7782",
+    "lat": 43.6224427,
+    "lng": -79.5683338,
     "areas": [
       "mississauga"
     ],
@@ -6175,6 +6659,8 @@
     "address": null,
     "phone": "(289) 752-2002",
     "hours_line": "Closed · Opens 8 a.m. Thu · (289) 752-2002",
+    "lat": 43.724934,
+    "lng": -79.7595439,
     "areas": [
       "mississauga"
     ],
@@ -6203,6 +6689,8 @@
     "address": null,
     "phone": "(902) 800-2063",
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (902) 800-2063",
+    "lat": 44.646189,
+    "lng": -63.6328975,
     "areas": [
       "mississauga"
     ],
@@ -6231,6 +6719,8 @@
     "address": null,
     "phone": "(905) 793-0087",
     "hours_line": "Closed · Opens 8 a.m. Thu · (905) 793-0087",
+    "lat": 43.2608104,
+    "lng": -79.9331491,
     "areas": [
       "mississauga"
     ],
@@ -6259,6 +6749,8 @@
     "address": null,
     "phone": "(236) 263-3777",
     "hours_line": "Closed · Opens 5 a.m. Thu · (236) 263-3777",
+    "lat": 49.0986205,
+    "lng": -122.6588929,
     "areas": [
       "mississauga"
     ],
@@ -6287,6 +6779,8 @@
     "address": null,
     "phone": "(519) 937-1927",
     "hours_line": "Closed · Opens 8 a.m. Thu · (519) 937-1927",
+    "lat": 42.948881,
+    "lng": -81.24862,
     "areas": [
       "mississauga"
     ],
@@ -6315,6 +6809,8 @@
     "address": null,
     "phone": "(778) 949-4070",
     "hours_line": "Closed · Opens 5 a.m. Thu · (778) 949-4070",
+    "lat": 49.2514535,
+    "lng": -122.7546735,
     "areas": [
       "mississauga"
     ],
@@ -6343,6 +6839,8 @@
     "address": "3154 Hurontario St",
     "phone": "+1 877-412-2646",
     "hours_line": "Open 24 hours · +1 877-412-2646",
+    "lat": 43.582858,
+    "lng": -79.6211611,
     "areas": [
       "mississauga"
     ],
@@ -6368,6 +6866,8 @@
     "address": "66 N Queen St",
     "phone": "+1 877-412-2646",
     "hours_line": "Open 24 hours · +1 877-412-2646",
+    "lat": 43.6229311,
+    "lng": -79.5403884,
     "areas": [
       "mississauga"
     ],
@@ -6393,6 +6893,8 @@
     "address": "4060 Confederation Pkwy",
     "phone": "+1 877-412-2646",
     "hours_line": "Closes soon · 11 p.m. · Opens 9 a.m. Thu · +1 877-412-2646",
+    "lat": 43.5861984,
+    "lng": -79.6468327,
     "areas": [
       "mississauga"
     ],
@@ -6418,6 +6920,8 @@
     "address": "290 The West Mall",
     "phone": "+1 877-412-2646",
     "hours_line": "Open · Closes 1 a.m. · +1 877-412-2646",
+    "lat": 43.6351178,
+    "lng": -79.5627716,
     "areas": [
       "mississauga"
     ],
@@ -6443,6 +6947,8 @@
     "address": "295 Eglinton Ave E",
     "phone": "+1 877-412-2646",
     "hours_line": "Closes soon · 11 p.m. · Opens 8 a.m. Thu · +1 877-412-2646",
+    "lat": 43.6135472,
+    "lng": -79.6463686,
     "areas": [
       "mississauga"
     ],
@@ -6467,6 +6973,8 @@
     "address": "700 Burnhamthorpe Rd W #4",
     "phone": "(289) 521-2274",
     "hours_line": "Closed · Opens 10 a.m. Thu · (289) 521-2274",
+    "lat": 43.5786582,
+    "lng": -79.6513508,
     "areas": [
       "mississauga"
     ],
@@ -6491,6 +6999,8 @@
     "address": null,
     "phone": "(905) 502-5460",
     "hours_line": null,
+    "lat": 62.6573279,
+    "lng": -95.989235,
     "areas": [
       "mississauga"
     ],
@@ -6516,6 +7026,8 @@
     "address": "40 Dundas St E",
     "phone": "(905) 897-0606",
     "hours_line": "Open 24 hours · (905) 897-0606",
+    "lat": 43.5810184,
+    "lng": -79.6150449,
     "areas": [
       "mississauga"
     ],
@@ -6540,6 +7052,8 @@
     "address": "3355 Hurontario St #3",
     "phone": "(905) 276-6639",
     "hours_line": "Closed · Opens 10 a.m. Thu · (905) 276-6639",
+    "lat": 43.587365,
+    "lng": -79.6256833,
     "areas": [
       "mississauga"
     ],
@@ -6565,6 +7079,8 @@
     "address": "Inside Rexall Drugstore, 250 The East Mall #0158",
     "phone": "(416) 239-5708",
     "hours_line": "Closed · Opens 9 a.m. Thu · (416) 239-5708",
+    "lat": 43.6304852,
+    "lng": -79.5552856,
     "areas": [
       "mississauga"
     ],
@@ -6590,6 +7106,8 @@
     "address": "2191 Dundas St E",
     "phone": "(905) 624-2990",
     "hours_line": "Closed · Opens 8 a.m. Thu · (905) 624-2990",
+    "lat": 43.6266917,
+    "lng": -79.5659261,
     "areas": [
       "mississauga"
     ],
@@ -6615,6 +7133,8 @@
     "address": "4023 The Exchange",
     "phone": "(647) 688-7161",
     "hours_line": "Closed · Opens 9 a.m. Thu · (647) 688-7161",
+    "lat": 43.5903935,
+    "lng": -79.6403633,
     "areas": [
       "mississauga"
     ],
@@ -6643,6 +7163,8 @@
     "address": "1310 Dundas St E Unit 204",
     "phone": "(905) 275-9210",
     "hours_line": "Closed · Opens 11 a.m. Thu · (905) 275-9210",
+    "lat": 43.6067585,
+    "lng": -79.5857883,
     "areas": [
       "mississauga"
     ],
@@ -6670,6 +7192,8 @@
     "address": "377 Burnhamthorpe Rd E Unit#37",
     "phone": "(647) 254-9813",
     "hours_line": "Closed · Opens 10 a.m. Thu · (647) 254-9813",
+    "lat": 43.6028499,
+    "lng": -79.62651,
     "areas": [
       "mississauga"
     ],
@@ -6695,6 +7219,8 @@
     "address": "1370 Dundas St E Unit 9",
     "phone": "(905) 306-7070",
     "hours_line": "Closed · Opens 9 a.m. Thu · (905) 306-7070",
+    "lat": 43.6086149,
+    "lng": -79.5836615,
     "areas": [
       "mississauga"
     ],
@@ -6720,6 +7246,8 @@
     "address": "4226 Duke of York Blvd",
     "phone": "(647) 977-7304",
     "hours_line": "Closed · Opens 10 a.m. Thu · (647) 977-7304",
+    "lat": 43.5919223,
+    "lng": -79.6485439,
     "areas": [
       "mississauga"
     ],
@@ -6745,6 +7273,8 @@
     "address": "2225 Dundas St E",
     "phone": "(905) 282-9969",
     "hours_line": "Closed · Opens 10 a.m. Thu · (905) 282-9969",
+    "lat": 43.6271497,
+    "lng": -79.5647186,
     "areas": [
       "mississauga"
     ],
@@ -6769,6 +7299,8 @@
     "address": "488 Eglinton Ave W Unit#10",
     "phone": "(905) 819-1919",
     "hours_line": "Closed · Opens 9 a.m. Thu · (905) 819-1919",
+    "lat": 43.5969908,
+    "lng": -79.6621831,
     "areas": [
       "mississauga"
     ],
@@ -6794,6 +7326,8 @@
     "address": "2 Robert Speck Pkwy #620",
     "phone": "(647) 689-2323",
     "hours_line": "Open 24 hours · (647) 689-2323",
+    "lat": 43.596404,
+    "lng": -79.63698,
     "areas": [
       "mississauga"
     ],
@@ -6822,6 +7356,8 @@
     "address": "3920 Grand Park Dr",
     "phone": "(647) 784-8740",
     "hours_line": "Closed · Opens 8 a.m. Thu · (647) 784-8740",
+    "lat": 43.5801567,
+    "lng": -79.6470088,
     "areas": [
       "mississauga"
     ],
@@ -6846,6 +7382,8 @@
     "address": "2395 Cawthra Rd #101",
     "phone": "(905) 897-1616",
     "hours_line": "Closed · Opens 10 a.m. Thu · (905) 897-1616",
+    "lat": 43.5906298,
+    "lng": -79.5935157,
     "areas": [
       "mississauga"
     ],
@@ -6870,6 +7408,8 @@
     "address": "100 City Centre Dr Unit #2 - 287",
     "phone": "(905) 279-4475",
     "hours_line": "Closed · Opens 10 a.m. Thu · (905) 279-4475",
+    "lat": 43.5937338,
+    "lng": -79.6415961,
     "areas": [
       "mississauga"
     ],
@@ -6894,6 +7434,8 @@
     "address": "107A Dundas St E",
     "phone": "(905) 290-8318",
     "hours_line": "Closed · Opens 10 a.m. Thu · (905) 290-8318",
+    "lat": 43.5829722,
+    "lng": -79.6139394,
     "areas": [
       "mississauga"
     ],
@@ -6918,6 +7460,8 @@
     "address": "107a Dundas St E",
     "phone": "(905) 290-8318",
     "hours_line": "Closed · Opens 10 a.m. Thu · (905) 290-8318",
+    "lat": 43.5829285,
+    "lng": -79.6138955,
     "areas": [
       "mississauga"
     ],
@@ -6943,6 +7487,8 @@
     "address": "105 Dundas St W",
     "phone": "(905) 566-8953",
     "hours_line": "Closed · Opens 10 a.m. Thu · (905) 566-8953",
+    "lat": 43.5780155,
+    "lng": -79.6192203,
     "areas": [
       "mississauga"
     ],
@@ -6967,6 +7513,8 @@
     "address": "600 Matheson Blvd W Unit 5",
     "phone": "(437) 268-2899",
     "hours_line": "Closed · Opens 12 p.m. Thu · (437) 268-2899",
+    "lat": 43.6112497,
+    "lng": -79.6880643,
     "areas": [
       "mississauga"
     ],

@@ -51,12 +51,16 @@ function page({ title, description, canonicalPath, body, jsonLd, h1 }) {
 <meta name="description" content="${esc(description)}">
 <meta name="google-site-verification" content="Ye_IMYi1SiV2M2haI9gEqUoeOJr3WJVGUXEurMIXcG8" />
 <link rel="canonical" href="${SITE_URL}${canonicalPath}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="/style.css">
+<script src="/app.js" defer></script>
 ${ld}
 </head>
 <body>
 <header class="site-header">
-  <a href="/" class="brand">💵 ${SITE_NAME}</a>
+  <a href="/" class="brand">${SITE_NAME}</a>
   <nav>
     <a href="/no-cash-list/">No-cash list</a>
     <a href="/how-we-verify/">How we verify</a>
@@ -84,15 +88,13 @@ function statusBadge(shop) {
 }
 
 function shopCard(shop) {
-  return `<div class="shop-card">
+  const coords = shop.lat != null ? ` data-lat="${shop.lat}" data-lng="${shop.lng}"` : '';
+  return `<div class="shop-card"${coords}>
   <h3><a href="/shop/${shop.slug}/">${esc(shop.name)}</a></h3>
   <p class="badges">${statusBadge(shop)}${shop.fintrac_registered ? ' <span class="badge fintrac">FINTRAC registered</span>' : ''}</p>
-  <p class="meta">
-    ${shop.address ? `📍 ${esc(shop.address)} · <a href="${mapsLink(shop)}" rel="nofollow">map</a><br>` : ''}
-    ${shop.phone ? `📞 <a href="tel:${esc(shop.phone.replace(/[^\d+]/g, ''))}">${esc(shop.phone)}</a>` : '📞 no phone listed'}
-    ${shop.rating ? ` · ★ ${shop.rating} (Google)` : ''}
-  </p>
-  ${shop.hours_line ? `<p class="hours">🕒 ${esc(cleanHours(shop.hours_line))}</p>` : ''}
+  ${shop.address ? `<p class="meta"><span class="k">addr</span> ${esc(shop.address)} · <a href="${mapsLink(shop)}" rel="nofollow">map</a></p>` : ''}
+  <p class="meta"><span class="k">tel</span> ${shop.phone ? `<a href="tel:${esc(shop.phone.replace(/[^\d+]/g, ''))}">${esc(shop.phone)}</a>` : 'not listed'}${shop.rating ? ` <span class="rating">· ★ ${shop.rating} Google</span>` : ''}</p>
+  ${shop.hours_line ? `<p class="hours"><span class="k">hrs</span> ${esc(cleanHours(shop.hours_line))}</p>` : ''}
 </div>`;
 }
 
@@ -127,9 +129,12 @@ for (const [slug, area] of Object.entries(AREAS)) {
 
   const body = `
 <p class="intro">${esc(area.blurb)}</p>
-<p class="trap-note">⚠️ ${traps.length ? `<strong>${traps.length} "currency exchange" listing${traps.length > 1 ? 's' : ''} in this search are online-only</strong> — they will not exchange your cash at a counter. <a href="/no-cash-list/">See the no-cash list</a>.` : `No confirmed online-only traps in this area's search results — but always <a href="/how-we-verify/">check the status badge</a>.`}</p>
-<p class="count">${areaShops.length} walk-in candidates · updated ${updatedDate}</p>
+<p class="trap-note">${traps.length ? `<strong>${traps.length} "currency exchange" listing${traps.length > 1 ? 's' : ''} in this search are online-only</strong> — they will not exchange your cash at a counter. <a href="/no-cash-list/">See the no-cash list</a>.` : `No confirmed online-only traps in this area's search results — but always <a href="/how-we-verify/">check the status badge</a>.`}</p>
+<p class="legend"><span class="badge ok">Walk-in confirmed</span> verified, dated <span class="badge warn">Call ahead</span> likely walk-in, unconfirmed <span class="badge bad">Online only</span> flagged, excluded</p>
+<p class="count">${areaShops.length} walk-in candidates · updated ${updatedDate} · <button type="button" class="btn-sort" id="sort-distance-btn">Sort by distance</button></p>
+<div id="shop-list">
 ${areaShops.map(shopCard).join('\n')}
+</div>
 `;
   const dir = path.join(DIST, slug);
   fs.mkdirSync(dir, { recursive: true });
@@ -183,7 +188,7 @@ ${shop.rating ? `<tr><th>Google rating</th><td>★ ${shop.rating}</td></tr>` : '
 const trapCard = (s, badgeHtml) => `<div class="shop-card trap">
   <h3>${esc(s.name)}</h3>
   <p class="badges">${badgeHtml}</p>
-  ${s.address ? `<p class="meta">📍 ${esc(s.address)}</p>` : ''}
+  ${s.address ? `<p class="meta"><span class="k">addr</span> ${esc(s.address)}</p>` : ''}
   ${s.evidence ? `<p class="evidence"><strong>Evidence:</strong> ${esc(s.evidence)}</p>` : ''}
 </div>`;
 
@@ -246,13 +251,33 @@ const areaCards = Object.entries(AREAS).map(([slug, area]) => {
 
 const confirmed = shops.filter((s) => s.status === 'walk_in_confirmed').length;
 const totalUnique = summary.total_unique || shops.length;
+
+// Minimal dataset for the client-side "near me" ranking (listable shops only).
+const nearMeData = shops.filter(listable).map((s) => ({
+  slug: s.slug, name: s.name, status: s.status, phone: s.phone, lat: s.lat, lng: s.lng,
+}));
+const nearMeJson = JSON.stringify(nearMeData).replace(/</g, '\\u003c');
+
 const indexBody = `
-<p class="intro">Find a currency exchange shop in the GTA that <strong>actually takes cash at the counter</strong>. Google Maps mixes real shops with online-only offices — we scraped ${totalUnique} listings, filtered out the banks, Bitcoin ATMs and money-transfer counters, and flagged <a href="/no-cash-list/">${trapsConfirmed.length} listings that won't take your cash</a>.</p>
+<div class="hero">
+<p class="languages">Cash exchange · 唱錢 · 换汇 · صرافی · обмен валют</p>
+<p class="promise intro">Walk-in currency exchange shops across the GTA — with the one fact Google Maps won't tell you: <strong>does it actually take cash at a counter?</strong></p>
+<div class="action-row">
+  <button type="button" class="btn-near" id="near-me-btn">Find shops near me</button>
+</div>
+<nav class="area-chips" aria-label="Areas">
+${Object.entries(AREAS).map(([slug, area]) => `  <a class="chip" href="/${slug}/">${area.title}</a>`).join('\n')}
+</nav>
+<p class="legend"><span class="badge ok">Walk-in confirmed</span> verified, dated <span class="badge warn">Call ahead</span> likely walk-in <span class="badge bad">Online only</span> flagged — <a href="/how-we-verify/">how we verify</a></p>
+</div>
+<div id="near-me-results" hidden></div>
+<p class="trap-note"><strong><a href="/no-cash-list/">${trapsConfirmed.length} "currency exchange" listings won't take your cash</a></strong> — online-only offices that look like shops on Google Maps. Don't make the trip for nothing.</p>
 <div class="area-grid">
 ${areaCards}
 </div>
 <h2>Why this site exists</h2>
 <p>A friend of ours searched "currency exchange" on Google Maps, travelled to a well-rated result, and found an office that only does online transfers — no counter, no cash. It's not rare: <strong>${trapsConfirmed.length} of ${totalUnique} listings we scraped (${Math.round((trapsConfirmed.length / totalUnique) * 100)}%) are confirmed online-only</strong>, with ${trapsUncertain.length} more pending verification. ${confirmed ? `${confirmed} shops are walk-in confirmed so far; the rest carry an honest "call ahead" badge until we verify them.` : `Every listing carries an honest status badge — "likely walk-in, call ahead" until we directly verify it.`} <a href="/how-we-verify/">How we verify →</a></p>
+<script type="application/json" id="shops-data">${nearMeJson}</script>
 `;
 fs.writeFileSync(path.join(DIST, 'index.html'), page({
   title: `Currency Exchange in Toronto & GTA That Takes Cash — Walk-In Shops Directory`,
@@ -265,6 +290,7 @@ fs.writeFileSync(path.join(DIST, 'index.html'), page({
 
 // ---------- static, robots, sitemap, 404 ----------
 fs.copyFileSync(path.join(__dirname, 'static', 'style.css'), path.join(DIST, 'style.css'));
+fs.copyFileSync(path.join(__dirname, 'static', 'app.js'), path.join(DIST, 'app.js'));
 fs.writeFileSync(path.join(DIST, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`);
 
 const urls = ['/', '/no-cash-list/', '/how-we-verify/',
