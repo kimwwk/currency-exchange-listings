@@ -32,11 +32,27 @@
     return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   }
 
+  // Locate with two tiers: precise browser geolocation first; if denied,
+  // unavailable, or slow (common on desktops), fall back to the Worker's
+  // /api/whereami (Cloudflare edge IP location, city-level). onOk(lat, lng,
+  // approx) — approx=true means network location, label it in the UI.
   function locate(onOk, onErr) {
-    if (!('geolocation' in navigator)) { onErr(); return; }
+    var settled = false;
+    function ok(la, lo, approx) { if (!settled) { settled = true; onOk(la, lo, !!approx); } }
+    function ipFallback() {
+      fetch('/api/whereami').then(function (r) { return r.json(); }).then(function (d) {
+        if (d && d.lat != null) ok(d.lat, d.lng, true); else if (!settled) { settled = true; onErr(); }
+      }).catch(function () { if (!settled) { settled = true; onErr(); } });
+    }
+    if (!('geolocation' in navigator)) { ipFallback(); return; }
+    var fallbackTimer = setTimeout(ipFallback, 8500);
     navigator.geolocation.getCurrentPosition(function (pos) {
-      onOk(pos.coords.latitude, pos.coords.longitude);
-    }, onErr, { enableHighAccuracy: false, timeout: 10000, maximumAge: 300000 });
+      clearTimeout(fallbackTimer);
+      ok(pos.coords.latitude, pos.coords.longitude, false);
+    }, function () {
+      clearTimeout(fallbackTimer);
+      ipFallback();
+    }, { enableHighAccuracy: false, timeout: 8000, maximumAge: 300000 });
   }
 
   // ---- Home: near-me ranking ----
@@ -48,7 +64,7 @@
       var orig = nearBtn.textContent;
       nearBtn.textContent = 'Locating…';
       nearBtn.disabled = true;
-      locate(function (la, lo) {
+      locate(function (la, lo, approx) {
         var shops;
         try { shops = JSON.parse(dataEl.textContent); } catch (e) { shops = []; }
         shops = shops.filter(function (s) { return s.lat != null; });
@@ -64,8 +80,8 @@
             (s.phone ? '<span class="k">tel</span> <a href="' + telHref(s.phone) + '">' + esc(s.phone) + '</a>' : '<span class="k">tel</span> not listed — see shop page') +
             '</p></div>';
         }).join('');
-        out.innerHTML = '<h2>Nearest walk-in candidates</h2>' + rows +
-          '<p class="count">Distances are straight-line. Statuses are honest: call before you go.</p>';
+        out.innerHTML = '<h2>Nearest walk-in candidates' + (approx ? ' <span class="approx">~ approximate (network) location</span>' : '') + '</h2>' + rows +
+          '<p class="count">Distances are straight-line' + (approx ? ', from your network location (city-level accuracy)' : '') + '. Statuses are honest: call before you go.</p>';
         out.hidden = false;
         nearBtn.textContent = orig;
         nearBtn.disabled = false;
@@ -85,7 +101,7 @@
       var orig = sortBtn.textContent;
       sortBtn.textContent = 'Locating…';
       sortBtn.disabled = true;
-      locate(function (la, lo) {
+      locate(function (la, lo, approx) {
         var list = document.getElementById('shop-list');
         var cards = Array.prototype.slice.call(list.querySelectorAll('.shop-card[data-lat]'));
         cards.forEach(function (c) {
@@ -98,7 +114,7 @@
         });
         cards.sort(function (a, b) { return a._km - b._km; });
         cards.forEach(function (c) { list.appendChild(c); });
-        sortBtn.textContent = 'Sorted by distance';
+        sortBtn.textContent = approx ? 'Sorted by distance (approx.)' : 'Sorted by distance';
       }, function () {
         sortBtn.textContent = 'Location unavailable';
         setTimeout(function () { sortBtn.textContent = orig; sortBtn.disabled = false; }, 4000);
