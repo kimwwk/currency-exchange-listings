@@ -11,6 +11,9 @@ const DIST = path.join(ROOT, 'dist');
 const SITE_URL = process.env.SITE_URL || 'https://gta-cash-exchange.kivov-digital.workers.dev';
 const SITE_NAME = 'GTA Cash Exchange Directory';
 const REPO_URL = 'https://github.com/kimwwk/currency-exchange-listings';
+// Public by design (ships in client HTML) — protected via HTTP-referrer
+// restriction in Google Cloud Console, NOT by secrecy.
+const MAPS_KEY = process.env.GOOGLE_MAPS_KEY || 'AIzaSyA19nEB0g7TlQBhKp17adL8qM1htJV03Vw';
 
 const shops = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'shops.json'), 'utf8'));
 const summary = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'shops-summary.json'), 'utf8'));
@@ -271,6 +274,9 @@ ${Object.entries(AREAS).map(([slug, area]) => `  <a class="chip" href="/${slug}/
 <p class="legend"><span class="badge ok">Walk-in confirmed</span> verified, dated <span class="badge warn">Call ahead</span> likely walk-in <span class="badge bad">Online only</span> flagged — <a href="/how-we-verify/">how we verify</a></p>
 </div>
 <div id="near-me-results" hidden></div>
+<h2>Spot them on the map</h2>
+<div id="map" data-key="${MAPS_KEY}" role="region" aria-label="Map of GTA walk-in currency exchange shops"><p class="map-loading">Map loads as you scroll…</p></div>
+<p class="count map-legend"><span class="dot dot-ok"></span> walk-in confirmed · <span class="dot dot-warn"></span> call ahead · <span class="dot dot-you"></span> you (approximate until you allow precise location)</p>
 <p class="trap-note"><strong><a href="/no-cash-list/">${trapsConfirmed.length} "currency exchange" listings won't take your cash</a></strong> — online-only offices that look like shops on Google Maps. Don't make the trip for nothing.</p>
 <div class="area-grid">
 ${areaCards}
