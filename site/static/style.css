@@ -19,6 +19,10 @@
   --bad-bg: #f2dfda;
   --fintrac: #2c4a7c;
   --fintrac-bg: #e2e8f2;
+  --na: #6b6b66;          /* invalid listing: neutral ledger grey */
+  --na-bg: #e9e7df;
+  --live: #1f5e8a;        /* live-rates tag: ink blue */
+  --live-bg: #e0ecf4;
 }
 
 * { box-sizing: border-box; }
@@ -185,6 +189,9 @@ main { max-width: 780px; margin: 0 auto; padding: 1rem 1.1rem 3rem; }
 .badge.warn { color: var(--warn); background: var(--warn-bg); }
 .badge.bad { color: var(--bad); background: var(--bad-bg); transform: rotate(-1.2deg); }
 .badge.fintrac { color: var(--fintrac); background: var(--fintrac-bg); border-style: dashed; }
+.badge.na { color: var(--na); background: var(--na-bg); border-style: dotted; }
+a.badge.live { color: var(--live); background: var(--live-bg); text-decoration: none; }
+a.badge.live:hover { background: var(--live); color: #fff; }
 .verified-date { font-family: "IBM Plex Mono", monospace; font-size: 0.74rem; color: var(--ok); margin-left: 0.4rem; }
 
 /* ---------- ledger cards ---------- */
@@ -203,6 +210,8 @@ main { max-width: 780px; margin: 0 auto; padding: 1rem 1.1rem 3rem; }
 .shop-card h3 a { text-decoration: none; color: var(--ink); }
 .shop-card h3 a:hover { color: var(--note); text-decoration: underline; }
 .shop-card.trap { border-left-color: var(--bad); }
+.shop-card.invalid { border-left-color: var(--na); opacity: 0.78; filter: saturate(0.35); }
+.shop-card.invalid:hover { opacity: 1; filter: none; }
 .badges { margin: 0.25rem 0; display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center; }
 
 .meta, .hours {
@@ -323,6 +332,25 @@ main { max-width: 780px; margin: 0 auto; padding: 1rem 1.1rem 3rem; }
 .area-card:hover { transform: translateY(-2px); border-color: var(--note); box-shadow: 0 4px 10px rgba(28, 42, 36, 0.12); }
 .area-card:hover::after { opacity: 1; transform: translateX(0); }
 
+/* ---------- home sections: clearly ruled ledger blocks ---------- */
+.home-section {
+  margin-top: 2.4rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--note-line);
+}
+.home-section h2 { margin-top: 0; display: flex; align-items: baseline; gap: 0.6rem; }
+.sec-no {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  border: 1px solid var(--gold);
+  border-radius: 3px;
+  padding: 0.1rem 0.4rem;
+  transform: translateY(-2px);
+}
+
 /* ---------- footer: ledger rule ---------- */
 footer {
   border-top: 3px double var(--gold);
@@ -335,6 +363,23 @@ footer {
   margin-right: auto;
 }
 footer a { color: var(--note); }
+.footer-rules-title {
+  font-size: 0.95rem;
+  margin: 1.4rem 0 0.4rem;
+  color: var(--ink);
+}
+.footer-rules {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+.footer-rules li {
+  padding: 0.45rem 0;
+  border-top: 1px dashed var(--note-line);
+  font-size: 0.84rem;
+  line-height: 1.6;
+}
+.footer-rules .badge { margin-right: 0.3rem; transform: none; }
 
 @keyframes rise {
   from { opacity: 0; transform: translateY(8px); }

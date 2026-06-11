@@ -21,7 +21,11 @@
  *   (e) anything ambiguous                                -> "unknown"
  *
  * Status vocabulary (exact):
- *   walk_in_confirmed | walk_in_unverified | remittance_first | online_only | noise | unknown
+ *   walk_in_confirmed | walk_in_unverified | remittance_first | online_only | invalid | noise | unknown
+ *
+ * `invalid` is override-only: a Google Maps "currency exchange" listing that is
+ * not actually a currency exchange business (mislabelled, SEO listing, wrong
+ * category). Shown publicly in grey so visitors can help validate it.
  */
 
 'use strict';
@@ -103,11 +107,17 @@ function kebab(s) {
 // Is a `lines[]` entry a rating line? e.g. "4.5", "4.5(24)", "4.5(56,672)",
 // "3.9(3,341) · $", or "No reviews".
 function parseRatingLine(line) {
-  if (line == null) return { isRating: false, rating: null };
-  if (line === 'No reviews') return { isRating: true, rating: null };
-  const m = line.match(/^(\d(?:\.\d)?)(?:\([\d,]+\))?(?:\s*·\s*\$+)?$/);
-  if (m) return { isRating: true, rating: parseFloat(m[1]) };
-  return { isRating: false, rating: null };
+  if (line == null) return { isRating: false, rating: null, reviewCount: null };
+  if (line === 'No reviews') return { isRating: true, rating: null, reviewCount: 0 };
+  const m = line.match(/^(\d(?:\.\d)?)(?:\(([\d,]+)\))?(?:\s*·\s*\$+)?$/);
+  if (m) {
+    return {
+      isRating: true,
+      rating: parseFloat(m[1]),
+      reviewCount: m[2] != null ? parseInt(m[2].replace(/,/g, ''), 10) : null,
+    };
+  }
+  return { isRating: false, rating: null, reviewCount: null };
 }
 
 // A status/hours line mentions opening/closing keywords or is a pure phone line.
@@ -201,6 +211,8 @@ function loadOverrides() {
     source: e.source || null,
     note: e.note || null,
     verified_phone: e.verified_phone || null,
+    website: e.website || null,
+    live_rates_url: e.live_rates_url || null,
   }));
 }
 
@@ -482,9 +494,10 @@ function main() {
 
       // Parse fields from lines[]
       let rating = null;
+      let review_count = null;
       for (const l of lines) {
         const pr = parseRatingLine(l);
-        if (pr.isRating) { rating = pr.rating; break; }
+        if (pr.isRating) { rating = pr.rating; review_count = pr.reviewCount; break; }
       }
       const cat = parseCategoryLine(lines);
       const hours_line = parseHoursLine(lines, cat.raw);
@@ -495,6 +508,7 @@ function main() {
           id,
           name: r.name,
           rating,
+          review_count,
           category: cat.category,
           address: cat.address,
           phone,
@@ -511,6 +525,7 @@ function main() {
         ex.areas.add(area);
         // backfill any missing fields from a richer duplicate
         if (ex.rating == null && rating != null) ex.rating = rating;
+        if (ex.review_count == null && review_count != null) ex.review_count = review_count;
         if (!ex.category && cat.category) ex.category = cat.category;
         if (!ex.address && cat.address) ex.address = cat.address;
         if (!ex.phone && phone) ex.phone = phone;
@@ -533,6 +548,7 @@ function main() {
   for (const p of places.values()) {
     const ov = matchOverride(overrides, p.id, p.name);
     let status, sub_type, evidence, confidence, verified_phone;
+    let website = null, live_rates_url = null;
 
     if (ov) {
       status = ov.status;
@@ -540,6 +556,8 @@ function main() {
       evidence = ov.evidence;
       confidence = 'override';
       verified_phone = ov.verified_phone || null;
+      website = ov.website || null;
+      live_rates_url = ov.live_rates_url || null;
     } else {
       const ruled = classifyByRules(p);
       status = ruled.status;
@@ -578,10 +596,13 @@ function main() {
       evidence: evidence || null,
       confidence,
       rating: p.rating,
+      review_count: p.review_count ?? null,
       ratings_source: 'google_maps',
       category: p.category || null,
       address: p.address || null,
       phone: p.phone || null,
+      website,
+      live_rates_url,
       hours_line: p.hours_line || null,
       lat: p.lat ?? null,
       lng: p.lng ?? null,
@@ -605,7 +626,7 @@ function main() {
   fs.writeFileSync(SHOPS_OUT, JSON.stringify(shops, null, 2) + '\n');
 
   // ---- summary ----
-  const STATUSES = ['walk_in_confirmed', 'walk_in_unverified', 'remittance_first', 'online_only', 'noise', 'unknown'];
+  const STATUSES = ['walk_in_confirmed', 'walk_in_unverified', 'remittance_first', 'online_only', 'invalid', 'noise', 'unknown'];
   const summary = {
     generated_at: new Date().toISOString(),
     total_unique_places: shops.length,
@@ -706,7 +727,8 @@ function printSummary(summary, STATUSES) {
   // header
   const SHORT = {
     walk_in_confirmed: 'wi_conf', walk_in_unverified: 'wi_unver',
-    remittance_first: 'remit', online_only: 'online', noise: 'noise', unknown: 'unknown',
+    remittance_first: 'remit', online_only: 'online', invalid: 'invalid',
+    noise: 'noise', unknown: 'unknown',
   };
   const areaCol = 12;
   const cols = STATUSES.map((s) => padL(SHORT[s], 9)).join('');

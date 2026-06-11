@@ -25,7 +25,8 @@
   var STATUS = {
     walk_in_confirmed: { label: 'Walk-in confirmed', cls: 'ok' },
     walk_in_unverified: { label: 'Likely walk-in — call ahead', cls: 'warn' },
-    remittance_first: { label: 'Money transfer first — call ahead', cls: 'warn' }
+    remittance_first: { label: 'Money transfer first — call ahead', cls: 'warn' },
+    invalid: { label: 'Invalid listing', cls: 'na' }
   };
 
   function esc(s) {
