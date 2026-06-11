@@ -351,6 +351,36 @@ a.badge.live:hover { background: var(--live); color: #fff; }
   transform: translateY(-2px);
 }
 
+/* ---------- contact form ---------- */
+.form-row { margin: 0.9rem 0; }
+.form-row label {
+  display: block;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-bottom: 0.3rem;
+}
+.form-row .req { color: var(--warn); text-transform: none; letter-spacing: 0; }
+.form-row .opt { color: var(--muted); text-transform: none; letter-spacing: 0; font-weight: 400; }
+.form-row input, .form-row textarea {
+  width: 100%;
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 0.95rem;
+  color: var(--ink);
+  background: var(--panel);
+  border: 1px solid var(--note-line);
+  border-radius: 6px;
+  padding: 0.55rem 0.7rem;
+}
+.form-row input:focus, .form-row textarea:focus {
+  outline: 2px solid var(--note);
+  outline-offset: 1px;
+  border-color: var(--note);
+}
+#cf-status { margin-top: 0.6rem; }
+
 /* ---------- footer: ledger rule ---------- */
 footer {
   border-top: 3px double var(--gold);

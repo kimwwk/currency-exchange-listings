@@ -214,6 +214,40 @@
     }
   }
 
+  // ---- Contact page: submit report to the automation webhook as JSON ----
+  // Progressive enhancement: without JS the form still POSTs urlencoded to the
+  // same webhook; with JS we add submittedAt, send JSON and stay on the page.
+  var contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    var cfStatus = document.getElementById('cf-status');
+    var cfSubmit = document.getElementById('cf-submit');
+    contactForm.addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      var payload = {
+        name: contactForm.elements.name.value.trim(),
+        email: contactForm.elements.email.value.trim(),
+        company: contactForm.elements.company.value.trim(),
+        message: contactForm.elements.message.value.trim(),
+        submittedAt: new Date().toISOString()
+      };
+      cfSubmit.disabled = true;
+      cfStatus.textContent = 'Sending…';
+      fetch(contactForm.action, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      }).then(function (r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        contactForm.reset();
+        cfSubmit.disabled = false;
+        cfStatus.textContent = 'Sent — thank you. We typically reply within 1 business day.';
+      }).catch(function () {
+        cfSubmit.disabled = false;
+        cfStatus.textContent = 'Could not send right now — please try again, or open a GitHub issue (link below).';
+      });
+    });
+  }
+
   // ---- Area pages: sort existing cards by distance ----
   var sortBtn = document.getElementById('sort-distance-btn');
   if (sortBtn) {

@@ -284,7 +284,8 @@ fs.writeFileSync(path.join(DIST, 'how-we-verify', 'index.html'), page({
 }));
 
 // ---------- contact / validate ----------
-const CONTACT_EMAIL = 'kim.sing.canada@gmail.com';
+// Reports go to an automation webhook (n8n) — no personal email in the HTML.
+const CONTACT_WEBHOOK = 'https://automation.getjustgo.com/webhook/GTA-currency-exchange-contact';
 const contactBody = `
 <p class="intro">This directory gets better every time someone who actually knows a shop tells us what they saw. One line is enough.</p>
 <h2>Tell us about a shop</h2>
@@ -295,11 +296,28 @@ const contactBody = `
   <li><strong>"That listing isn't a currency exchange at all"</strong> — confirms an <span class="badge na">Invalid listing</span> verdict (or tells us we got one wrong).</li>
   <li>Corrections to hours, phone numbers, closures, or a shop we're missing entirely.</li>
 </ul>
-<h2>How to reach us</h2>
-<table class="shop-table">
-<tr><th>Email</th><td><a href="mailto:${CONTACT_EMAIL}?subject=GTA%20Cash%20Exchange%20%E2%80%94%20shop%20report">${CONTACT_EMAIL}</a> — include the shop name and what you saw.</td></tr>
-<tr><th>GitHub</th><td><a href="${REPO_URL}/issues" target="_blank" rel="noopener">Open an issue</a> — the whole pipeline and dataset are public.</td></tr>
-</table>
+<h2>Send a report</h2>
+<form id="contact-form" action="${CONTACT_WEBHOOK}" method="post">
+  <div class="form-row">
+    <label for="cf-name">Your name <span class="req">required</span></label>
+    <input id="cf-name" name="name" type="text" required maxlength="120" autocomplete="name">
+  </div>
+  <div class="form-row">
+    <label for="cf-email">Your email <span class="opt">optional — only if you want a reply</span></label>
+    <input id="cf-email" name="email" type="email" maxlength="200" autocomplete="email">
+  </div>
+  <div class="form-row">
+    <label for="cf-company">Shop you're reporting <span class="opt">optional</span></label>
+    <input id="cf-company" name="company" type="text" maxlength="200" placeholder="e.g. Silk Road Currency Exchange, 301 Spadina">
+  </div>
+  <div class="form-row">
+    <label for="cf-message">What you saw <span class="req">required</span></label>
+    <textarea id="cf-message" name="message" required rows="5" maxlength="4000" placeholder="e.g. Exchanged USD cash at the counter on June 10 — no issues. / Went there, office only, they refused cash."></textarea>
+  </div>
+  <button type="submit" class="btn-near" id="cf-submit">Send report</button>
+  <p id="cf-status" class="count" role="status" aria-live="polite"></p>
+</form>
+<p class="disclaimer">We typically reply within 1 business day (if you left an email). Prefer GitHub? <a href="${REPO_URL}/issues" target="_blank" rel="noopener">Open an issue</a> — the whole pipeline and dataset are public.</p>
 <p>Every report is checked against our <a href="/how-we-verify/">verification rules</a> before a badge changes — your report becomes the dated evidence shown on the shop's page.</p>
 `;
 fs.mkdirSync(path.join(DIST, 'contact'), { recursive: true });
