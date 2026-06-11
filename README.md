@@ -20,9 +20,11 @@ One command refresh: `bash pipeline/refresh.sh` (or `--no-scrape` to reuse raw d
 
 ## Honesty rules (read before editing)
 
-- `walk_in_confirmed` is ONLY set via `data/overrides.json` with dated evidence (a website quote, a phone call). The classifier never auto-confirms.
+- `walk_in_confirmed` is ONLY set via `data/overrides.json` with dated evidence: a website quote, a phone call, or a qualifying Google-review signal (10+ reviews describing in-person cash exchange incl. activity within the last month). The classifier never auto-confirms.
 - The default for a plausible shop is `walk_in_unverified` → shown as "Likely walk-in — call ahead".
 - `online_only` verdicts carry their evidence string and are shown publicly on `/no-cash-list/`.
+- `invalid` (override-only) marks Google Maps "currency exchange" listings that aren't exchange businesses at all. They stay visible in grey (never hidden) so visitors can validate them via `/contact/`.
+- `live_rates_url` on an override tags shops whose own website publishes real-time rates; the site links to it, never copies the numbers.
 - Phone verifications go in `overrides.json` as `"verified_phone": {"date": "YYYY-MM-DD", "answer": "yes|no"}`.
 
 ## Run locally

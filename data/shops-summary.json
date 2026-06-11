@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05T01:06:54.508Z",
+  "generated_at": "2026-06-11T20:01:32.603Z",
   "total_unique_places": 274,
   "maps_scraped": {
     "earliest": "2026-06-04T02:31:35.177Z",
@@ -13,65 +13,72 @@
     "match_rate": 0.314
   },
   "by_status": {
-    "walk_in_confirmed": 0,
-    "walk_in_unverified": 109,
-    "remittance_first": 15,
+    "walk_in_confirmed": 8,
+    "walk_in_unverified": 100,
+    "remittance_first": 14,
     "online_only": 31,
+    "invalid": 2,
     "noise": 112,
     "unknown": 7
   },
   "by_area": {
     "toronto": {
       "total": 103,
-      "walk_in_confirmed": 0,
-      "walk_in_unverified": 23,
-      "remittance_first": 4,
+      "walk_in_confirmed": 8,
+      "walk_in_unverified": 14,
+      "remittance_first": 3,
       "online_only": 17,
+      "invalid": 2,
       "noise": 56,
       "unknown": 3
     },
     "downtown": {
       "total": 67,
-      "walk_in_confirmed": 0,
-      "walk_in_unverified": 13,
-      "remittance_first": 5,
+      "walk_in_confirmed": 8,
+      "walk_in_unverified": 4,
+      "remittance_first": 4,
       "online_only": 10,
+      "invalid": 2,
       "noise": 39,
       "unknown": 0
     },
     "scarborough": {
       "total": 33,
-      "walk_in_confirmed": 0,
-      "walk_in_unverified": 21,
+      "walk_in_confirmed": 2,
+      "walk_in_unverified": 19,
       "remittance_first": 3,
       "online_only": 1,
+      "invalid": 0,
       "noise": 8,
       "unknown": 0
     },
     "north-york": {
       "total": 87,
-      "walk_in_confirmed": 0,
-      "walk_in_unverified": 55,
+      "walk_in_confirmed": 4,
+      "walk_in_unverified": 51,
       "remittance_first": 1,
       "online_only": 3,
+      "invalid": 0,
       "noise": 27,
       "unknown": 1
     },
     "markham": {
       "total": 28,
-      "walk_in_confirmed": 0,
-      "walk_in_unverified": 14,
+      "walk_in_confirmed": 2,
+      "walk_in_unverified": 12,
       "remittance_first": 3,
       "online_only": 6,
+      "invalid": 0,
       "noise": 5,
       "unknown": 0
     },
     "mississauga": {
       "total": 74,
-      "walk_in_confirmed": 0,
-      "walk_in_unverified": 32,
+      "walk_in_confirmed": 2,
+      "walk_in_unverified": 30,
       "remittance_first": 4,
       "online_only": 4,
+      "invalid": 0,
       "noise": 31,
       "unknown": 3
     }

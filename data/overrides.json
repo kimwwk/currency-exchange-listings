@@ -5,6 +5,8 @@
     "status_vocabulary": "walk_in_confirmed | walk_in_unverified | remittance_first | online_only | noise. (The classifier also emits `unknown`, but that is never set via override.)",
     "walk_in_confirmed_rule": "ONLY set status=walk_in_confirmed when `evidence` contains a real verification (website 'how it works' language confirming an in-person cash counter, or a logged phone call). Never infer it from category/address alone.",
     "fields": {
+      "website": "Official website URL, shown on the shop page (opens in new tab).",
+      "live_rates_url": "URL of the shop's own live/realtime rates page. Renders as a 'Live rates' badge linking out. Only set when the page genuinely shows current rates.",
       "match.name_regex": "Case-insensitive regex string tested against place name. Fallback when feature_ids miss.",
       "match.feature_ids": "Array of Google Maps feature IDs (0x..:0x..) this verdict applies to. Primary match key.",
       "status": "One of the status vocabulary values.",
@@ -318,10 +320,131 @@
       "match": { "name_regex": "^Interchange Financial", "feature_ids": ["0x882b34cb032fed39:0xdd08aa7f725e4669"] },
       "status": "walk_in_unverified",
       "sub_type": "hybrid_pickup_no_cash_in",
-      "evidence": "interchangefinancial.com confirms in-person pickup at physical locations ('pick up cash in-store... pay with Debit Card or Interac e-transfer'). HOWEVER it does NOT accept cash-in (debit/e-transfer only) -- a hybrid pickup model, NOT a traditional cash-in-cash-out counter. (verified 2026-06-03)",
+      "evidence": "interchangefinancial.com confirms in-person pickup at physical locations ('pick up cash in-store... pay with Debit Card or Interac e-transfer'). HOWEVER it does NOT accept cash-in (debit/e-transfer only) -- a hybrid pickup model, NOT a traditional cash-in-cash-out counter. (verified 2026-06-03; recent review activity re-checked 2026-06-11)",
       "source": "web",
       "note": "Material correction from gap-analysis: reclassified ONLINE_ONLY -> WALK_IN_SHOP (UNCERTAIN). Kept as walk_in_unverified NOT walk_in_confirmed because the product question is 'takes YOUR cash at a counter' and the confirmed evidence is that it does NOT take cash-in. Flag for a phone call: 'Do you accept cash deposits in person?'",
+      "verified_phone": { "date": null, "answer": null },
+      "website": "https://www.interchangefinancial.com/",
+      "live_rates_url": "https://www.interchangefinancial.com/"
+    },
+    {
+      "match": { "name_regex": "^Calforex Currency Exchange-Toronto Downtown", "feature_ids": ["0x882b34dab7c2b211:0xe687cd4f6183f11f"] },
+      "status": "walk_in_confirmed",
+      "evidence": "calforex.com location page: 'Conveniently located inside Eaton Centre, level 1 - Queen Street Entrance... over 50 currencies kept in stock', with posted mall hours (Mon-Sat 10-9, Sun 11-7). Review signal: ~167 Google reviews, activity through May/June 2026. (verified 2026-06-11)",
+      "source": "web",
+      "note": "Retail mall storefront, also listed in Cadillac Fairview's official Eaton Centre store directory. Rates quoted inside the online cash-reservation flow only, no public live-rates page -> no live_rates_url.",
+      "verified_phone": { "date": null, "answer": null },
+      "website": "https://www.calforex.com/en/locations/toronto-downtown-eaton-centre/"
+    },
+    {
+      "match": { "name_regex": "^College Currency Exchange", "feature_ids": ["0x882b34b502e2f569:0x29a08945ce976cba"] },
+      "status": "walk_in_confirmed",
+      "evidence": "Review signal: 41+ reviews across Google/Yelp describing in-person cash-only exchange at the 437A Yonge St storefront ('venue primarily accepts cash transactions... bring cash for exchanges as debit and credit card payments are not accepted'; 'buys and sells 80 different currencies, open 7 days a week'), listing activity through March 2026. Registered MSB (College Currency Investments Inc.). (verified 2026-06-11)",
+      "source": "web",
+      "note": "Official site collegecurrency.ca appears dead (not indexed) -> evidence is the review signal + MSB registration, which meets the published review rule (10+ in-person-cash reviews with recent activity). Some aggregator reviews allege inflated ratings; rate quality not vouched for.",
       "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^CURRENCY EXCHANGE SHOPPE", "feature_ids": ["0x882b34c37a285bfd:0x332b3203c720fcd"] },
+      "status": "walk_in_confirmed",
+      "evidence": "mycurrencyshoppe.com downtown location page: 'All currency exchange transactions must be completed in person at 279 Spadina Ave, and they only accept cash for payment in person.' Hours Mon-Fri 10:30-5:30. Review signal: 583 Google reviews, listing activity through May 2026. (verified 2026-06-11)",
+      "source": "web",
+      "note": "Operates as 'Currency Shoppe' (formerly Goldium FX, since 1991). Explicit in-person cash-only policy on its own site -- the strongest walk-in evidence downtown. Closed weekends. No published rates (site says call; rates differ by branch).",
+      "verified_phone": { "date": null, "answer": null },
+      "website": "https://www.mycurrencyshoppe.com/locations/toronto-downtown"
+    },
+    {
+      "match": { "name_regex": "^Currency Exchange Toronto Downtown Currency Mart", "feature_ids": ["0x882b3511c6c4612f:0xf8700484773ecc5e"] },
+      "status": "walk_in_confirmed",
+      "evidence": "currencymart.net branch page: 'No appointment is needed -- just walk in... Bring foreign currency to any Currency Mart branch and receive Canadian dollars on the spot' (PATH concourse below 120 Adelaide St W). Publishes a branch-specific live rates page stated to update every 5 minutes. Review signal: 114 Google reviews (4.6), listing activity through April 2026. (verified 2026-06-11)",
+      "source": "web",
+      "note": "PATH concourse shop, not street level: enter 120 Adelaide St W, escalator behind the security desk down to the PATH. Closed Sundays.",
+      "verified_phone": { "date": null, "answer": null },
+      "website": "https://currencymart.net/currency-exchange/toronto/downtown/index.html",
+      "live_rates_url": "https://currencymart.net/exchange-rate/toronto/downtown/index.html"
+    },
+    {
+      "match": { "name_regex": "^TORONTO FIRST STEPS", "feature_ids": ["0x882b34cecb2cbecd:0x97ceb0f2437719cd"] },
+      "status": "invalid",
+      "sub_type": "mislabelled",
+      "evidence": "Not a currency exchange: Toronto First Steps was a Brazilian study-abroad & immigration agency ('A sua Agência de Intercâmbio em Toronto' -- Portuguese 'intercâmbio' = student exchange, not currency exchange), offering English courses and immigration consulting. 439 University Ave 5th floor is a Regus serviced-office floor, and torontofirststeps.com is now an expired/parked domain. 1 Google review. (verified 2026-06-11)",
+      "source": "web",
+      "note": "The Google Maps 'currency exchange' category is almost certainly a mistranslation/SEO artifact of 'intercâmbio'. Listed grey as invalid (not hidden) so locals can validate.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^Silk Road Currency Exchange", "feature_ids": ["0x882b35a7ea08ecd9:0x813619a9ecbb5ef"] },
+      "status": "walk_in_confirmed",
+      "evidence": "silkroadex.ca: 'They provide genuine cash exchange downtown Toronto... open Monday through Saturday from 10:00 AM to 7:00 PM... the final rate will be confirmed at the time of your transaction in-store', at 301 Spadina Ave in Chinatown. Site publishes per-currency rate pages (/usd/, /jpy/, ...) with fresh 2026 dates. (verified 2026-06-11)",
+      "source": "web",
+      "note": "Phone on site matches listing. Rate pages actively maintained (CRC page dated 2 June 2026).",
+      "verified_phone": { "date": null, "answer": null },
+      "website": "https://silkroadex.ca/",
+      "live_rates_url": "https://silkroadex.ca/usd/"
+    },
+    {
+      "match": { "name_regex": "^NHVN Currency Exchange", "feature_ids": ["0x882b34c3596109cb:0x6eaae79cf2a8d36e"] },
+      "status": "walk_in_confirmed",
+      "evidence": "nhvnfx.com confirms the storefront at 222 Spadina Ave Unit 101C with in-store hours Mon-Fri 10:30-5:00; reviewers corroborate a cash-only in-person counter ('accepts cash-only transactions... not accepting debit cards'; 'the best USD/CAD FX rate that i found within the downtown toronto area'). (verified 2026-06-11)",
+      "source": "web",
+      "note": "Cash-only -- bring cash, no debit. No live-rates page (site says contact for current rates).",
+      "verified_phone": { "date": null, "answer": null },
+      "website": "https://nhvnfx.com/"
+    },
+    {
+      "match": { "name_regex": "^Million Downtown", "feature_ids": ["0x882b354c5a5a45a3:0xa205303db2483ea4"] },
+      "status": "walk_in_unverified",
+      "evidence": "Real business (millionex.ca, operating since 2001) with a Toronto branch at 65 Wellesley St E Unit 200, weekday hours 10-6, offering 'both in-person and online' services -- but primarily an Iranian sarafi (IRR/toman remittance) and no explicit cash-counter wording found. (checked 2026-06-11)",
+      "source": "web",
+      "note": "Kept at call-ahead: plausible walk-in office, unconfirmed for walk-in CAD/USD cash. Candidate for a phone call.",
+      "verified_phone": { "date": null, "answer": null },
+      "website": "https://www.millionex.ca/"
+    },
+    {
+      "match": { "name_regex": "^RemitLand Currency Exchange", "feature_ids": ["0x89d4cb01ee17fbaf:0xea9b52a3dbebef10"] },
+      "status": "walk_in_unverified",
+      "evidence": "The address + phone (111 Queens Quay W, 647-343-1011) belong to the long-running walk-in counter NET EXCHANGE (netmoneyexchange.com, ~77 Yelp reviews), and the Google listing itself carries 126 reviews -- but no website or directory ties the name 'RemitLand' to this address, so the branding/operator is unconfirmed. (checked 2026-06-11)",
+      "source": "web",
+      "note": "Likely a Google Maps rebrand of the Net Exchange counter at Harbourfront. Walk-in cash at the location is probably real; call to confirm who answers and whether they exchange cash walk-in.",
+      "verified_phone": { "date": null, "answer": null }
+    },
+    {
+      "match": { "name_regex": "^Ebixcash World Money", "feature_ids": ["0x882b46fdabebcbff:0xc6514ff9e6b31977"] },
+      "status": "walk_in_confirmed",
+      "evidence": "Review signal: reviewers describe a multi-counter in-person exchange at 121 Yonge St ('the line up was quick and all counters (3 in total) was [open]'; 'Great exchange rate and super fast!'), ~4.5 across aggregators, listing activity through Dec 2025. FINTRAC-registered; formerly Cox & Kings. (verified 2026-06-11)",
+      "source": "web",
+      "note": "Hours Mon-Fri 10-6 (one source adds Sat 10-4). One source mentions a $3.50 per-transaction fee. No public live-rates page on ebixcash.ca.",
+      "verified_phone": { "date": null, "answer": null },
+      "website": "https://www.ebixcash.ca/"
+    },
+    {
+      "match": { "name_regex": "^TD Foreign Exchange Centre", "feature_ids": ["0x882b34d2dc465329:0x1e29f82d0c7330d2"] },
+      "status": "walk_in_confirmed",
+      "evidence": "TD's own announcement of the centre: 'The Foreign Exchange Centre maintains a broad selection of currencies and precious metals to offer immediate fulfillment of most cash orders to walk-in clients... a stand-alone location specializing in the sale of foreign cash.' Directory/Yelp listings current to June 2026 show it open Mon-Fri 8-6 at 55 King St W Concourse Level. (verified 2026-06-11)",
+      "source": "web",
+      "note": "A TD-run retail FX counter (50+ currencies in stock), distinct from a bank branch and open to walk-in public. TD's bank-wide converter shows today's cash rates -> live_rates_url.",
+      "verified_phone": { "date": null, "answer": null },
+      "website": "https://www.td.com/ca/en/personal-banking/solutions/currency-exchange-services",
+      "live_rates_url": "https://www.td.com/ca/en/personal-banking/solutions/exchange/currency-converter"
+    },
+    {
+      "match": { "name_regex": "^York Foreign Exchange", "feature_ids": ["0x882b34af9cd8960f:0x27fc995cac5828fe"] },
+      "status": "walk_in_unverified",
+      "evidence": "Storefront at 69 Yorkville Ave #102 confirmed via the Bloor-Yorkville BIA directory and FINTRAC MSB registration M09351691 (foreign exchange dealing), but yorkfx.com could not be reached and no first-party 'visit us / cash' statement or in-person-cash review was found. 54 Google reviews (~3.0). (checked 2026-06-11)",
+      "source": "web",
+      "note": "yorkfx.com homepage is titled 'Retail Exchange Rates', suggesting a rate board -- recheck when the site is reachable. Candidate for a phone call.",
+      "verified_phone": { "date": null, "answer": null },
+      "website": "http://www.yorkfx.com/"
+    },
+    {
+      "match": { "name_regex": "^ACE Money Transfer", "feature_ids": ["0x882b46fd072da855:0x7d6410cfb6e8090"] },
+      "status": "invalid",
+      "sub_type": "mislabelled",
+      "evidence": "Suite 2201, 250 Yonge St is the Canadian corporate office (22nd floor of an office tower) of ACE Money Transfer / Habib Express, an online remittance app. ACE's own FAQ states cash is not facilitated -- cash pickup happens at partner agents in destination countries, not at this office. The 1.9-star Google listing pattern matches app complaints on a corporate-office pin, not a shop. (verified 2026-06-11)",
+      "source": "web",
+      "note": "Mislabelled as a currency exchange shop on Google Maps. Listed grey as invalid so anyone can validate; if someone confirms a public counter at suite 2201, we will correct.",
+      "verified_phone": { "date": null, "answer": null },
+      "website": "https://acemoneytransfer.com/"
     }
   ]
 }
