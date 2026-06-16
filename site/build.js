@@ -38,7 +38,15 @@ const STATUS_META = {
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 // hours_line from the scrape often ends with the phone number — strip it for display
 const cleanHours = (s) => String(s ?? '').replace(/\s*·?\s*\(\d{3}\)\s*\d{3}-\d{4}\s*$/, '').trim();
-const updatedDate = (shops.find((s) => s.sources && s.sources.maps_scraped_at) || {}).sources?.maps_scraped_at?.slice(0, 10) || '2026-06-03';
+// Two distinct dates, kept honest:
+//  scrapedDate  — when the Google Maps raw data was pulled (used in "scraped" / "Last scraped" labels)
+//  verifiedDate — when we last re-verified + rebuilt (summary.generated_at; used in "updated" labels + sitemap)
+const scrapedDate = (shops.find((s) => s.sources && s.sources.maps_scraped_at) || {}).sources?.maps_scraped_at?.slice(0, 10) || '2026-06-03';
+// Render in America/Toronto (the site's locale) so a late-evening rebuild doesn't
+// roll over to the next UTC day. en-CA formats as YYYY-MM-DD.
+const verifiedDate = summary.generated_at
+  ? new Date(summary.generated_at).toLocaleDateString('en-CA', { timeZone: 'America/Toronto' })
+  : scrapedDate;
 
 function mapsLink(shop) {
   return 'https://www.google.com/maps/search/' + encodeURIComponent(`${shop.name} ${shop.address || ''}`);
@@ -86,7 +94,7 @@ ${body}
     <li><span class="badge live">Live rates</span> — the shop's own website publishes today's rates online; the badge links straight to them.</li>
   </ul>
   <p>Know one of these shops? <a href="/contact/">Help us validate</a> — a one-line email is enough, we correct fast.</p>
-  <p>Data: Google Maps results scraped ${updatedDate} · FINTRAC MSB Registry (<a href="https://open.canada.ca/en/open-government-licence-canada" rel="nofollow">Open Government Licence — Canada</a>).</p>
+  <p>Data: Google Maps results scraped ${scrapedDate}, verified ${verifiedDate} · FINTRAC MSB Registry (<a href="https://open.canada.ca/en/open-government-licence-canada" rel="nofollow">Open Government Licence — Canada</a>).</p>
   <p>Spotted an error? <a href="/contact/">Contact us</a> or <a href="${REPO_URL}/issues" target="_blank" rel="noopener">open an issue</a>. Built from an open pipeline: <a href="${REPO_URL}" target="_blank" rel="noopener">source</a>.</p>
 </footer>
 </body>
@@ -162,7 +170,7 @@ for (const [slug, area] of Object.entries(AREAS)) {
 <p class="intro">${esc(area.blurb)}</p>
 <p class="trap-note">${traps.length ? `<strong>${traps.length} "currency exchange" listing${traps.length > 1 ? 's' : ''} in this search are online-only</strong> — they will not exchange your cash at a counter. <a href="/no-cash-list/">See the no-cash list</a>.` : `No confirmed online-only traps in this area's search results — but always <a href="/how-we-verify/">check the status badge</a>.`}</p>
 <p class="legend"><span class="badge ok">Walk-in confirmed</span> verified, dated <span class="badge warn">Call ahead</span> likely walk-in, unconfirmed <span class="badge bad">Online only</span> flagged, excluded <span class="badge na">Invalid</span> not an exchange <span class="badge live">Live rates</span> rates on shop's site</p>
-<p class="count">${areaShops.length} walk-in candidates · updated ${updatedDate} · <button type="button" class="btn-sort" id="sort-distance-btn">Sort by distance</button></p>
+<p class="count">${areaShops.length} walk-in candidates · updated ${verifiedDate} · <button type="button" class="btn-sort" id="sort-distance-btn">Sort by distance</button></p>
 <div id="shop-list">
 ${areaShops.map(shopCard).join('\n')}
 </div>
@@ -175,7 +183,7 @@ ${areaInvalid.map(shopCard).join('\n')}` : ''}
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, 'index.html'), page({
     title: `Currency Exchange in ${area.title} That Takes Cash (${areaShops.length} Walk-In Shops) | ${SITE_NAME}`,
-    description: `Walk-in currency exchange shops in ${area.title} with addresses, phone numbers and honest verification status. ${traps.length} online-only traps flagged. Updated ${updatedDate}.`,
+    description: `Walk-in currency exchange shops in ${area.title} with addresses, phone numbers and honest verification status. ${traps.length} online-only traps flagged. Updated ${verifiedDate}.`,
     canonicalPath: `/${slug}/`,
     h1: `Currency exchange in ${area.title} — shops that take cash`,
     body, jsonLd,
@@ -207,7 +215,8 @@ ${shop.hours_line ? `<tr><th>Hours (as scraped)</th><td>${esc(cleanHours(shop.ho
 ${shop.rating ? `<tr><th>Google rating</th><td>★ ${shop.rating}${shop.review_count != null ? ` (${shop.review_count} reviews)` : ''}</td></tr>` : ''}
 <tr><th>FINTRAC MSB registry</th><td>${shop.fintrac_registered === true ? 'Registered' : shop.fintrac_registered === false ? 'No match found' : 'Not checked'}</td></tr>
 <tr><th>Areas</th><td>${(shop.areas || []).map((a) => AREAS[a] ? `<a href="/${a}/">${AREAS[a].title}</a>` : a).join(' · ')}</td></tr>
-<tr><th>Last scraped</th><td>${updatedDate}</td></tr>
+<tr><th>Last scraped</th><td>${scrapedDate}</td></tr>
+<tr><th>Last verified</th><td>${verifiedDate}</td></tr>
 </table>
 ${shop.live_rates_url ? '' : `<p class="disclaimer">No rates shown — this shop quotes by phone. Rates change hourly; the phone number above is the freshest source.</p>`}
 `;
@@ -232,7 +241,7 @@ const trapCard = (s, badgeHtml) => `<div class="shop-card trap">
 
 const trapBody = `
 <p class="intro">These businesses appear in Google Maps results for "currency exchange" in the GTA — but our evidence says they <strong>do not exchange cash at a walk-in counter</strong>. Several are well-rated online FX services; nothing wrong with them as businesses, but if you show up with cash, you'll leave with the same cash.</p>
-<p class="count">${trapsConfirmed.length} listings with confirmed evidence · ${trapsUncertain.length} more pending verification · updated ${updatedDate}</p>
+<p class="count">${trapsConfirmed.length} listings with confirmed evidence · ${trapsUncertain.length} more pending verification · updated ${verifiedDate}</p>
 ${trapsConfirmed.map((s) => trapCard(s, '<span class="badge bad">Online only — no walk-in cash</span>')).join('\n')}
 ${trapsUncertain.length ? `
 <h2>Pending verification — likely not walk-in</h2>
@@ -252,7 +261,7 @@ fs.writeFileSync(path.join(DIST, 'no-cash-list', 'index.html'), page({
 // ---------- how we verify ----------
 const counts = summary.overall || {};
 const verifyBody = `
-<p class="intro">This site exists because Google Maps' "currency exchange" category mixes real walk-in shops with online-only offices, banks, Bitcoin ATMs and money-transfer counters. We measured it: in our ${updatedDate} scrape of ${summary.total_unique || shops.length} unique places, ${counts.online_only || 0} were online-only businesses listed as currency exchanges.</p>
+<p class="intro">This site exists because Google Maps' "currency exchange" category mixes real walk-in shops with online-only offices, banks, Bitcoin ATMs and money-transfer counters. We measured it: in our ${scrapedDate} scrape of ${summary.total_unique || shops.length} unique places, ${counts.online_only || 0} were online-only businesses listed as currency exchanges.</p>
 <h2>Our pipeline</h2>
 <ol>
   <li><strong>Scrape:</strong> we collect the actual Google Maps results a user sees for "currency exchange" across 6 GTA searches (headless browser, re-runnable any time).</li>
@@ -405,7 +414,7 @@ const urls = ['/', '/no-cash-list/', '/how-we-verify/', '/contact/',
   ...shops.filter(hasPage).map((s) => `/shop/${s.slug}/`)];
 fs.writeFileSync(path.join(DIST, 'sitemap.xml'),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
-  urls.map((u) => `  <url><loc>${SITE_URL}${u}</loc><lastmod>${updatedDate}</lastmod></url>`).join('\n') +
+  urls.map((u) => `  <url><loc>${SITE_URL}${u}</loc><lastmod>${verifiedDate}</lastmod></url>`).join('\n') +
   `\n</urlset>\n`);
 
 fs.writeFileSync(path.join(DIST, '404.html'), page({
