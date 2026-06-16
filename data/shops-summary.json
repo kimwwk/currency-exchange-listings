@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T20:01:32.603Z",
+  "generated_at": "2026-06-16T01:18:01.911Z",
   "total_unique_places": 274,
   "maps_scraped": {
     "earliest": "2026-06-04T02:31:35.177Z",
@@ -13,19 +13,19 @@
     "match_rate": 0.314
   },
   "by_status": {
-    "walk_in_confirmed": 8,
-    "walk_in_unverified": 100,
-    "remittance_first": 14,
-    "online_only": 31,
-    "invalid": 2,
-    "noise": 112,
-    "unknown": 7
+    "walk_in_confirmed": 39,
+    "walk_in_unverified": 59,
+    "remittance_first": 21,
+    "online_only": 32,
+    "invalid": 5,
+    "noise": 113,
+    "unknown": 5
   },
   "by_area": {
     "toronto": {
       "total": 103,
-      "walk_in_confirmed": 8,
-      "walk_in_unverified": 14,
+      "walk_in_confirmed": 12,
+      "walk_in_unverified": 10,
       "remittance_first": 3,
       "online_only": 17,
       "invalid": 2,
@@ -44,43 +44,43 @@
     },
     "scarborough": {
       "total": 33,
-      "walk_in_confirmed": 2,
-      "walk_in_unverified": 19,
-      "remittance_first": 3,
+      "walk_in_confirmed": 9,
+      "walk_in_unverified": 10,
+      "remittance_first": 4,
       "online_only": 1,
       "invalid": 0,
-      "noise": 8,
+      "noise": 9,
       "unknown": 0
     },
     "north-york": {
       "total": 87,
-      "walk_in_confirmed": 4,
-      "walk_in_unverified": 51,
-      "remittance_first": 1,
+      "walk_in_confirmed": 18,
+      "walk_in_unverified": 31,
+      "remittance_first": 5,
       "online_only": 3,
-      "invalid": 0,
+      "invalid": 2,
       "noise": 27,
       "unknown": 1
     },
     "markham": {
       "total": 28,
-      "walk_in_confirmed": 2,
-      "walk_in_unverified": 12,
-      "remittance_first": 3,
-      "online_only": 6,
+      "walk_in_confirmed": 7,
+      "walk_in_unverified": 7,
+      "remittance_first": 2,
+      "online_only": 7,
       "invalid": 0,
       "noise": 5,
       "unknown": 0
     },
     "mississauga": {
       "total": 74,
-      "walk_in_confirmed": 2,
-      "walk_in_unverified": 30,
-      "remittance_first": 4,
+      "walk_in_confirmed": 17,
+      "walk_in_unverified": 13,
+      "remittance_first": 7,
       "online_only": 4,
-      "invalid": 0,
+      "invalid": 1,
       "noise": 31,
-      "unknown": 3
+      "unknown": 1
     }
   }
 }

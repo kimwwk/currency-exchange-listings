@@ -223,17 +223,17 @@
     "id": "0x882b33a678b8682f:0xf3b99ece2808b501",
     "slug": "batis-currency-exchange",
     "name": "BATIS CURRENCY EXCHANGE",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "evidence": "batisfinancial.com states the physical office at \"2354A Yonge St, Unit 1 (2nd Floor), Toronto, ON M4P 2E6\" near Yonge & Eglinton (NOT Scarborough), says \"Customers from across Toronto visit Batis Financial\" for buying/selling foreign currency, and publishes an \"Our Special Rates\" live buy/sell table; corroborated by the federal registry entry \"Batis Exchange Inc.\" at the same address and a Yelp listing \"Updated May 2026.\" The \"4.8/224 Google reviews\" figure could not be independently confirmed but the first-party website alone meets the walk-in bar. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.8,
     "review_count": 224,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "2354A Yonge St Unit 1 (2nd Floor",
     "phone": "(416) 848-4849",
-    "website": null,
-    "live_rates_url": null,
+    "website": "https://www.batisfinancial.com/",
+    "live_rates_url": "https://www.batisfinancial.com/",
     "hours_line": "Closed · Opens 9 a.m. Thu · (416) 848-4849",
     "lat": 43.7085774,
     "lng": -79.3990767,
@@ -244,7 +244,10 @@
       "mississauga"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:55.790Z"
     },
@@ -662,17 +665,17 @@
     "id": "0x882b3236e816db3b:0x6a3939c265722d2d",
     "slug": "continental-currency-exchange",
     "name": "Continental Currency Exchange",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "evidence": "Official continentalcurrency.ca/branches/toronto-branch (own site) matches scraped address '3401 Dufferin St., Unit 32C, Toronto, ON M6A 2T9' and phone (416) 787-1444; states 'Buy or sell foreign cash' over-the-counter at a walk-in Yorkdale Shopping Centre location ('North East entrance, under the escalators, across from Indigo'); retail hours Mon-Fri 9:30am-8:00pm, Sat 10am-6pm, Sun 11am-5pm; currency-converter shows cash rates as of June 15th 2026 applying to over-the-counter cash exchanges. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.2,
     "review_count": 265,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "3401 Dufferin St Unit 32C",
     "phone": "(416) 787-1444",
-    "website": null,
-    "live_rates_url": null,
+    "website": "https://www.continentalcurrency.ca/branches/toronto-branch",
+    "live_rates_url": "https://www.continentalcurrency.ca/currency-converter",
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (416) 787-1444",
     "lat": 43.7268737,
     "lng": -79.4513888,
@@ -681,7 +684,10 @@
       "north-york"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:55.790Z"
     },
@@ -795,17 +801,17 @@
     "id": "0x882b2d32fe1043d9:0x74c76180d2004c16",
     "slug": "currency-exchange-toronto-north-york-currency-mart",
     "name": "Currency Exchange Toronto North York Currency Mart",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "evidence": "currencymart.net North York page (4841 Yonge St Unit 237D, M2N 5X2; phone (647) 812-2876) directly confirmed: \"No appointment — just walk in\", \"we welcome walk-ins and offer instant exchange for over 50 currencies\", \"Bring a government-issued ID\"; storefront hours Mon-Sat listed, near North York Centre subway. Note: address is North York/Toronto, not Scarborough as listed. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.3,
     "review_count": 81,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "4841 Yonge St Unit 237D",
     "phone": "(647) 812-2876",
-    "website": null,
-    "live_rates_url": null,
+    "website": "https://currencymart.net/currency-exchange/toronto/north-york/index.html",
+    "live_rates_url": "https://currencymart.net/exchange-rate/index.html",
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (647) 812-2876",
     "lat": 43.7625088,
     "lng": -79.4105316,
@@ -816,7 +822,10 @@
       "mississauga"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:55.790Z"
     },
@@ -1806,17 +1815,17 @@
     "id": "0x882b372b04277edf:0xb1591feedc90147f",
     "slug": "kantor-currency-exchange",
     "name": "Kantor Currency Exchange",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "evidence": "kantor.ca North York Branch page lists the physical storefront ('4400 Dufferin St., Unit B1, North York, ON M3H 6A8', phone 416-855-5770) as a retail currency-exchange location with walk-in hours 'Mon-Fri 10:00 am - 7:00 pm; Sat 10:00 am - 5:00 pm; Sun Closed'; independent review aggregators corroborate in-person cash exchanges with quick counter service. (Note: the proposed /rates timestamp could not be confirmed — that page 404'd — but walk-in status does not depend on it.) (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.7,
     "review_count": 458,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "2310 Bloor St W",
     "phone": "(416) 767-7782",
-    "website": null,
-    "live_rates_url": null,
+    "website": "https://www.kantor.ca/branches/North_York_Branch",
+    "live_rates_url": "https://www.kantor.ca/exchange_rates",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 767-7782",
     "lat": 43.6505219,
     "lng": -79.4796968,
@@ -1824,7 +1833,10 @@
       "toronto"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:55.790Z"
     },
@@ -2534,15 +2546,16 @@
     "slug": "orbit-money-currency-exchange-money-transfer",
     "name": "Orbit Money-Currency Exchange & Money Transfer",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "sub_type": "money_transfer",
+    "evidence": "Could not corroborate first-party walk-in/cash/counter language (site is JS-only shell) nor 10+ recent (last 1-2 months) dated in-person cash reviews; walk-in/no-appointment/street-parking claims trace only to undated third-party aggregator summaries.",
+    "confidence": "override",
     "rating": 4.9,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "1973 Yonge St",
     "phone": "(647) 948-7416",
-    "website": null,
+    "website": "https://orbitmoney.com/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 11 a.m. Thu · (647) 948-7416",
     "lat": 43.6999531,
@@ -2552,7 +2565,10 @@
       "north-york"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:55.790Z"
     },
@@ -3687,15 +3703,15 @@
     "slug": "1941018-ontario-inc-currency-exchange",
     "name": "1941018 ONTARIO INC - Currency Exchange",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "evidence": "Birdeye review page for \"1941018 Ontario Inc, Currency Exchange\" lists official site canadiancashpro.com and 43 reviews with recent activity (most recent ~4 weeks ago); a reviewer states \"We visited many shops and received the best rate in the Currency Exchange at Don Mills\" (~4 weeks ago) and others reference counter staff, consistent with a staffed walk-in FX counter. However, only ~1-2 reviews explicitly describe in-person cash exchange (below the 10+ bar) and the official site (canadiancashpro.com) would not load to confirm cash/walk-in wording. (review signal, verified 2026-06-15)",
+    "confidence": "override",
     "rating": 3.7,
     "review_count": 39,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "3030 Don Mills Rd E #1a",
     "phone": "(647) 348-5488",
-    "website": null,
+    "website": "https://canadiancashpro.com/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (647) 348-5488",
     "lat": 43.785944,
@@ -3705,7 +3721,10 @@
       "north-york"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -3717,16 +3736,16 @@
     "slug": "altaif-currency-exchange",
     "name": "Altaif Currency Exchange",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "evidence": "taifco.com is remittance/app-first (ALTAIF GO money transfer) and never says counter/walk-in/cash; the quoted \"same-day service / 50+ currencies\" line is generic marketing, not datable proof of in-person cash exchange. Yelp shows only ~3 undated reviews; the Google 4.8/165 count was not corroborated as recent in-person cash-exchange activity. (not verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.8,
     "review_count": 165,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "1967 Lawrence Ave E #5",
     "phone": "(416) 285-9669",
-    "website": null,
-    "live_rates_url": null,
+    "website": "https://taifco.com/",
+    "live_rates_url": "https://taifco.com/exchange-rate-table",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 285-9669",
     "lat": 43.7446715,
     "lng": -79.2971556,
@@ -3735,7 +3754,10 @@
       "north-york"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -3776,16 +3798,16 @@
     "slug": "azizi-exchange",
     "name": "AZIZI EXCHANGE",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "evidence": "Brand site aziziexchange.ca confirms walk-in cash FX ('Visit our strategically located branches for in-person exchanges'; live rates 'Rate Last Updated: May 21, 2026'), but it lists ONLY a North York branch (6126 Yonge St, phones 416-474-6133/647-827-2222), NOT the scraped 3143 Eglinton Ave E / (647) 460-9202. The Eglinton address is FINTRAC-registered as 'Azizi Ltd. / Azizi Exchange' (M20626440, opengovca) and appears in directories, but Yelp shows only 1 review and Google n/a reviews — no recent storefront review signal. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 3.8,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "3143 Eglinton Ave E",
     "phone": "(647) 460-9202",
-    "website": null,
-    "live_rates_url": null,
+    "website": "https://aziziexchange.ca/",
+    "live_rates_url": "https://aziziexchange.ca/",
     "hours_line": "Closed · Opens 10 a.m. Thu · (647) 460-9202",
     "lat": 43.7420415,
     "lng": -79.2224254,
@@ -3793,7 +3815,10 @@
       "scarborough"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:31:35.177Z"
     },
@@ -3804,16 +3829,17 @@
     "id": "0x89d4cdf410c7afb1:0xb749f59330c13516",
     "slug": "babylon-monetary-services-currency-exchange-money-transfer-2",
     "name": "Babylon Monetary Services - Currency Exchange & Money Transfer (صرافی)",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "sub_type": "money_transfer",
+    "evidence": "babylonfx.com contact page (\"Get In Touch With Us! | Babylon - Call or Stop By Today!\") lists 1975 Lawrence Ave E, Scarborough ON M1R 2Z2 with walk-in hours Mon-Sat 10:00 AM - 6:00 PM (Sun closed); home page states \"Babylon Monetary Services buys and sells all major and exotic currencies\"; recent Yelp reviews (updated April 2026) describe in-person currency exchange at this location. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.4,
     "review_count": 210,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "1975 Lawrence Ave E",
     "phone": "(416) 840-0086",
-    "website": null,
+    "website": "https://babylonfx.com/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 840-0086",
     "lat": 43.7446458,
@@ -3823,7 +3849,10 @@
       "north-york"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -3834,9 +3863,10 @@
     "id": "0x89d4cc208ed2b381:0x69adece3a7e88bdd",
     "slug": "bangladeshi-money-exchange-ltd",
     "name": "Bangladeshi Money Exchange Ltd",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "remittance_first",
+    "sub_type": "money_transfer",
+    "evidence": "FINTRAC MSB registry via opengovca.com (M09909843): registered only for \"Money transferring / Transfert de fonds\" (not foreign exchange dealing), at \"3000 Danforth Ave. Suite 116\", reg. expired 2024-02-16; directory listings describe it as Bangladesh remittance (\"Send money to any bank in BD... money reaches the beneficiary's bank account within 5 business days\"). No reviews found on Google, Yellow Pages, or Bangla Toronto. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 3.7,
     "review_count": null,
     "ratings_source": "google_maps",
@@ -3852,7 +3882,10 @@
       "scarborough"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:31:35.177Z"
     },
@@ -3893,16 +3926,16 @@
     "id": "0x89d4d1a63e495405:0x4a2fe314142bd7bd",
     "slug": "continental-currency-exchange-4",
     "name": "Continental Currency Exchange",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "evidence": "continentalcurrency.ca Scarborough branch page confirms a physical storefront at 300 Borough Dr, Unit #775, \"in Scarborough Town Centre right inside entrance number 4, the TTC entrance, directly across from the Gap,\" where customers can \"Buy or sell foreign cash,\" with posted walk-in hours (Mon-Fri 9:30am-8:00pm, Sat 10:00am-6:00pm, Sun 11:00am-5:00pm); address/unit match the listing exactly. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.5,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "300 Borough Dr #775",
     "phone": "(416) 290-1010",
-    "website": null,
+    "website": "https://www.continentalcurrency.ca/branches/scarborough-branch",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (416) 290-1010",
     "lat": 43.774905,
@@ -3911,7 +3944,10 @@
       "scarborough"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:31:35.177Z"
     },
@@ -4047,15 +4083,16 @@
     "slug": "jack-filled-foreign-exchange-inc",
     "name": "Jack Filled Foreign Exchange Inc.",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "sub_type": "money_transfer",
+    "evidence": "Official site jackfilledforex.com references a physical branch with a \"Bureau de change led board showing currencies and rates\" and posted in-person office hours, but lists payment as \"Cheques, Bank Drafts, Debit, and e-transfers\" (cash not explicitly stated) and says services are \"easy to comprehend remotely without visiting the branch.\" Directory listings (canpages/yellowpages) describe a FINTRAC MSB (#M09909843) carrying USD/GBP/EUR/40+ currencies plus money transfer to India/Pakistan/UAE; review aggregators cite 200+ Google reviews praising rates, but Google/Yelp/Yably review pages returned HTTP 403 so in-person cash exchange could not be directly confirmed with a datable quote. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.3,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "305 Milner Ave #102",
     "phone": "(416) 901-9995",
-    "website": null,
+    "website": "https://jackfilledforex.com/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 8 a.m. Thu · (416) 901-9995",
     "lat": 43.7894162,
@@ -4065,7 +4102,10 @@
       "markham"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:56.311Z"
     },
@@ -4109,16 +4149,16 @@
     "id": "0x882b337cffc09a47:0xa08ced3126e17c19",
     "slug": "kings-trust-exchange",
     "name": "Kings Trust Exchange",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "evidence": "kingstrust.exchange (contact-us/about-us) confirms a retail currency-exchange storefront at 2479 Yonge St, Toronto, ON M4P 2H6 (Yonge & Eglinton, Midtown — NOT Scarborough as the listing's city field states) with posted in-person counter hours (Mon-Fri 9:30AM-5:30PM, Sat 10:00AM-4:30PM, Sun closed), in-person cash currency exchange, and on-site testimonials describing walking in ('This was my third visit to the store... from the moment you walk in', 'Friendly service at the front desk'), consistent with 312 5-star Google reviews; phone (416) 316-2222. City field correction recommended: Toronto, not Scarborough. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 5,
     "review_count": 312,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "2479 Yonge St",
     "phone": "(416) 316-2222",
-    "website": null,
+    "website": "https://kingstrust.exchange/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (416) 316-2222",
     "lat": 43.7116627,
@@ -4128,7 +4168,10 @@
       "north-york"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -4139,17 +4182,18 @@
     "id": "0x882b2d09ace1ca3d:0x836dc85e12aa128b",
     "slug": "money-express",
     "name": "Money Express ( ОБМЕН ВАЛЮТЫ)",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "sub_type": "money_transfer",
+    "evidence": "money-express.ca/currency-exchange.php: \"buy and sell American Dollars (USD), Euro (EUR) and other foreign currency at our location... better yet visit us in person\", a 3-step \"Currency Exchange Process\" (\"Visit Our Location\"), and a published BUY/SELL rate table (USD/CAD 1.385272/1.411858, EUR 1.618774/1.657702, GBP 1.832775/1.924001, CHF 1.718271/1.80651); address 1057 Steeles Ave W is North York not Scarborough, and body copy inconsistently references Markham/Shops on Yonge. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 5,
     "review_count": 125,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "1057 Steeles Ave W",
     "phone": "(437) 690-1707",
-    "website": null,
-    "live_rates_url": null,
+    "website": "http://money-express.ca/",
+    "live_rates_url": "http://money-express.ca/currency-exchange.php",
     "hours_line": "Closed · Opens 10 a.m. Thu · (437) 690-1707",
     "lat": 43.7912889,
     "lng": -79.4482925,
@@ -4158,7 +4202,10 @@
       "north-york"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -4200,16 +4247,16 @@
     "slug": "omid-exchange-money-transfer",
     "name": "Omid Exchange money Transfer",
     "status": "remittance_first",
-    "sub_type": "money_transfer_fx",
-    "evidence": "Rule: category \"Money transfer service\" (money transfer/order) without strong exchange signal — unverified walk-in candidate, FLAGGED.",
-    "confidence": "rule",
+    "sub_type": "money_transfer",
+    "evidence": "omidexchange.ca: 'We help you send money to family back home, receive money for study... For ideal exchange rates, feel free to ask one of our Team Associates'; jabeh.ca listing: 'foreign exchange services... at the lowest remittance rates, and buying and selling digital currencies without fees.' Google Maps category 'Money transfer service'; ~39 reviews but most recent visible are Nov 2023-Jan 2024 describing 'transaction... official receipt', no walk-in cash-FX or recent activity signal. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 3.3,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Money transfer service",
     "address": "1879 Lawrence Ave E",
     "phone": "(647) 847-5329",
-    "website": null,
+    "website": "https://omidexchange.ca/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 10 a.m. Thu · (647) 847-5329",
     "lat": 43.7434753,
@@ -4218,7 +4265,10 @@
       "scarborough"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:31:35.177Z"
     },
@@ -4230,15 +4280,16 @@
     "slug": "orbit-money-2",
     "name": "Orbit Money",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "sub_type": "money_transfer",
+    "evidence": "orbitmoney.com is a Canadian money-transfer + currency-exchange brand with a multi-branch retail network; the 2300 Lawrence Ave E #9 Scarborough address is listed as one of its stores with phone (416) 414-4344, and it is FINTRAC MSB-registered for foreign exchange. Search snippets cite reviews praising rates and \"service during their visits,\" but I could not load the company's own locations/about pages (JS-rendered, returned only the title) nor the Wheree review page (HTTP 403), so no datable own-site walk-in/cash statement or recent (last 1-2 month) in-person cash-exchange review signal was confirmed. (no confirmation found, verified 2026-06-15)",
+    "confidence": "override",
     "rating": 5,
     "review_count": 45,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "2300 Lawrence Ave E #9",
     "phone": "(416) 414-4344",
-    "website": null,
+    "website": "https://orbitmoney.com/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 414-4344",
     "lat": 43.7507466,
@@ -4248,7 +4299,10 @@
       "north-york"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -4291,15 +4345,15 @@
     "name": "PNB Remittance Co",
     "status": "remittance_first",
     "sub_type": "money_transfer",
-    "evidence": "Rule: category \"Money transfer service\" (money transfer/order) without strong exchange signal — unverified walk-in candidate, FLAGGED.",
-    "confidence": "rule",
+    "evidence": "PNB Remittance Co is the Canadian arm of Philippine National Bank: kabayanbusiness.com listing describes it as \"a non-bank subsidiary of the Philippine National Bank, offering various services to the Filipino-Canadian community,\" located inside Seafood City Scarborough; Google Maps category is \"Money transfer service\" and it is not FINTRAC-registered for foreign exchange. PNB RCI/Seafood City partnership materials describe sending remittances and \"cash pickup... at any PNB Domestic Branch or authorized payout partners\" — i.e. a money-transfer/remittance counter, not a walk-in cash FX shop. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 3.3,
     "review_count": 64,
     "ratings_source": "google_maps",
     "category": "Money transfer service",
     "address": "Inside SEAFOOD CITY SCARBOROUGH, 20 Lebovic Ave Suite 500",
     "phone": "(416) 293-8758",
-    "website": null,
+    "website": "https://www.pnb.com.ph/rcc/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (416) 293-8758",
     "lat": 43.7225522,
@@ -4308,7 +4362,10 @@
       "scarborough"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:31:35.177Z"
     },
@@ -4320,16 +4377,16 @@
     "slug": "prasanna-money-exchange",
     "name": "Prasanna Money Exchange",
     "status": "remittance_first",
-    "sub_type": "money_transfer_fx",
-    "evidence": "Rule: category \"Money transfer service\" (money transfer/order) without strong exchange signal — unverified walk-in candidate, FLAGGED.",
-    "confidence": "rule",
+    "sub_type": "money_transfer",
+    "evidence": "Official site prasannaexchange.com (per search snippets of home + /services pages) describes itself as 'a reliable and customer-focused money exchange and international transfer service provider based in Toronto... send money to Sri Lanka quickly and safely with reliable networks'; Google Maps categorizes it as 'Money transfer service' and it is NOT FINTRAC-registered for foreign exchange. Directory/review snippets describe deposits and transfers ('fast deposit times', 'redeposited the amount'), not in-person cash FX. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.2,
     "review_count": 11,
     "ratings_source": "google_maps",
     "category": "Money transfer service",
     "address": "3341 Markham Rd unit no-106",
     "phone": "(416) 293-1700",
-    "website": null,
+    "website": "https://prasannaexchange.com/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 10:30 a.m. Thu · (416) 293-1700",
     "lat": 43.8356047,
@@ -4339,7 +4396,10 @@
       "markham"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:56.311Z"
     },
@@ -4350,9 +4410,10 @@
     "id": "0x89d4cfcff8890d7f:0x95c40688000a6814",
     "slug": "simply-transact-ltd",
     "name": "Simply Transact Ltd.",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "noise",
+    "sub_type": "money_transfer",
+    "evidence": "opengovca.com FINTRAC MSB listing (M08938050): registered service is \"Money transferring / Transfert de fonds\" and the entity operates \"as an agent for Western Union Financial Services (Canada), Inc.\" (www.westernunion.com); no own website and no findable Google/Yelp reviews. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.6,
     "review_count": null,
     "ratings_source": "google_maps",
@@ -4368,7 +4429,10 @@
       "scarborough"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:31:35.177Z"
     },
@@ -4380,15 +4444,15 @@
     "slug": "starlette-foreign-exchange",
     "name": "Starlette Foreign Exchange",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "evidence": "Official site starletteforeignexchange.com is a near-empty landing page (tagline \"Unlocking Potential, Together\", a Contact Us section) with no addresses, locations, rates, or walk-in/cash vs online-only language; about/contact pages 404/empty. Bizapedia lists the corporate address as \"2ND FLOOR 2567 HURONTARIO STREET\" (Mississauga office); Yelp/Google reviews were blocked (HTTP 403) so no datable quote of in-person cash exchange could be confirmed. Business is FINTRAC MSB FX-registered and Google-categorized \"Currency exchange service\" (4.8, 95 reviews), so plausible but unconfirmed. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.8,
     "review_count": 95,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "3463 Sheppard Ave E Unit 3",
     "phone": "(437) 419-0200",
-    "website": null,
+    "website": "https://starletteforeignexchange.com/",
     "live_rates_url": null,
     "hours_line": null,
     "lat": 43.7789831,
@@ -4398,7 +4462,10 @@
       "north-york"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -4409,16 +4476,16 @@
     "id": "0x882b2d0fbb37422d:0x617e6fab7e73f66d",
     "slug": "taheri-exchange",
     "name": "Taheri Exchange",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "evidence": "Own site taheriexchange.com states \"in-store pickup at our Toronto location\" and buying currency \"in person\"; established walk-in counter at 5775 Yonge St (North York/Toronto, M2M 4J1 — NOT Scarborough as listed), Mon-Fri 10-5, glass-window lobby with electronic-door/buzzer security; reviews describe in-person counter cash exchange. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 3.9,
     "review_count": 216,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "5775 Yonge St",
     "phone": "(416) 488-8822",
-    "website": null,
+    "website": "https://taheriexchange.com/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 488-8822",
     "lat": 43.7833294,
@@ -4430,7 +4497,10 @@
       "mississauga"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:24.418Z"
     },
@@ -4472,15 +4542,15 @@
     "slug": "100-currency-exchange",
     "name": "100 Currency Exchange",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "evidence": "Official site 100exchange.ca confirms the same address/phone (6125 Yonge St Unit 4, North York; +1 289-710-0100) and lists three services — \"Money Exchange\" (\"competitive rates...for all your travel money needs\"), \"International Transfer,\" and \"Crypto Currency\" — with buy/sell rates shown only as \"Call.\" No page (home/contact/services) states walk-in, in-person, visit-us, counter, or cash; the about page returns 404. No Google/Yelp reviews were found (Google shows 5 stars, n/a reviews), so no in-person cash-exchange signal could be confirmed. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 5,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "6125 Yonge St Unit 4",
     "phone": "(289) 710-0100",
-    "website": null,
+    "website": "https://www.100exchange.ca",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 10 a.m. Thu · (289) 710-0100",
     "lat": 43.7922402,
@@ -4489,7 +4559,10 @@
       "north-york"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -4501,15 +4574,16 @@
     "slug": "6030-currency-exchange-toronto",
     "name": "6030 Currency Exchange Toronto | صرافی ۶۰۳۰ تورنتو",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "sub_type": "money_transfer",
+    "evidence": "Official site 6030exchange.ca lists a physical Toronto office at '6030 Yonge St, North York, ON M2M 3W5' (plus a Vancouver office), tells customers to 'مراجعه کنید' (visit), and offers in-person buy/sell of CAD/USD/EUR/GBP; 4.9 rating, 131+ reviews, M-F 9-5 / Sat 9-4. But it heavily promotes Iran-Canada remittance, SWIFT/Hawala, currency delivery, and WhatsApp/Telegram/app transactions, and I found no datable recent (last 1-2 months) review text describing in-person CASH exchange — one cited reviewer said they had 'never visited the exchange in person.' (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.9,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "6032 Yonge St",
     "phone": "(647) 360-6030",
-    "website": null,
+    "website": "https://6030exchange.ca/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 9 a.m. Thu · (647) 360-6030",
     "lat": 43.7896138,
@@ -4518,7 +4592,10 @@
       "north-york"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -4530,15 +4607,15 @@
     "slug": "apex-currency",
     "name": "Apex Currency",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "evidence": "Official site apex-ccc.com (Apex CCC) matches the listing — 4664 Yonge St unit 20, North York, (416) 792-7355, info@apex-ccc.com — and is a genuine foreign currency exchange offering wire/money transfer and a 'Buy Back service' to return unused currency at the same rate; search snippets call it a 'newly opened North York branch' (explaining 0 reviews). However apex-ccc.com repeatedly refused connection (ECONNREFUSED), so I could not read explicit walk-in/in-person/cash/counter language, no live-rates page found, and there are no Google/Yelp reviews to confirm in-person cash exchange. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": null,
     "review_count": 0,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "4664 Yonge St",
     "phone": "(416) 792-7355",
-    "website": null,
+    "website": "https://apex-ccc.com/",
     "live_rates_url": null,
     "hours_line": null,
     "lat": 43.7579081,
@@ -4547,7 +4624,10 @@
       "north-york"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -4587,17 +4667,17 @@
     "id": "0x882b2d3bc248c517:0xd5ab11b728390542",
     "slug": "azizi-currency-exchange-toronto",
     "name": "Azizi Currency Exchange - Toronto",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "evidence": "aziziexchange.ca states \"Visit our strategically located branches for in-person exchanges\"; storefront at 6126 Yonge St, North York with retail hours (Mon-Fri 9:30-6, Sat 10-5), phone +1 647 827 2222, and an on-site buy/sell rates table last updated May 21, 2026. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 5,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "6126 Yonge St",
     "phone": "(647) 827-2222",
-    "website": null,
-    "live_rates_url": null,
+    "website": "https://aziziexchange.ca/",
+    "live_rates_url": "https://aziziexchange.ca/",
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (647) 827-2222",
     "lat": 43.7918242,
     "lng": -79.4188457,
@@ -4605,7 +4685,10 @@
       "north-york"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -4616,16 +4699,17 @@
     "id": "0x882b2d03c4f39f25:0x8e98fb0a5b142497",
     "slug": "bahmani-exchange",
     "name": "Bahmani Exchange | صرافی بهمنی",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "remittance_first",
+    "sub_type": "money_transfer",
+    "evidence": "Brand service list (via adrise.net/sarafibahmani and SarafiBahmani.com, search-snippet) lists 'send money to Canada from anywhere in the world... Deposits to all valid bank accounts in Canada... Payment via EFT... Payment of tuition fees for students... Providing remittance services to Canada for the Iranian community,' alongside 'Cash payment in Canadian dollars in Toronto in person' and 'Exchange of various major world currencies in cash'; address is '6120A Yonge St, #209' (suite/upper floor), FINTRAC FX-registered: no. Primarily a money-transfer/remittance operation. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 5,
     "review_count": 3179,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "6120B Yonge St",
     "phone": "(416) 319-0000",
-    "website": null,
+    "website": "https://www.sarafibahmani.com/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 9 a.m. Thu · (416) 319-0000",
     "lat": 43.7917325,
@@ -4634,7 +4718,10 @@
       "north-york"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -4674,17 +4761,17 @@
     "id": "0x882b3338b3252b1b:0x7f400d05953e1300",
     "slug": "currency-exchange",
     "name": "Currency Exchange",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "evidence": "tcurrencyexchange.com (TCE/T Currency Exchange, 5775 Yonge St, ph 416-488-9841): homepage states \"Walk-ins Welcome\" and \"Call or visit our location today to get a quote and exchange foreign currencies\"; rates page lists distinct cash-counter rates (\"US Dollar - paying with Canadian Cash: We Buy 1.37130 / We Sell 1.40279\", separate from debit/e-transfer rate 1.43427); Yelp reviews describe the physical glass-window counter (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 2.7,
     "review_count": 11,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "5775 Yonge St",
     "phone": "(416) 488-9841",
-    "website": null,
-    "live_rates_url": null,
+    "website": "https://tcurrencyexchange.com/",
+    "live_rates_url": "https://tcurrencyexchange.com/exchange-rates",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 488-9841",
     "lat": 43.783429,
     "lng": -79.416182,
@@ -4693,7 +4780,10 @@
       "markham"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:56.311Z"
     },
@@ -4763,15 +4853,15 @@
     "slug": "delta-exchange",
     "name": "Delta Exchange",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "evidence": "delta-exchange.ca describes a physical North York store (6083 Yonge St, \"Mon – Sat: 10am – 6pm\", \"Sunday: 10am – 4pm\") offering \"currency exchange... buy and sell transactions\" plus crypto and gold/jewelry, and says \"you can check out our products at location\"; FINTRAC MSB registered for FX. But the site never explicitly states cash/counter currency exchange, no live rates page, and I could not access the Google/Yelp review text (Zaubee returned HTTP 403; other \"Delta Exchange\" review hits were the unrelated delta.exchange crypto platform), so in-person cash exchange and recent review activity are unverified. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.8,
     "review_count": 31,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "6083 Yonge St",
     "phone": "(647) 450-6030",
-    "website": null,
+    "website": "https://delta-exchange.ca/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 9 a.m. Thu · (647) 450-6030",
     "lat": 43.7908224,
@@ -4780,7 +4870,10 @@
       "north-york"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -5003,16 +5096,17 @@
     "id": "0x89d4cd6bcd4d1ebb:0x17d30c5adbd3591",
     "slug": "herat-exchange",
     "name": "Herat Exchange",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "remittance_first",
+    "sub_type": "money_transfer",
+    "evidence": "Web search result summarizing heratexchange.com: \"Herat Exchange allows you to send money to Afghanistan and visit their office in person... a legitimate money transfer service that operates in Canada and provides services for sending money to Afghanistan\" (FINTRAC MSB M09963841); company is headquartered in Kabul, est. 2007, regulated by the Central Bank of Afghanistan — i.e. a send-money-to-Afghanistan remittance operator, not a walk-in cash FX counter. Phone (416) 424-1700 matches the listing. Official site heratexchange.com timed out on every fetch, so no own-site walk-in cash language and no datable Google-review signal could be verified. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 3.9,
     "review_count": 30,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "45 Overlea Blvd Unit 139",
     "phone": "(416) 424-1700",
-    "website": null,
+    "website": "http://heratexchange.com/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 11 a.m. Thu · (416) 424-1700",
     "lat": 43.7059396,
@@ -5021,7 +5115,10 @@
       "north-york"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -5033,15 +5130,15 @@
     "slug": "izadi-exchange",
     "name": "Izadi Exchange صرافی ایزدی تورنتو",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "evidence": "Ganjineh directory (directory.ganjineh.ca) lists Izadi Exchange (صرافی ایزدی) as a North York money exchange offering 'In-person cash currency exchange' alongside Iran-Canada wire transfers and cash delivery, phone (647) 482-8000; but the shop's own site izadiexchange.ca now serves only a parked Turkish stub ('Hoş Geldin / Sistem Aktif') and Yelp/Google reviews were inaccessible (Yelp 403, nicelocal redirect dead 404), so no first-party or datable recent-review confirmation of walk-in cash was found. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.6,
     "review_count": 107,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "7368 Yonge St #306",
     "phone": "(647) 482-8000",
-    "website": null,
+    "website": "https://izadiexchange.ca/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 10 a.m. Thu · (647) 482-8000",
     "lat": 43.807398,
@@ -5050,7 +5147,10 @@
       "north-york"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -5061,17 +5161,17 @@
     "id": "0x882b2dfe599eebf1:0x50904c5080cc8f25",
     "slug": "kantor-currency-exchange-3",
     "name": "Kantor Currency Exchange",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "evidence": "kantor.ca North York Branch page lists the physical storefront ('4400 Dufferin St., Unit B1, North York, ON M3H 6A8', phone 416-855-5770) as a retail currency-exchange location with walk-in hours 'Mon-Fri 10:00 am - 7:00 pm; Sat 10:00 am - 5:00 pm; Sun Closed'; independent review aggregators corroborate in-person cash exchanges with quick counter service. (Note: the proposed /rates timestamp could not be confirmed — that page 404'd — but walk-in status does not depend on it.) (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.6,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "4400 Dufferin St Unit B1",
     "phone": "(416) 855-5770",
-    "website": null,
-    "live_rates_url": null,
+    "website": "https://www.kantor.ca/branches/North_York_Branch",
+    "live_rates_url": "https://www.kantor.ca/exchange_rates",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 855-5770",
     "lat": 43.7650191,
     "lng": -79.4680143,
@@ -5079,7 +5179,10 @@
       "north-york"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -5090,16 +5193,16 @@
     "id": "0x882b2d9dcedbfc67:0x1ed619ec2267d1d2",
     "slug": "kiyan-exchange-toronto-canada",
     "name": "Kiyan Exchange Toronto Canada صرافی کیان تورنتو کانادا",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "remittance_first",
+    "evidence": "kiyanexchange.com lists 6087 Yonge St (Iranian Plaza) and advertises cash buy/sell (خرید و فروش نقدی ارز) plus in-person visit (مراجعه حضوری), but the site is remittance-first (its top services are SWIFT/حواله wire transfers, student/property payments) and the \"in-person visit\" is framed as a way to request a transfer; no independent listings or recent (last 1-2 months) reviews confirm a standalone walk-in cash counter, so walk-in cash exchange is unverified.",
+    "confidence": "override",
     "rating": 4.2,
     "review_count": 33,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "Iranian Plaza, 6087 Yonge St",
     "phone": "(647) 554-7000",
-    "website": null,
+    "website": "https://kiyanexchange.com",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 9 a.m. Thu · (647) 554-7000",
     "lat": 43.790941,
@@ -5108,7 +5211,10 @@
       "north-york"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -5180,15 +5286,15 @@
     "slug": "mesghal-exchange",
     "name": "Mesghal Exchange | ارز مثقال",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "evidence": "Storefront with fixed hours and 800+ reviews exists, but corroborated March 2026 reviews are generic and do not specify in-person cash exchange; needs 10+ recent (within ~1-2 months) reviews explicitly describing counter cash exchange, or own-website confirmation of walk-in/cash service (site currently 403).",
+    "confidence": "override",
     "rating": 4.8,
     "review_count": 826,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "6121 Yonge St",
     "phone": "(416) 844-5555",
-    "website": null,
+    "website": "https://www.mesghalexchange.com/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 9 a.m. Thu · (416) 844-5555",
     "lat": 43.7916221,
@@ -5197,7 +5303,10 @@
       "north-york"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -5239,15 +5348,15 @@
     "name": "Money Corner",
     "status": "remittance_first",
     "sub_type": "money_transfer",
-    "evidence": "Rule: category \"Money transfer service\" (money transfer/order) without strong exchange signal — unverified walk-in candidate, FLAGGED.",
-    "confidence": "rule",
+    "evidence": "Own site (benjamenpinsky.wixsite.com/mysite-3) lists core services as \"Money Transfer,\" \"Currency Exchange,\" and \"Cashing of Cheques,\" with \"over 4 different money transferring companies... send money anywhere in the world within minutes\" as the lead pitch; address 6227 Bathurst St, open 7 days 10am-9pm, contact email \"Videocorner@ymail.com\" — a walk-in convenience/video-store counter where remittance is primary and FX is secondary; Google category is \"Money transfer service\" and FINTRAC FX registration is absent. No dated 2026 review evidence of in-person cash FX could be retrieved (Zaubee review page returned HTTP 403). (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.5,
     "review_count": 22,
     "ratings_source": "google_maps",
     "category": "Money transfer service",
     "address": "6227 Bathurst St",
     "phone": "(647) 350-6750",
-    "website": null,
+    "website": "https://benjamenpinsky.wixsite.com/mysite-3",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 10 a.m. Thu · (647) 350-6750",
     "lat": 43.7918659,
@@ -5256,7 +5365,10 @@
       "north-york"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -5267,16 +5379,17 @@
     "id": "0x882b3a5f3344c417:0x8e468e94443dabc1",
     "slug": "money-exchange-world-2",
     "name": "Money Exchange World",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "sub_type": "money_transfer",
+    "evidence": "moneyexchangeworld.com/contact-us/ states \"Walk-ins are always welcome\" and lists Unit 12 - 1701 Martin Grove Road, Etobicoke M9V 4N4, phone (416) 746-4900, with weekday counter hours 10 AM-7 PM (closed weekends); third-party directories (Yelp/Yellowpages/Wheree) corroborate in-person USD/EUR cash exchange, updated May/June 2026. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.9,
     "review_count": 253,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "1701 Martin Grove Rd #12",
     "phone": "(416) 746-4900",
-    "website": null,
+    "website": "https://moneyexchangeworld.com",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 746-4900",
     "lat": 43.7331528,
@@ -5285,7 +5398,10 @@
       "north-york"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -5326,16 +5442,17 @@
     "id": "0x882b2d0e9d1e9075:0xa46b01247f9f945d",
     "slug": "money-trust",
     "name": "Money Trust",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "sub_type": "money_transfer",
+    "evidence": "moneytrust.ca home page states \"Call our office or simply walk-in to know the latest exchange rate\" and references paying \"our office cashier\"; contact page lists ground-floor storefront at Dynasty Court, 5460 Yonge St Shop 105, North York, ON M2N 6K7 with hours Mon-Fri 8am-5pm; corroborated by third-party MoneyGram location listing for the same address. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.9,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "Dynasty Court, 5460 Yonge St Shop 105",
     "phone": "(416) 567-2222",
-    "website": null,
+    "website": "https://www.moneytrust.ca/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 567-2222",
     "lat": 43.7776989,
@@ -5344,7 +5461,10 @@
       "north-york"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -5356,15 +5476,16 @@
     "slug": "moneyex",
     "name": "MoneyEX",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "sub_type": "office_floor",
+    "evidence": "moneyex.ca official site blocked direct fetch (HTTP 403); searches show transfer-first branding ('$0 fees... support for over 150 currencies,' 'international transfers,' 'rate alerts,' 'offices across 5 continents,' '$20 million exchanged annually'); FINTRAC #M20123625 lists 'Foreign exchange dealing' + 'Money transferring.' A Google review says 'I had a great experience at MoneyEx... Just head to the Concord floor for the best exchange rates – it only took a few minutes,' indicating an office-floor (5700 Yonge tower, 'Unit 1') location, not a verified street-level cash counter; only 27 reviews total and recency of cash-exchange reviews not confirmed. No solid walk-in cash confirmation found. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 5,
     "review_count": 27,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "5700 Yonge St #1",
     "phone": "(416) 270-5555",
-    "website": null,
+    "website": "https://moneyex.ca/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 9 a.m. Thu · (416) 270-5555",
     "lat": 43.7811838,
@@ -5373,7 +5494,10 @@
       "north-york"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -5450,16 +5574,16 @@
     "slug": "new-york-currency-exchange",
     "name": "New York Currency Exchange",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "evidence": "Official site newyorkexchange.ca shows storefront '7368 Yonge St., suit 8A, Thornhill (Ontario)' with map pin and retail hours 'Monday-Friday 09:30-18:00, Saturday 11:00-17:00, Sunday closed' plus a live rates widget and 'if you are interested to buy or sell your currency please contact us to identify the accurate and on time exchange rates' — strongly suggests a walk-in FX counter, but the site never explicitly says 'walk in / cash / in person' and Yelp/Google reviews were inaccessible (403), so in-person cash could not be directly confirmed. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.6,
     "review_count": 45,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "7368 Yonge St #8A",
     "phone": "(905) 597-8787",
-    "website": null,
-    "live_rates_url": null,
+    "website": "http://newyorkexchange.ca/",
+    "live_rates_url": "http://newyorkexchange.ca/",
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (905) 597-8787",
     "lat": 43.8074754,
     "lng": -79.422929,
@@ -5468,7 +5592,10 @@
       "markham"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:56.311Z"
     },
@@ -5539,15 +5666,16 @@
     "slug": "nikan-exchange",
     "name": "Nikan Exchange",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "sub_type": "money_transfer",
+    "evidence": "Ratinaj directory listing for صرافی نیکان تورنتو (Nikan Exchange): 'این صرافی هم به صورت آنلاین و هم حضوری ... خریدو فروش ارز به صورت نقدی' ('this exchange serves you both online and in person ... cash buying and selling of currency'), hours daily except Sundays 10am-6pm. Listing also features money remittance (حواله) and Western Union. Could not confirm the 6166 Yonge St address nor find datable Google-review activity describing in-person cash exchange; the shop's own JS-rendered site (nikanexchange.ca / nikan.exchange) returned no readable text. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.7,
     "review_count": 38,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "6166 Yonge St",
     "phone": "(647) 553-5000",
-    "website": null,
+    "website": "https://www.nikanexchange.ca/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 10 a.m. Thu · (647) 553-5000",
     "lat": 43.7930161,
@@ -5556,7 +5684,10 @@
       "north-york"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -5597,15 +5728,16 @@
     "slug": "palladium-finantial-exchange",
     "name": "Palladium Finantial Exchange | صرافی پالادیوم",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "sub_type": "money_transfer",
+    "evidence": "Official site palladium-ex.com (Iranian 'صرافی'/sarrafi) and Persian listings describe buying/selling currencies plus a dedicated remittance page 'حواله به سراسر کانادا و دیگر کشورها'; FINTRAC MSB reg #M21249806 (Karmateam Inc., opengovca.com) confirms it is a real money-service business at 7181 Yonge St. The site blocked automated reads (HTTP 403) and no datable Google-review evidence of recent in-person cash exchange could be retrieved. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.8,
     "review_count": 54,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "7181 Yonge St Unit 195",
     "phone": "(437) 500-1500",
-    "website": null,
+    "website": "https://palladium-ex.com/en",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 10 a.m. Thu · (437) 500-1500",
     "lat": 43.8035434,
@@ -5614,7 +5746,10 @@
       "north-york"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -5625,16 +5760,17 @@
     "id": "0x882b2d1a1ff994eb:0x9cfdb771de7186ec",
     "slug": "queen-pars-currency-exchange",
     "name": "Queen Pars Currency Exchange | صرافی کویین پارس تورنتو کانادا",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "invalid",
+    "sub_type": "corporate_office",
+    "evidence": "queenpars.com homepage and contact page both carry a current notice: \"Queen Pars Exchange is currently not conducting money services activities. We are not accepting new transactions at this time. Limited appointments may be arranged strictly for the purpose of settling prior obligations.\" No walk-in/cash invitation; appointments only to settle old obligations. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.9,
     "review_count": 50,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "193 Sheppard Ave E",
     "phone": "(416) 802-2220",
-    "website": null,
+    "website": "https://queenpars.com/",
     "live_rates_url": null,
     "hours_line": "Temporarily closed · (416) 802-2220",
     "lat": 43.7638196,
@@ -5643,7 +5779,10 @@
       "north-york"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -5654,16 +5793,16 @@
     "id": "0x882b2d6416cfee27:0xa398caa3033ffbd8",
     "slug": "queen-pars-exchange",
     "name": "Queen Pars Exchange | صرافی کویین پارس تورنتو کانادا",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "invalid",
+    "evidence": "queenpars.com contact and home pages state: Queen Pars Exchange is currently not conducting money services activities. We are not accepting new transactions at this time. Site lists two North York storefronts including 4578 Yonge St that formerly did in-person cash FX, but the business has ceased operating and FINTRAC MSB shows not registered. (verified 2026-06-15)</evidence>\n<parameter name=\"sub_type\">closed",
+    "confidence": "override",
     "rating": 4.9,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "4578 Yonge St",
     "phone": "(416) 802-2220",
-    "website": null,
+    "website": "https://queenpars.com/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 802-2220",
     "lat": 43.7565108,
@@ -5672,7 +5811,10 @@
       "north-york"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -5683,16 +5825,17 @@
     "id": "0x882b313371fc4f33:0xc60b84264ef104c6",
     "slug": "quick-collect-money-transfer",
     "name": "QUICK COLLECT MONEY TRANSFER",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "remittance_first",
+    "sub_type": "money_transfer",
+    "evidence": "quickcollects.com/money-transfer: app/web-based remittance to African countries (Nigeria, Ghana, Kenya, etc.) — 'Pay with your Quick Collect wallet or just pay with your card' and 'use our web application or just download our app'; no walk-in cash counter, payment is wallet/card not cash. Phone (416) 817-8648 is listed as the company WhatsApp number. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.4,
     "review_count": 36,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "2424 Finch Ave W Unit 18G",
     "phone": "(416) 817-8648",
-    "website": null,
+    "website": "https://quickcollects.com",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 817-8648",
     "lat": 43.7510434,
@@ -5701,7 +5844,10 @@
       "north-york"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -5742,16 +5888,16 @@
     "id": "0x882b2d0396e32ed5:0xfc989047d3c99a41",
     "slug": "sarafi-arg",
     "name": "Sarafi ARG",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "evidence": "Own website argexchange.ca/arg-exchange-north-york-on/ describes a physical \"One-stop Money Exchange Center\" at 6089 Yonge St, North York, ON M2M 3W2, with walk-in retail hours Mon-Sat 9:00AM-5:00PM, storefront phone (416) 224-0000, and in-person ID verification (passport/driver's license). Corroborated independently by Nicelocal/Zoon (4.9/127 reviews) and ProfileCanada/Wheree directories listing the same address, phone, and hours, with reviews citing named counter staff and in-person exchanges. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.9,
     "review_count": 629,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "6089 Yonge St",
     "phone": "(416) 224-0000",
-    "website": null,
+    "website": "https://argexchange.ca/arg-exchange-north-york-on/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (416) 224-0000",
     "lat": 43.7909637,
@@ -5760,7 +5906,10 @@
       "north-york"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -5772,15 +5921,16 @@
     "slug": "shahan-exchange",
     "name": "Shahan Exchange",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "sub_type": "money_transfer",
+    "evidence": "Own site shahanexchange.ca lists FX, transfers, crypto and school/immigration fee payments but never states walk-in/cash/visit-us; loc8nearme shows 104 reviews (most recent visible Feb 2026) and a nicelocal review describes an in-person cash exchange ('exchanging Iranian Rial to CAD... gave all bills in twenties'), but no cash-exchange reviews confirmable within the last 1-2 months. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.8,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "6099A Yonge St Upper Floor",
     "phone": "(416) 400-0080",
-    "website": null,
+    "website": "https://shahanexchange.ca/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (416) 400-0080",
     "lat": 43.79122,
@@ -5789,7 +5939,10 @@
       "north-york"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -5801,16 +5954,17 @@
     "slug": "tehranto-trade",
     "name": "Tehranto Trade",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "sub_type": "money_transfer",
+    "evidence": "tehrantotrade.com contact page lists storefront \"6113 Yonge St. Toronto, ON M2M 3W2\" and the site publishes a live \"Today's Rates\" page, but its language is transfer/quote-focused (\"Get a currency quote\", wire transfers) with no explicit walk-in/cash-counter statement; Yelp and the review aggregator returned HTTP 403, so no datable recent reviews quoting in-person cash exchange could be confirmed. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.4,
     "review_count": 200,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "6113 Yonge St",
     "phone": "(416) 225-2345",
-    "website": null,
-    "live_rates_url": null,
+    "website": "https://tehrantotrade.com",
+    "live_rates_url": "https://tehrantotrade.com/todays-rates/",
     "hours_line": "Temporarily closed · (416) 225-2345",
     "lat": 43.7915112,
     "lng": -79.4179454,
@@ -5818,7 +5972,10 @@
       "north-york"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -5829,16 +5986,16 @@
     "id": "0x882b2dc6ea03ddfd:0xddcd0f080ce015d4",
     "slug": "tejarat-exchange",
     "name": "Tejarat Exchange",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "evidence": "tejaratexchange.ca/en lists a physical walk-in office at \"2nd Floor, 6075 Yonge St – Unit A, North York, ON M2M 3W2\", hours Mon-Sat 10 AM–5 PM, and offers in-person cash currency exchange (\"receive the currency you need in cash by carrying your bank card and identification document\"); corroborated as an Active FINTRAC-registered foreign exchange dealer. Note: the 565/221-review ~4.9 Google figures are real but I could only directly verify older (2020-2021) text reviews, not recent-month in-person cash narratives; the own-website storefront evidence is what carries the verdict. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.9,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "6075 Yonge St 2ND FLOOR",
     "phone": "(647) 699-8080",
-    "website": null,
+    "website": "https://tejaratexchange.ca/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 10 a.m. Thu · (647) 699-8080",
     "lat": 43.7907594,
@@ -5847,7 +6004,10 @@
       "north-york"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -5859,16 +6019,17 @@
     "slug": "toronto-exchange",
     "name": "Toronto Exchange",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "sub_type": "money_transfer",
+    "evidence": "toronto-exchange.ca (official site, matches phone (416) 448-8888 and address 6091 Yonge St M2M 3W2) home page shows a live buy/sell rates table dated 'June 15, 2026 9:05 PM' with a 'نقدی' (cash) column for CAD/USD/EUR plus retail hours (Mon-Fri 9:30-17:30, Sat 9:30-15:30, Sun closed) and a counter address; describes 'buying, selling and transfer of international currencies' (Iranian صرافی), but uses no explicit 'walk-in / visit in person' wording and Google reviews could not be read to confirm a recent in-person cash signal. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.7,
     "review_count": 67,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "6091 Yonge St",
     "phone": "(416) 448-8888",
-    "website": null,
-    "live_rates_url": null,
+    "website": "https://toronto-exchange.ca/",
+    "live_rates_url": "https://toronto-exchange.ca/",
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (416) 448-8888",
     "lat": 43.7910914,
     "lng": -79.4178125,
@@ -5876,7 +6037,10 @@
       "north-york"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -5888,15 +6052,16 @@
     "slug": "vip-currency-exchange",
     "name": "VIP Currency Exchange",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "sub_type": "money_transfer",
+    "evidence": "vipex.ca self-describes as \"your trusted partner in foreign currency exchange since 2020\" with currency exchange listed first among services, plus a physical address (6062 Yonge St, North York) and posted counter hours (Mon-Fri 10-6, Sat 10-4); but the site never states \"walk-in\"/\"cash\"/\"no appointment\" and I could not obtain a datable Google/Yelp review-volume signal (Wheree review page returned HTTP 403). (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.8,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "6062 Yonge St",
     "phone": "(416) 580-5000",
-    "website": null,
+    "website": "https://www.vipex.ca/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 580-5000",
     "lat": 43.7903108,
@@ -5905,7 +6070,10 @@
       "north-york"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -5981,15 +6149,16 @@
     "slug": "zerik-exchange",
     "name": "Zerik Exchange | صرافی زریک",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "sub_type": "money_transfer",
+    "evidence": "zerik.ca homepage title/snippet: \"Zerik Exchange | toronto currency exchange | 250 Sheppard Avenue East #107\" and it \"send/receive IRR\" and exchanges \"USD, CAD, Euro, Iranian Rial/Toman, and TETHER USDT.\" The site is JS-rendered and home/about/contact pages returned no readable body, so I found no explicit walk-in/cash-counter statement and no datable Google/Yelp review describing in-person cash exchange. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 3.9,
     "review_count": 28,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "250 Sheppard Ave E #107",
     "phone": "(647) 300-0635",
-    "website": null,
+    "website": "https://www.zerik.ca/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 10 a.m. Thu · (647) 300-0635",
     "lat": 43.7640634,
@@ -5998,7 +6167,10 @@
       "north-york"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:39.651Z"
     },
@@ -6097,16 +6269,16 @@
     "id": "0x89d4d679fe0f2141:0xb0dbf7216a2536e",
     "slug": "continental-currency-exchange-2",
     "name": "Continental Currency Exchange",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "evidence": "continentalcurrency.ca Markham Branch page advertises \"Buy or sell foreign cash\" at Markville Shopping Centre, 5000 Hwy 7 East Unit 2235 (Entrance 4, between Carol Baker Visage and GNC); corroborated by the official CF Markville (Cadillac Fairview) store directory listing it as an active store offering \"Cash currency exchange • Foreign-to-foreign trades\" at Unit 2235. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.1,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "Markville Shopping Centre, 5000 Hwy 7 Unit 2235",
     "phone": "(905) 475-1500",
-    "website": null,
+    "website": "https://www.continentalcurrency.ca/branches/markham-branch",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (905) 475-1500",
     "lat": 43.8697805,
@@ -6115,7 +6287,10 @@
       "markham"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:56.311Z"
     },
@@ -6160,15 +6335,15 @@
     "slug": "everforex-currency-exchange-markham",
     "name": "Everforex Currency Exchange Markham",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "evidence": "Everforex official contact page lists the Markham branch at the exact scraped address ('Suite 21, 7010 Warden Ave., (at Warden/Steels), Markham, ON, L3R 5Y3') but marks it '(temporarily closed due to Covid)'; aggregator listings show retail hours (Mon-Fri 10-6, Sat 11-3) and old undated praise ('Great exchange rate, friendly, reliable service'), but Yelp returned HTTP 403 and I found no dated review signal confirming currently-operating in-person cash exchange. (everforex.ca/en/about/abcontact.aspx, verified 2026-06-15)",
+    "confidence": "override",
     "rating": 3.2,
     "review_count": 30,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "7020-7080, 7010 Warden Ave. #21",
     "phone": "+1 800-699-4816",
-    "website": null,
+    "website": "https://www.everforex.ca/",
     "live_rates_url": null,
     "hours_line": "Temporarily closed · +1 800-699-4816",
     "lat": 43.8201339,
@@ -6177,7 +6352,10 @@
       "markham"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:56.311Z"
     },
@@ -6221,17 +6399,17 @@
     "id": "0x89d4d770a754fb0f:0x7f72505f1e2949b0",
     "slug": "kailashaa-money-exchange",
     "name": "KAILASHAA MONEY EXCHANGE",
-    "status": "remittance_first",
-    "sub_type": "money_transfer_fx",
-    "evidence": "Rule: category \"Money transfer service\" (money transfer/order) without strong exchange signal — unverified walk-in candidate, FLAGGED.",
-    "confidence": "rule",
+    "status": "online_only",
+    "sub_type": "money_transfer",
+    "evidence": "kailashaamoneyexchange.com homepage: 'Money Transfer is one of the leading on-line, international money transfer company in Toronto'; contact.html is an unedited placeholder ('Exchange Currency - Responsive HTML5 Template', emails exchang@gmail.com / demo@gmail.com, address 'London 145 United Kingdom', Lorem ipsum). No walk-in/cash/counter language and no real GTA storefront; Google category is 'Money transfer service' and FINTRAC shows no FX registration. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 5,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Money transfer service",
     "address": "7 Eastvale Dr",
     "phone": "(647) 966-9693",
-    "website": null,
+    "website": "https://kailashaamoneyexchange.com/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 10 a.m. Thu · (647) 966-9693",
     "lat": 43.8384172,
@@ -6240,7 +6418,10 @@
       "markham"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:56.311Z"
     },
@@ -6379,16 +6560,16 @@
     "name": "Pioneer Money Transfer Inc",
     "status": "remittance_first",
     "sub_type": "money_transfer",
-    "evidence": "Rule: category \"Money transfer service\" (money transfer/order) without strong exchange signal — unverified walk-in candidate, FLAGGED.",
-    "confidence": "rule",
+    "evidence": "pioneermoneytransfer.com home page leads with 'Send Money Anywhere' / 'Money Transfers Worldwide' and describes 'wire transfers, foreign exchange for investors and tourists, and other banking services,' emphasizing remote methods (phone, WhatsApp, e-transfer, bank deposit); FX is a secondary service and Google Maps category is 'Money transfer service.' No explicit walk-in cash FX counter language found. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 5,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Money transfer service",
     "address": "6055 Steeles Ave E UNIT 117",
     "phone": "(416) 613-1888",
-    "website": null,
-    "live_rates_url": null,
+    "website": "https://pioneermoneytransfer.com/",
+    "live_rates_url": "https://pioneermoneytransfer.com/",
     "hours_line": "Closed · Opens 10 a.m. Thu · (416) 613-1888",
     "lat": 43.8363556,
     "lng": -79.2496439,
@@ -6396,7 +6577,10 @@
       "markham"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:56.311Z"
     },
@@ -6470,16 +6654,17 @@
     "id": "0x882b2be37e995bad:0xe166bf70b3bfbcab",
     "slug": "hannah-exchange",
     "name": "صرافي هانا|Hannah exchange",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "sub_type": "money_transfer",
+    "evidence": "Official site hanaco.ca states \"feel free to visit during normal business hours,\" shows physical address 8763 Bayview Ave Unit 115, Richmond Hill with hours \"Open today 10:30 a.m. - 04:30 p.m.,\" offering currency exchange and money transfers. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.9,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "8763 Bayview Ave #115",
     "phone": "(905) 763-9555",
-    "website": null,
+    "website": "https://hanaco.ca/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 10:30 a.m. Thu · (905) 763-9555",
     "lat": 43.8453488,
@@ -6488,7 +6673,10 @@
       "markham"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:56.311Z"
     },
@@ -6499,16 +6687,16 @@
     "id": "0x882b2b9a6ed00397:0x8254d5f18d55c4fc",
     "slug": "ava-exchange",
     "name": "صرافی آوا AVA Exchange",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "evidence": "avaexchange.ca home page states \"Our walk-in office ensures you receive competitive rates\" and \"Visit Our Office — Come by during business hours, no online signups needed... Simply visit our office with the currency you wish to exchange.\" Site lists address as Unit 9, 10097 Yonge St (shown as Richmond Hill, same building as the Markham-bordered listing); also offers transfers/crypto but walk-in cash exchange is explicit. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.8,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "10097 Yonge St unit 9",
     "phone": "(416) 418-4466",
-    "website": null,
+    "website": "https://avaexchange.ca/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 9 a.m. Thu · (416) 418-4466",
     "lat": 43.8738963,
@@ -6517,7 +6705,10 @@
       "markham"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:56.311Z"
     },
@@ -6529,15 +6720,16 @@
     "slug": "bisti-currency-exchange-toronto",
     "name": "صرافی بیستی تورنتو | Bisti Currency Exchange - Toronto",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "sub_type": "corporate_office",
+    "evidence": "Bisti brand site bisti.ca describes an \"online security platform\" with \"domestic and international money transfer services\" for \"corporate and individual clients\" (HQ 3981 Boulevard Saint-Laurent, Montreal); no Toronto walk-in cash counter is described. The Toronto address 125 Commerce Valley Dr W Unit 822 is an upper-floor office suite in a Markham/Thornhill commercial tower (other tenants incl. CGI), and the listing has no Google reviews — searched bisti.ca pages, the address, and the phone/name; no confirmation of in-person cash exchange found. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 5,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "125 Commerce Valley Dr W Unit 822",
     "phone": "(647) 592-2011",
-    "website": null,
+    "website": "https://bisti.ca/en/homepage/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 9 a.m. Thu · (647) 592-2011",
     "lat": 43.8397609,
@@ -6546,7 +6738,10 @@
       "markham"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:32:56.311Z"
     },
@@ -6592,15 +6787,15 @@
     "name": "AbleExpress",
     "status": "remittance_first",
     "sub_type": "money_transfer",
-    "evidence": "Rule: category \"Money transfer service\" (money transfer/order) without strong exchange signal — unverified walk-in candidate, FLAGGED.",
-    "confidence": "rule",
+    "evidence": "ableexpress.ca / opengovca FINTRAC record (M09931098): Able Express International Inc., 220-1325 Eglinton Ave E (Suite 220), registered service is 'Money transferring' and the firm 'has been in the business of providing home remittance to Pakistan through banking channels since 2009'; Google Maps category is 'Money transfer service.' Secondary 'sale and purchase of foreign currencies' is mentioned but no walk-in cash-counter language found and no FINTRAC foreign-exchange registration. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.9,
     "review_count": 46,
     "ratings_source": "google_maps",
     "category": "Money transfer service",
     "address": "1325 Eglinton Ave E",
     "phone": "(416) 230-4444",
-    "website": null,
+    "website": "https://www.ableexpress.ca/",
     "live_rates_url": null,
     "hours_line": null,
     "lat": 43.6348703,
@@ -6609,7 +6804,10 @@
       "mississauga"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:24.418Z"
     },
@@ -6679,16 +6877,17 @@
     "id": "0x882b47aa54262961:0x858b307e627a6209",
     "slug": "alsham-exchange-service",
     "name": "Alsham Exchange service",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "remittance_first",
+    "sub_type": "money_transfer",
+    "evidence": "alshamex.com (redirects to arabz.ca/directory/listing/alsham-exchange-service): headline 'تحويل أموال إلى البلاد العربية خلال 24 ساعة' (money transfer to Arab countries within 24 hours), listing 'Money transfers to ... Syria, Saudi Arabia, Lebanon, Jordan, Egypt, Iraq' alongside 'currency exchange at competitive rates' at the 918 Dundas St E storefront. Remittance is the lead service; could not get datable Google-review confirmation of in-person cash FX (review pages 403). (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.5,
     "review_count": 77,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "918 Dundas St E Unit C1A",
     "phone": "(437) 424-0424",
-    "website": null,
+    "website": "https://www.alshamex.com",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 11 a.m. Thu · (437) 424-0424",
     "lat": 43.5990431,
@@ -6697,7 +6896,10 @@
       "mississauga"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:24.418Z"
     },
@@ -6708,9 +6910,10 @@
     "id": "0x882b46fdbac30be3:0x4b163904166a659a",
     "slug": "ar-international-inc",
     "name": "AR International Inc.",
-    "status": "unknown",
-    "evidence": "Rule: ambiguous (category \"Currency exchange service\", address \"125 A Dundas St E\"). Needs review.",
-    "confidence": "weak",
+    "status": "remittance_first",
+    "sub_type": "money_transfer",
+    "evidence": "FINTRAC MSB record (opengovca.com/money-service/M17308917) lists 'Foreign exchange dealing' and 'Money transferring' but status 'Ceased / Cessée', cessation date 2019-07-08; the only review found (n49.com) is a long-time customer who 'used the service for 10 years to transfer money to Pakistan.' No recent (2026) review activity or own website found. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.3,
     "review_count": 142,
     "ratings_source": "google_maps",
@@ -6726,7 +6929,10 @@
       "mississauga"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:24.418Z"
     },
@@ -6738,15 +6944,15 @@
     "slug": "azizi-forex-exchange",
     "name": "Azizi Forex Exchange - صرافی عزیزی",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "evidence": "Shop's own site azizifx.com (Location/Services/Rates pages) per search snippets describes \"foreign banknote (cash) transactions,\" \"competitive rates that reflect the current market,\" and \"special preferred rates for larger transactions exceeding $5,000\" at 3064 Hurontario St, Mississauga — consistent with a retail cash-FX counter; but azizifx.com, Yelp and directory pages all returned HTTP 403 so I could not directly read a \"walk-in/visit us\" statement or confirm recent review activity (Yelp listing showed \"Updated June 2025\", not last 1-2 months). No solid datable confirmation obtained. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.9,
     "review_count": 47,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "3064 Hurontario St",
     "phone": "(905) 277-5188",
-    "website": null,
+    "website": "https://azizifx.com/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 10:30 a.m. Thu · (905) 277-5188",
     "lat": 43.5812885,
@@ -6755,7 +6961,10 @@
       "mississauga"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:24.418Z"
     },
@@ -6766,17 +6975,17 @@
     "id": "0x882b4790b0156ceb:0xabb7245a3b674d0d",
     "slug": "babylon-monetary-services-currency-exchange-money-transfer",
     "name": "Babylon Monetary Services - Currency Exchange & Money Transfer (صرافی)",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "evidence": "Own website babylonfx.com/contact lists 3060 Hurontario St, Mississauga, ON L5B 1N7 as a physical retail branch (1 of 4), retail hours Mon-Sat 10:00 AM-6:00 PM (Sun closed), phone (905) 566-9393 matching, with header invitation \"Call or Stop By Today!\" — staffed counter for currency exchange. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 5,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "3060 Hurontario St",
     "phone": "(905) 566-9393",
-    "website": null,
-    "live_rates_url": null,
+    "website": "https://babylonfx.com/",
+    "live_rates_url": "https://babylonfx.com/live-rates.html",
     "hours_line": "Closed · Opens 10 a.m. Thu · (905) 566-9393",
     "lat": 43.5812433,
     "lng": -79.6185354,
@@ -6784,7 +6993,10 @@
       "mississauga"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:24.418Z"
     },
@@ -6977,17 +7189,17 @@
     "id": "0x882b418978a464cb:0xad4af93b4593b3fd",
     "slug": "continental-currency-exchange-3",
     "name": "Continental Currency Exchange",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "evidence": "continentalcurrency.ca/branches/mississauga-branch confirms the 5100 Erin Mills Parkway Unit R235 storefront (upper level Erin Mills Town Centre, phone 905-828-2288, walk-in hours Mon-Fri 9:30am-8:00pm, \"Buy or sell foreign cash,\" \"visit us today\"), and the currency-converter page states \"Cash rates as of: June 15th, 2026, 9:00 am ... apply to over-the-counter cash exchanges only.\" (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.2,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "5100 Erin Mills Pkwy unit r235 unit r235",
     "phone": "(905) 828-2288",
-    "website": null,
-    "live_rates_url": null,
+    "website": "https://www.continentalcurrency.ca/branches/mississauga-branch",
+    "live_rates_url": "https://www.continentalcurrency.ca/currency-converter",
     "hours_line": "Closed · Opens 9:30 a.m. Thu · (905) 828-2288",
     "lat": 43.557576,
     "lng": -79.7122713,
@@ -6995,7 +7207,10 @@
       "mississauga"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:24.418Z"
     },
@@ -7006,9 +7221,10 @@
     "id": "0x882b434852b503e1:0x247e7a615b44876b",
     "slug": "currency-exchange-xpert",
     "name": "Currency Exchange Xpert",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "invalid",
+    "sub_type": "dead_listing",
+    "evidence": "Multiple web/Yelp/FINTRAC searches for \"Currency Exchange Xpert\" and phone (416) 771-0027 returned zero matching results — no website, listing, or reviews under this name. The exact address 4099 Erin Mills Pkwy resolves to two different operators: National Bank's \"THE EXCHANGE ABM\" (Unit 7) and a booth \"CN Cash - inside IQBAL's Food\" with phone 647-740-3381 (canada247.org), neither matching this name or phone. The Google listing shows 0 actual reviews. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 5,
     "review_count": null,
     "ratings_source": "google_maps",
@@ -7024,7 +7240,10 @@
       "mississauga"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:24.418Z"
     },
@@ -7095,15 +7314,16 @@
     "slug": "finmark-financials",
     "name": "Finmark Financials",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "sub_type": "money_transfer",
+    "evidence": "finmarkfinancials.ca Foreign-Currency-Exchange page: \"We change your foreign banknotes, traveller's checks and provide you the desired currency\"; OurLocations page: \"Foreign Currency Exchange service is only available at Head Office & Branch location\" (the 3031A Hurontario St address). No explicit \"walk-in/cash counter\" wording and Yelp/Google reviews were inaccessible (HTTP 403), so in-person cash exchange could not be confirmed. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 3.7,
     "review_count": 17,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "3031A Hurontario St",
     "phone": "(905) 272-3888",
-    "website": null,
+    "website": "https://www.finmarkfinancials.ca/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 11 a.m. Thu · (905) 272-3888",
     "lat": 43.5811679,
@@ -7112,7 +7332,10 @@
       "mississauga"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:24.418Z"
     },
@@ -7154,15 +7377,15 @@
     "name": "Ghalla Monetary Services",
     "status": "remittance_first",
     "sub_type": "money_transfer",
-    "evidence": "Rule: category \"Money transfer service\" (money transfer/order) without strong exchange signal — unverified walk-in candidate, FLAGGED.",
-    "confidence": "rule",
+    "evidence": "Ghalla's own Instagram (instagram.com/ghallamonetaryservices, post DChqlelvGfC) lists services in order 'Bank Wire Transfers – Fast and secure,' 'Money Transfers – Affordable and reliable,' 'Currency Exchange – Competitive rates' and invites 'Visit us' at '53 Village Centre Pl, Unit 100'; arabz.ca directory leads with 'Global Bank Wire Transfers' and 'Fast and low-fee money transfer services,' and Google's category is 'Money transfer service.' No 'cash'/'walk-in' wording or recent in-person cash-FX reviews could be verified (Yelp returned 403). (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.6,
     "review_count": 20,
     "ratings_source": "google_maps",
     "category": "Money transfer service",
     "address": "53 Village Centre Pl",
     "phone": "(905) 276-4252",
-    "website": null,
+    "website": "https://www.ghallagroup.ca",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 10 a.m. Thu · (905) 276-4252",
     "lat": 43.6010285,
@@ -7171,7 +7394,10 @@
       "mississauga"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:24.418Z"
     },
@@ -7183,16 +7409,17 @@
     "slug": "global-services",
     "name": "Global Services",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "sub_type": "money_transfer",
+    "evidence": "gsexchange.ca lists \"Currency exchange\" and \"International Remittances/money transfer\" with a live buy/sell rates table and a single storefront address (113 Dundas St E), but contains NO walk-in/counter/cash/\"visit us\" language; its process steps are generic (\"Access Rates... Exchange Currency... Money Transfer\"). Directory listings call it \"Authorized Agency of Wall Street Finance\" focused on transfers to India/Bangladesh/Middle East. Yelp returned HTTP 403 and searches surfaced no quotable, recent (last 1-2 months) review describing in-person cash exchange. No confirmation of walk-in cash FX found. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.9,
     "review_count": 32,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "113 Dundas St E",
     "phone": "(905) 232-2822",
-    "website": null,
-    "live_rates_url": null,
+    "website": "https://gsexchange.ca/",
+    "live_rates_url": "https://gsexchange.ca/",
     "hours_line": "Closed · Opens 10:30 a.m. Thu · (905) 232-2822",
     "lat": 43.5830333,
     "lng": -79.6137464,
@@ -7200,7 +7427,10 @@
       "mississauga"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:24.418Z"
     },
@@ -7212,16 +7442,17 @@
     "slug": "gsexchange",
     "name": "GsExchange",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "sub_type": "money_transfer",
+    "evidence": "gsexchange.ca lists a physical address ('113 Dundas St E Mississauga, ON, L5A1W7'), retail hours (Mon-Fri, Sat), and a live buy/sell rates table for 20+ currencies, advertising 'Currency Exchange' and 'International Remittances'; its 'Our Process' page ('Access Rates... Exchange Currency... Money Transfer... Satisfaction') never explicitly states walk-in/in-person/cash, and no Google/Yelp reviews confirming in-person cash exchange were retrievable (Yelp returned HTTP 403). Plausible storefront but no datable confirmation either way. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.4,
     "review_count": 13,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "113 Dundas St E",
     "phone": "(905) 232-2822",
-    "website": null,
-    "live_rates_url": null,
+    "website": "https://gsexchange.ca/",
+    "live_rates_url": "https://gsexchange.ca/",
     "hours_line": "Closed · Opens 10:30 a.m. Thu · (905) 232-2822",
     "lat": 43.5830714,
     "lng": -79.6137934,
@@ -7229,7 +7460,10 @@
       "mississauga"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:24.418Z"
     },
@@ -7240,17 +7474,18 @@
     "id": "0x882b39749d9f23eb:0xbd001c4cb6fd308d",
     "slug": "ice-international-currency-exchange",
     "name": "ICE International Currency Exchange",
-    "status": "unknown",
-    "evidence": "Rule: ambiguous (category \"Currency exchange service\", address \"6301 Silver Dart Dr\"). Needs review.",
-    "confidence": "weak",
+    "status": "walk_in_confirmed",
+    "sub_type": "airport_currency_exchange",
+    "evidence": "ICE Canada's official location page (ice-canada.ca/en/our-locations/details/toronto-pearson-international-airport-yyz) lists multiple physical service points/walk-in counters at Toronto Pearson Terminal 1 (6300/6301 Silver Dart Dr), offering in-person cash exchange of USD/EUR/GBP and 60+ currencies with daily hours (approx 4-7 AM to 10 PM-midnight); corroborated by torontopearson.com airport service listings. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 5,
     "review_count": 1,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "6301 Silver Dart Dr",
     "phone": null,
-    "website": null,
-    "live_rates_url": null,
+    "website": "https://www.ice-canada.ca",
+    "live_rates_url": "https://www.ice-canada.ca/en/our-locations/details/toronto-pearson-international-airport-yyz",
     "hours_line": "Open 24 hours",
     "lat": 43.6814408,
     "lng": -79.6108264,
@@ -7258,7 +7493,10 @@
       "mississauga"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:24.418Z"
     },
@@ -7269,17 +7507,18 @@
     "id": "0x882b39737274dae5:0xbdcabee17624070d",
     "slug": "ice-international-currency-exchange-yyz-depatures-before-security",
     "name": "ICE International Currency Exchange - YYZ - Depatures Before security",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "sub_type": "airport_kiosk",
+    "evidence": "First-party confirmation: torontopearson.com ICE-T3-before-security-departures page and ice-canada.ca YYZ location page both state a physical staffed counter \"buys and sells over 70 international currencies\" in person, open daily 4:00am-11:00pm, with in-store pickup/payment. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 3.4,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "6300 Silver Dart Dr",
     "phone": "(416) 776-1311",
-    "website": null,
-    "live_rates_url": null,
+    "website": "https://www.ice-canada.ca/en/our-locations/details/toronto-pearson-international-airport-yyz",
+    "live_rates_url": "https://www.ice-canada.ca/en/exchange-rates/toronto-pearson-international-airport-yyz",
     "hours_line": "Open · Closes 12 a.m. · (416) 776-1311",
     "lat": 43.6860665,
     "lng": -79.622233,
@@ -7287,7 +7526,10 @@
       "mississauga"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:24.418Z"
     },
@@ -7298,16 +7540,17 @@
     "id": "0x882b396c265edf99:0x1cd849e925443981",
     "slug": "international-currency-exchange",
     "name": "International Currency Exchange",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "sub_type": "airport_kiosk",
+    "evidence": "6301 Silver Dart Dr is Toronto Pearson Airport; the airport's official services site lists multiple staffed in-person ICE (International Currency Exchange) booths across Terminals 1 and 3 (before/after security), open ~4:00 AM-10:00 PM seven days a week, buying/selling 70-100+ currencies where you \"pick up your currency and pay in-store\"; corroborated by ICE Canada's own YYZ page. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": null,
     "review_count": 0,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "6301 Silver Dart Dr",
     "phone": "+1 833-919-0823",
-    "website": null,
+    "website": "https://www.torontopearson.com/en/while-you-are-here/toronto-airport-services",
     "live_rates_url": null,
     "hours_line": null,
     "lat": 43.6852187,
@@ -7316,7 +7559,10 @@
       "mississauga"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:24.418Z"
     },
@@ -7327,17 +7573,17 @@
     "id": "0x882b396e8312707f:0xf91196665296fc60",
     "slug": "international-currency-exchange-ice",
     "name": "International Currency Exchange ICE",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "evidence": "ice-canada.ca YYZ locations page lists 5 staffed service points at 6300 Silver Dart Drive, Toronto/Mississauga ON L5P 1B2 (counter hours 4:00 AM-midnight per terminal), exchanging 100+ currencies for CAD with \"Orders placed by phone and/or directly at the counter may have different rates\"; independently corroborated by torontopearson.com which lists ICE walk-up counters in Terminals 1 & 3 before/after security. Note: directory address \"6301\" should be \"6300\" Silver Dart Dr (the airport address). (verified 2026-06-15)",
+    "confidence": "override",
     "rating": null,
     "review_count": 0,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "6301 Silver Dart Dr",
     "phone": "+1 833-919-0823",
-    "website": null,
-    "live_rates_url": null,
+    "website": "https://www.ice-canada.ca/en/",
+    "live_rates_url": "https://www.ice-canada.ca/en/exchange-rates/toronto-pearson-international-airport-yyz",
     "hours_line": null,
     "lat": 43.6856106,
     "lng": -79.6199014,
@@ -7345,7 +7591,10 @@
       "mississauga"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:24.418Z"
     },
@@ -7356,17 +7605,17 @@
     "id": "0x882b47809d9e9013:0x9a4d3ff3ee59cfb2",
     "slug": "kantor-currency-exchange-2",
     "name": "Kantor Currency Exchange",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "evidence": "kantor.ca/branches/Mississauga_Branch lists physical storefront '3643 Dixie Rd., Unit 1, Mississauga, ON L4Y 2B3' with retail hours Mon-Fri 10am-7pm, Sat 10am-5pm, Sun closed; kantor.ca/exchange_rates publishes live rates '1 USD = 1.38150000 CAD (We Buy) / 1.41600000 CAD (We Sell)', 'Rates effective as of 2026-06-15 09:05:02 EST'; FX company since 2001 with multiple physical branches. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.7,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "3643 Dixie Rd #1",
     "phone": "(905) 369-9978",
-    "website": null,
-    "live_rates_url": null,
+    "website": "https://www.kantor.ca",
+    "live_rates_url": "https://www.kantor.ca/exchange_rates",
     "hours_line": "Closed · Opens 10 a.m. Thu · (905) 369-9978",
     "lat": 43.622632,
     "lng": -79.60073,
@@ -7374,7 +7623,10 @@
       "mississauga"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:24.418Z"
     },
@@ -7763,16 +8015,17 @@
     "id": "0x882b412d6064b009:0x4e7a70e20341941",
     "slug": "money-exchange-world",
     "name": "Money Exchange World",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "sub_type": "money_transfer",
+    "evidence": "moneyexchangeworld.com home/forex pages state \"Visit one of our three convenient locations in Mississauga and Toronto... We buy and sell all major foreign currencies,\" listing the ground-floor counter \"Suite 4 – 700 Burnhamthorpe Rd W, Mississauga L5C 2R9\" / (289) 521-2274, counter hours Mon-Fri 10AM-7PM (corroborated across YellowPages/411 listings); established 2002. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.5,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "700 Burnhamthorpe Rd W #4",
     "phone": "(289) 521-2274",
-    "website": null,
+    "website": "https://moneyexchangeworld.com/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 10 a.m. Thu · (289) 521-2274",
     "lat": 43.5786582,
@@ -7781,7 +8034,10 @@
       "mississauga"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:24.418Z"
     },
@@ -7852,15 +8108,16 @@
     "slug": "money-money-exchange",
     "name": "MONEY MONEY Exchange",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "sub_type": "money_transfer",
+    "evidence": "Real operating site moneymoneycenter.com (same phone 905-276-6639 / 3355 Hurontario St) Services page lists 'Currency Exchange / Money Transfer / Payday Loans / Cashing Cheque'; home page: 'We provide Foreign Money Exchange Services and Cheque Cashing... transfer money around the world to loved ones for cash pickup or deposit directly into their bank account.' No walk-in/cash-counter wording, no rates page, and zero Google/YellowPages reviews found, so in-person cash FX could not be confirmed. The 'moneymoneyexchange.com' domain is a parked ParkLogic redirect, not the live site. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.7,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "3355 Hurontario St #3",
     "phone": "(905) 276-6639",
-    "website": null,
+    "website": "https://moneymoneycenter.com/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 10 a.m. Thu · (905) 276-6639",
     "lat": 43.587365,
@@ -7869,7 +8126,10 @@
       "mississauga"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:24.418Z"
     },
@@ -8007,16 +8267,17 @@
     "slug": "orbit-money",
     "name": "Orbit Money",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "sub_type": "money_transfer",
+    "evidence": "Orbit Money (orbitmoney.com) is a real multi-branch Canadian \"currency exchange and international money transfer\" firm with 12+ physical stores; the 377 Burnhamthorpe Rd E Unit#37 site is FINTRAC-registered, Google-categorized \"Currency exchange service\" with retail hours (Mon-Fri 10-6, Sat 10-4) and is also a MoneyGram agent. Search snippets say to \"bring valid identification and any cash\" when visiting, but the official site is JS-rendered (returned only its title) and the wheree.com reviews page was HTTP 403, so I could not get direct datable review evidence of in-person cash exchange. (searched orbitmoney.com locations/faqs/blog, infobel, wheree, MoneyGram; no solid walk-in confirmation, verified 2026-06-15)",
+    "confidence": "override",
     "rating": 5,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "377 Burnhamthorpe Rd E Unit#37",
     "phone": "(647) 254-9813",
-    "website": null,
-    "live_rates_url": null,
+    "website": "https://orbitmoney.com/",
+    "live_rates_url": "https://orbitmoney.com/check-all-rates/",
     "hours_line": "Closed · Opens 10 a.m. Thu · (647) 254-9813",
     "lat": 43.6028499,
     "lng": -79.62651,
@@ -8024,7 +8285,10 @@
       "mississauga"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:24.418Z"
     },
@@ -8125,17 +8389,17 @@
     "id": "0x882b41c0e071b0cd:0xff49363498085c92",
     "slug": "prime-fx",
     "name": "Prime FX",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "evidence": "primeforexservices.com (own site): homepage references the \"branch forex counter\" and states branches accept cash, cheque and e-transfer; Branches page lists the Mississauga branch at \"488 Eglinton Avenue West Unit# 10, Mississauga, ON L5R 0G2\" with walk-in hours Mon-Fri 9:00-18:00 and Sat 11:00-16:00; homepage live converter \"Rates updated on June 15, 2026 at 6:27 PM\". FINTRAC MSB registered. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.9,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "488 Eglinton Ave W Unit#10",
     "phone": "(905) 819-1919",
-    "website": null,
-    "live_rates_url": null,
+    "website": "https://primeforexservices.com",
+    "live_rates_url": "https://primeforexservices.com",
     "hours_line": "Closed · Opens 9 a.m. Thu · (905) 819-1919",
     "lat": 43.5969908,
     "lng": -79.6621831,
@@ -8143,7 +8407,10 @@
       "mississauga"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:24.418Z"
     },
@@ -8218,16 +8485,17 @@
     "slug": "sultan-currency-exchange-money-transfer",
     "name": "Sultan Currency Exchange & Money Transfer",
     "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "sub_type": "money_transfer",
+    "evidence": "sultanexchange.com lists a single retail address '2395 Cawthra Road, Unit 101 Mississauga' with storefront hours (Mon-Fri 10:00-18:00, Sat 11:30-16:30) and publishes live rates ('Client Buys (Pays Canadian) 1.4202' USD), and aggregated reviews praise in-person service ('slightly better than that at BMO', 'better rates than all banks'); but the site uses no explicit walk-in/cash-counter language and I found no datable 10+ recent reviews describing cash exchange (Yelp returned 403). (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.4,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "2395 Cawthra Rd #101",
     "phone": "(905) 897-1616",
-    "website": null,
-    "live_rates_url": null,
+    "website": "https://www.sultanexchange.com",
+    "live_rates_url": "https://www.sultanexchange.com/exchange-rate",
     "hours_line": "Closed · Opens 10 a.m. Thu · (905) 897-1616",
     "lat": 43.5906298,
     "lng": -79.5935157,
@@ -8235,7 +8503,10 @@
       "mississauga"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:24.418Z"
     },
@@ -8246,16 +8517,16 @@
     "id": "0x882b472ecf47d4bb:0xba2d1a0c7ccd3b6a",
     "slug": "tcx-currency-exchange",
     "name": "TCX Currency Exchange",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "evidence": "Square One official mall directory (shopsquareone.com / sq1district.com) lists \"TCX Currency Exchange,\" Level 1 near Walmart, phone 905-279-4475, hours Mon-Sat 10AM-9PM / Sun 11AM-7PM, described \"Over 30 years of business in Foreign Exchange! Deal in over 50 different currencies\"; TCX brand site (tcxcanada.ca/locations/tcx-square-one-mall) confirms same address (100 City Centre Drive) and phone plus in-store pickup/pay — a staffed mall foreign-exchange counter with retail walk-in hours. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 3.6,
     "review_count": null,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "100 City Centre Dr Unit #2 - 287",
     "phone": "(905) 279-4475",
-    "website": null,
+    "website": "https://tcxcanada.ca/locations/tcx-square-one-mall/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 10 a.m. Thu · (905) 279-4475",
     "lat": 43.5937338,
@@ -8264,7 +8535,10 @@
       "mississauga"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:24.418Z"
     },
@@ -8275,17 +8549,17 @@
     "id": "0x882b46fcbe249f13:0xa3a9e125706fb5a6",
     "slug": "thamor-jewels-currency-exchange",
     "name": "Thamor Jewels & Currency Exchange",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "evidence": "Own website thamorfx.com/currency-exchange-in-mississauga: \"Come into their Mississauga location (107A Dundas St E) with a photo ID and your method of payment... bring in cash to exchange directly for cash in your chosen currency... reserve your rate before you head into the store, and pick up your money in minutes\" — independently confirmed via live page search snippet and recent reviews at matching address. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.5,
     "review_count": 186,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "107A Dundas St E",
     "phone": "(905) 290-8318",
-    "website": null,
-    "live_rates_url": null,
+    "website": "https://thamorfx.com/",
+    "live_rates_url": "https://thamorfx.com/currency-exchange-in-mississauga",
     "hours_line": "Closed · Opens 10 a.m. Thu · (905) 290-8318",
     "lat": 43.5829722,
     "lng": -79.6139394,
@@ -8293,7 +8567,10 @@
       "mississauga"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:24.418Z"
     },
@@ -8304,16 +8581,16 @@
     "id": "0x882b47ddca43c973:0x6274b740e858e6a5",
     "slug": "thamorfx-currency-exchange-in-mississauga",
     "name": "Thamorfx - Currency exchange in mississauga",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "walk_in_confirmed",
+    "evidence": "Own website thamorfx.com (Currency Exchange in Mississauga page) states customers 'come into the Mississauga location with a photo ID and their method of payment (cash, credit card, or debit card) and leave with their money in minutes' and can 'bring in cash to exchange directly for cash in their chosen currency'; physical storefront at 107A Dundas St E, hours 10am-7pm, operating (Thamor Jewels & Currency Exchange, 200+ reviews). (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.5,
     "review_count": 13,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "107a Dundas St E",
     "phone": "(905) 290-8318",
-    "website": null,
+    "website": "https://thamorfx.com/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 10 a.m. Thu · (905) 290-8318",
     "lat": 43.5829285,
@@ -8322,7 +8599,10 @@
       "mississauga"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:24.418Z"
     },
@@ -8335,15 +8615,15 @@
     "name": "Tita Au's Services Ltd.",
     "status": "remittance_first",
     "sub_type": "money_transfer",
-    "evidence": "Rule: category \"Money transfer service\" (money transfer/order) without strong exchange signal — unverified walk-in candidate, FLAGGED.",
-    "confidence": "rule",
+    "evidence": "Official site titaau.com lists three services: 'Money Transfer: Fast, secure, affordable transfers to anywhere around the world', 'Cargo: door-to-door shipping... to Philippines', and 'International Calling'; no walk-in cash currency exchange mentioned. Search results describe it as 'an authorized money remittance centre for Ria Money Transfer and Vigo Western Union' serving Mississauga's Filipino community; Google category is 'Money transfer service' and it has no FINTRAC foreign-exchange registration. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 3.8,
     "review_count": 14,
     "ratings_source": "google_maps",
     "category": "Money transfer service",
     "address": "105 Dundas St W",
     "phone": "(905) 566-8953",
-    "website": null,
+    "website": "https://titaau.com/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 10 a.m. Thu · (905) 566-8953",
     "lat": 43.5780155,
@@ -8352,7 +8632,10 @@
       "mississauga"
     ],
     "fintrac_registered": false,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:24.418Z"
     },
@@ -8363,16 +8646,17 @@
     "id": "0x882b413e07ce0faf:0x72730574400ebc7d",
     "slug": "trust-exchange-and-financial-services",
     "name": "Trust Exchange And Financial Services",
-    "status": "walk_in_unverified",
-    "evidence": "Rule: \"Currency exchange service\" with street-retail address + phone. Honest default — NOT confirmed; needs phone/in-person check.",
-    "confidence": "rule",
+    "status": "remittance_first",
+    "sub_type": "money_transfer",
+    "evidence": "Official site trustfin.ca ('Trust Financial') self-describes as 'the leading provider of international online money transfers from Canada' and 'the Trusted MoneyGram Services Provider in Mississauga'; a MoneyGram agent listing at the identical address (Unit 5 - 600 Matheson Blvd) lists money transfers, money orders and bill payment. Site mentions transactions 'either online or in person' but gives no walk-in cash-FX counter language, no live rates page, and no Google/Yelp reviews describing in-person cash exchange. (verified 2026-06-15)",
+    "confidence": "override",
     "rating": 4.2,
     "review_count": 19,
     "ratings_source": "google_maps",
     "category": "Currency exchange service",
     "address": "600 Matheson Blvd W Unit 5",
     "phone": "(437) 268-2899",
-    "website": null,
+    "website": "https://trustfin.ca/",
     "live_rates_url": null,
     "hours_line": "Closed · Opens 12 p.m. Thu · (437) 268-2899",
     "lat": 43.6112497,
@@ -8381,7 +8665,10 @@
       "mississauga"
     ],
     "fintrac_registered": true,
-    "verified_phone": null,
+    "verified_phone": {
+      "date": null,
+      "answer": null
+    },
     "sources": {
       "maps_scraped_at": "2026-06-04T02:33:24.418Z"
     },
